@@ -4,12 +4,12 @@
   <element>
     <id>UMLActor</id>
     <coordinates>
-      <x>171</x>
+      <x>153</x>
       <y>0</y>
-      <w>54</w>
+      <w>90</w>
       <h>99</h>
     </coordinates>
-    <panel_attributes>Attore</panel_attributes>
+    <panel_attributes>Organizzatore</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
@@ -27,12 +27,12 @@
     <id>Relation</id>
     <coordinates>
       <x>189</x>
-      <y>144</y>
+      <y>81</y>
       <w>27</w>
-      <h>1971</h>
+      <h>2034</h>
     </coordinates>
     <panel_attributes>lt=.</panel_attributes>
-    <additional_attributes>10.0;10.0;10.0;2170.0</additional_attributes>
+    <additional_attributes>10.0;10.0;10.0;2240.0</additional_attributes>
   </element>
   <element>
     <id>Relation</id>
