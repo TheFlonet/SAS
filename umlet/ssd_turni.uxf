@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <diagram program="umlet" version="14.3.0">
-  <zoom_level>9</zoom_level>
+  <zoom_level>10</zoom_level>
   <element>
     <id>UMLActor</id>
     <coordinates>
-      <x>153</x>
+      <x>410</x>
       <y>0</y>
-      <w>90</w>
-      <h>99</h>
+      <w>100</w>
+      <h>110</h>
     </coordinates>
     <panel_attributes>Organizzatore</panel_attributes>
     <additional_attributes/>
@@ -15,10 +15,10 @@
   <element>
     <id>UMLDeployment</id>
     <coordinates>
-      <x>522</x>
-      <y>36</y>
-      <w>99</w>
-      <h>45</h>
+      <x>820</x>
+      <y>40</y>
+      <w>110</w>
+      <h>50</h>
     </coordinates>
     <panel_attributes>Sistema</panel_attributes>
     <additional_attributes/>
@@ -26,32 +26,32 @@
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>189</x>
-      <y>81</y>
-      <w>27</w>
-      <h>2034</h>
-    </coordinates>
-    <panel_attributes>lt=.</panel_attributes>
-    <additional_attributes>10.0;10.0;10.0;2240.0</additional_attributes>
-  </element>
-  <element>
-    <id>Relation</id>
-    <coordinates>
-      <x>558</x>
-      <y>72</y>
-      <w>27</w>
-      <h>2034</h>
-    </coordinates>
-    <panel_attributes>lt=.</panel_attributes>
-    <additional_attributes>10.0;10.0;10.0;2240.0</additional_attributes>
-  </element>
-  <element>
-    <id>Relation</id>
-    <coordinates>
-      <x>189</x>
+      <x>450</x>
       <y>90</y>
-      <w>396</w>
-      <h>36</h>
+      <w>30</w>
+      <h>2260</h>
+    </coordinates>
+    <panel_attributes>lt=.</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;2240.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>860</x>
+      <y>80</y>
+      <w>30</w>
+      <h>2260</h>
+    </coordinates>
+    <panel_attributes>lt=.</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;2240.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>450</x>
+      <y>100</y>
+      <w>440</w>
+      <h>40</h>
     </coordinates>
     <panel_attributes>lt=-&gt;&gt;&gt;
 1. selezionaTipoTurno()</panel_attributes>
@@ -60,10 +60,10 @@
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>189</x>
-      <y>117</y>
-      <w>396</w>
-      <h>36</h>
+      <x>450</x>
+      <y>130</y>
+      <w>440</w>
+      <h>40</h>
     </coordinates>
     <panel_attributes>lt=&lt;.
 restituisce il tipo del turno selezionato</panel_attributes>
@@ -72,10 +72,10 @@ restituisce il tipo del turno selezionato</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>189</x>
-      <y>243</y>
-      <w>396</w>
-      <h>36</h>
+      <x>450</x>
+      <y>270</y>
+      <w>440</w>
+      <h>40</h>
     </coordinates>
     <panel_attributes>lt=-&gt;&gt;&gt;
 selezionaEvento(evento)</panel_attributes>
@@ -84,10 +84,10 @@ selezionaEvento(evento)</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>189</x>
-      <y>279</y>
-      <w>396</w>
-      <h>36</h>
+      <x>450</x>
+      <y>310</y>
+      <w>440</w>
+      <h>40</h>
     </coordinates>
     <panel_attributes>lt=&lt;.
 restituisce le informazioni sull'evento</panel_attributes>
@@ -96,10 +96,10 @@ restituisce le informazioni sull'evento</panel_attributes>
   <element>
     <id>UMLFrame</id>
     <coordinates>
-      <x>144</x>
-      <y>315</y>
-      <w>441</w>
-      <h>72</h>
+      <x>400</x>
+      <y>350</y>
+      <w>490</w>
+      <h>80</h>
     </coordinates>
     <panel_attributes>OPT
 fg=#128C86
@@ -110,10 +110,10 @@ layer=1</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>189</x>
-      <y>324</y>
-      <w>396</w>
-      <h>36</h>
+      <x>450</x>
+      <y>360</y>
+      <w>440</w>
+      <h>40</h>
     </coordinates>
     <panel_attributes>lt=-&gt;&gt;&gt;
 3. precompilaTurni(evento)
@@ -123,10 +123,10 @@ layer=2</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>189</x>
-      <y>351</y>
-      <w>396</w>
-      <h>36</h>
+      <x>450</x>
+      <y>390</y>
+      <w>440</w>
+      <h>40</h>
     </coordinates>
     <panel_attributes>lt=&lt;.
 ok
@@ -136,10 +136,10 @@ layer=2</panel_attributes>
   <element>
     <id>UMLFrame</id>
     <coordinates>
-      <x>135</x>
-      <y>153</y>
-      <w>468</w>
-      <h>252</h>
+      <x>390</x>
+      <y>170</y>
+      <w>520</w>
+      <h>280</h>
     </coordinates>
     <panel_attributes>OPT
 fg=#128C86
@@ -149,10 +149,10 @@ bg=#B8E0E0</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>189</x>
-      <y>171</y>
-      <w>396</w>
-      <h>36</h>
+      <x>450</x>
+      <y>190</y>
+      <w>440</w>
+      <h>40</h>
     </coordinates>
     <panel_attributes>lt=-&gt;&gt;&gt;
 2. consultaListaEventi()</panel_attributes>
@@ -161,10 +161,10 @@ bg=#B8E0E0</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>189</x>
-      <y>207</y>
-      <w>396</w>
-      <h>36</h>
+      <x>450</x>
+      <y>230</y>
+      <w>440</w>
+      <h>40</h>
     </coordinates>
     <panel_attributes>lt=&lt;.
 restituisce la lista degli eventi</panel_attributes>
@@ -173,24 +173,24 @@ restituisce la lista degli eventi</panel_attributes>
   <element>
     <id>UMLFrame</id>
     <coordinates>
-      <x>0</x>
-      <y>423</y>
-      <w>675</w>
-      <h>1323</h>
+      <x>240</x>
+      <y>470</y>
+      <w>750</w>
+      <h>1470</h>
     </coordinates>
     <panel_attributes>LOOP
 fg=blue
 bg=#8CB4FF
-layer=-4</panel_attributes>
+layer=-5</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>189</x>
-      <y>441</y>
-      <w>396</w>
-      <h>36</h>
+      <x>450</x>
+      <y>490</y>
+      <w>440</w>
+      <h>40</h>
     </coordinates>
     <panel_attributes>lt=-&gt;&gt;&gt;
 4. consultaCalendario()</panel_attributes>
@@ -199,10 +199,10 @@ layer=-4</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>189</x>
-      <y>576</y>
-      <w>396</w>
-      <h>36</h>
+      <x>450</x>
+      <y>640</y>
+      <w>440</w>
+      <h>40</h>
     </coordinates>
     <panel_attributes>lt=&lt;.
 restituisce il calendario</panel_attributes>
@@ -211,10 +211,10 @@ restituisce il calendario</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>189</x>
-      <y>657</y>
-      <w>396</w>
-      <h>36</h>
+      <x>450</x>
+      <y>730</y>
+      <w>440</w>
+      <h>40</h>
     </coordinates>
     <panel_attributes>lt=-&gt;&gt;&gt;
 5. creaTurno(data, durata, luogo?)
@@ -224,10 +224,10 @@ layer=2</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>189</x>
-      <y>1413</y>
-      <w>396</w>
-      <h>36</h>
+      <x>450</x>
+      <y>1570</y>
+      <w>440</w>
+      <h>40</h>
     </coordinates>
     <panel_attributes>lt=-&gt;&gt;&gt;
 6. impostaRicorrenza(turno, frequenza, dataInizio, dataFine)</panel_attributes>
@@ -236,10 +236,10 @@ layer=2</panel_attributes>
   <element>
     <id>UMLFrame</id>
     <coordinates>
-      <x>144</x>
-      <y>1395</y>
-      <w>450</w>
-      <h>153</h>
+      <x>400</x>
+      <y>1550</y>
+      <w>500</w>
+      <h>170</h>
     </coordinates>
     <panel_attributes>OPT
 fg=#128C86
@@ -250,10 +250,10 @@ layer=-1</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>189</x>
-      <y>1458</y>
-      <w>396</w>
-      <h>36</h>
+      <x>450</x>
+      <y>1620</y>
+      <w>440</w>
+      <h>40</h>
     </coordinates>
     <panel_attributes>lt=&lt;.
 ok</panel_attributes>
@@ -262,10 +262,10 @@ ok</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>189</x>
-      <y>1575</y>
-      <w>396</w>
-      <h>36</h>
+      <x>450</x>
+      <y>1750</y>
+      <w>440</w>
+      <h>40</h>
     </coordinates>
     <panel_attributes>lt=-&gt;&gt;&gt;
 7. impostaDataScadenza(turno, data)</panel_attributes>
@@ -274,10 +274,10 @@ ok</panel_attributes>
   <element>
     <id>UMLFrame</id>
     <coordinates>
-      <x>144</x>
-      <y>1566</y>
-      <w>450</w>
-      <h>162</h>
+      <x>400</x>
+      <y>1740</y>
+      <w>500</w>
+      <h>180</h>
     </coordinates>
     <panel_attributes>OPT
 fg=#128C86
@@ -288,10 +288,10 @@ layer=-1</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>189</x>
-      <y>1629</y>
-      <w>396</w>
-      <h>36</h>
+      <x>450</x>
+      <y>1810</y>
+      <w>440</w>
+      <h>40</h>
     </coordinates>
     <panel_attributes>lt=&lt;.
 ok</panel_attributes>
@@ -300,10 +300,10 @@ ok</panel_attributes>
   <element>
     <id>UMLFrame</id>
     <coordinates>
-      <x>135</x>
-      <y>1755</y>
-      <w>468</w>
-      <h>225</h>
+      <x>390</x>
+      <y>1950</y>
+      <w>520</w>
+      <h>250</h>
     </coordinates>
     <panel_attributes>OPT
 fg=#128C86
@@ -314,10 +314,10 @@ layer=0</panel_attributes>
   <element>
     <id>UMLFrame</id>
     <coordinates>
-      <x>144</x>
-      <y>1782</y>
-      <w>432</w>
-      <h>180</h>
+      <x>400</x>
+      <y>1980</y>
+      <w>480</w>
+      <h>200</h>
     </coordinates>
     <panel_attributes>LOOP
 fg=blue
@@ -327,10 +327,10 @@ bg=#8CB4FF</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>189</x>
-      <y>1800</y>
-      <w>396</w>
-      <h>36</h>
+      <x>450</x>
+      <y>2000</y>
+      <w>440</w>
+      <h>40</h>
     </coordinates>
     <panel_attributes>lt=-&gt;&gt;&gt;
 8. raggruppaTurni(turni)
@@ -340,10 +340,10 @@ layer=2</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>189</x>
-      <y>1845</y>
-      <w>396</w>
-      <h>36</h>
+      <x>450</x>
+      <y>2050</y>
+      <w>440</w>
+      <h>40</h>
     </coordinates>
     <panel_attributes>lt=&lt;.
 ok
@@ -353,24 +353,24 @@ layer=2</panel_attributes>
   <element>
     <id>UMLFrame</id>
     <coordinates>
-      <x>63</x>
-      <y>612</y>
-      <w>558</w>
-      <h>756</h>
+      <x>310</x>
+      <y>680</y>
+      <w>620</w>
+      <h>840</h>
     </coordinates>
     <panel_attributes>LOOP
 fg=blue
 bg=#8CB4FF
-layer=-2</panel_attributes>
+layer=-3</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
     <id>UMLFrame</id>
     <coordinates>
-      <x>153</x>
-      <y>693</y>
-      <w>432</w>
-      <h>153</h>
+      <x>410</x>
+      <y>770</y>
+      <w>480</w>
+      <h>170</h>
     </coordinates>
     <panel_attributes>ALT
 bg=#ffaaaa
@@ -388,10 +388,10 @@ layer=0</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>189</x>
-      <y>702</y>
-      <w>396</w>
-      <h>36</h>
+      <x>450</x>
+      <y>780</y>
+      <w>440</w>
+      <h>40</h>
     </coordinates>
     <panel_attributes>lt=&lt;.
 turno</panel_attributes>
@@ -400,10 +400,10 @@ turno</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>189</x>
-      <y>747</y>
-      <w>396</w>
-      <h>36</h>
+      <x>450</x>
+      <y>830</y>
+      <w>440</w>
+      <h>40</h>
     </coordinates>
     <panel_attributes>lt=&lt;.
 5.1a la data selezionata è nel passato
@@ -414,24 +414,24 @@ layer=2</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>189</x>
-      <y>801</y>
-      <w>396</w>
-      <h>36</h>
+      <x>450</x>
+      <y>890</y>
+      <w>440</w>
+      <h>40</h>
     </coordinates>
     <panel_attributes>lt=&lt;.
-sovrapposizione di turni prepatori sul calendario
+5.1b sovrapposizione di turni prepatori sul calendario
 fg=red
-layer=0</panel_attributes>
+layer=1</panel_attributes>
     <additional_attributes>10.0;20.0;420.0;20.0</additional_attributes>
   </element>
   <element>
     <id>UMLSpecialState</id>
     <coordinates>
-      <x>558</x>
-      <y>810</y>
-      <w>18</w>
-      <h>18</h>
+      <x>860</x>
+      <y>900</y>
+      <w>20</w>
+      <h>20</h>
     </coordinates>
     <panel_attributes>type=termination
 fg=red
@@ -441,10 +441,10 @@ lw=2</panel_attributes>
   <element>
     <id>UMLFrame</id>
     <coordinates>
-      <x>90</x>
-      <y>639</y>
-      <w>522</w>
-      <h>720</h>
+      <x>340</x>
+      <y>710</y>
+      <w>580</w>
+      <h>800</h>
     </coordinates>
     <panel_attributes>ALT
 fg=#761C8C
@@ -484,10 +484,10 @@ layer=-2</panel_attributes>
   <element>
     <id>UMLFrame</id>
     <coordinates>
-      <x>153</x>
-      <y>864</y>
-      <w>432</w>
-      <h>162</h>
+      <x>410</x>
+      <y>960</y>
+      <w>480</w>
+      <h>180</h>
     </coordinates>
     <panel_attributes>ALT
 fg=#761C8C
@@ -504,10 +504,10 @@ lw=2
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>189</x>
-      <y>873</y>
-      <w>396</w>
-      <h>36</h>
+      <x>450</x>
+      <y>970</y>
+      <w>440</w>
+      <h>40</h>
     </coordinates>
     <panel_attributes>lt=-&gt;&gt;&gt;
 5a.1 eliminaTurno(turno)</panel_attributes>
@@ -516,10 +516,10 @@ lw=2
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>189</x>
-      <y>909</y>
-      <w>396</w>
-      <h>36</h>
+      <x>450</x>
+      <y>1010</y>
+      <w>440</w>
+      <h>40</h>
     </coordinates>
     <panel_attributes>lt=&lt;.
 ok</panel_attributes>
@@ -528,10 +528,10 @@ ok</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>189</x>
-      <y>954</y>
-      <w>396</w>
-      <h>36</h>
+      <x>450</x>
+      <y>1060</y>
+      <w>440</w>
+      <h>40</h>
     </coordinates>
     <panel_attributes>lt=-&gt;&gt;&gt;
 5a.1a eliminaGruppoTurni(turni)</panel_attributes>
@@ -540,10 +540,10 @@ ok</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>189</x>
-      <y>981</y>
-      <w>396</w>
-      <h>36</h>
+      <x>450</x>
+      <y>1090</y>
+      <w>440</w>
+      <h>40</h>
     </coordinates>
     <panel_attributes>lt=&lt;.
 ok</panel_attributes>
@@ -552,10 +552,10 @@ ok</panel_attributes>
   <element>
     <id>UMLFrame</id>
     <coordinates>
-      <x>144</x>
-      <y>1035</y>
-      <w>450</w>
-      <h>315</h>
+      <x>400</x>
+      <y>1150</y>
+      <w>500</w>
+      <h>350</h>
     </coordinates>
     <panel_attributes>ALT
 fg=#761C8C
@@ -584,10 +584,10 @@ layer=-1</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>189</x>
-      <y>1044</y>
-      <w>396</w>
-      <h>36</h>
+      <x>450</x>
+      <y>1160</y>
+      <w>440</w>
+      <h>40</h>
     </coordinates>
     <panel_attributes>lt=-&gt;&gt;&gt;
 5b.1 modificaTurno(turno)</panel_attributes>
@@ -596,10 +596,10 @@ layer=-1</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>189</x>
-      <y>1080</y>
-      <w>396</w>
-      <h>36</h>
+      <x>450</x>
+      <y>1200</y>
+      <w>440</w>
+      <h>40</h>
     </coordinates>
     <panel_attributes>lt=&lt;.
 ok</panel_attributes>
@@ -608,10 +608,10 @@ ok</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>189</x>
-      <y>1125</y>
-      <w>396</w>
-      <h>36</h>
+      <x>450</x>
+      <y>1250</y>
+      <w>440</w>
+      <h>40</h>
     </coordinates>
     <panel_attributes>lt=-&gt;&gt;&gt;
 5b.1a aggiungiTurno(turni, turno)</panel_attributes>
@@ -620,10 +620,10 @@ ok</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>189</x>
-      <y>1161</y>
-      <w>396</w>
-      <h>36</h>
+      <x>450</x>
+      <y>1290</y>
+      <w>440</w>
+      <h>40</h>
     </coordinates>
     <panel_attributes>lt=&lt;.
 ok</panel_attributes>
@@ -632,10 +632,10 @@ ok</panel_attributes>
   <element>
     <id>UMLFrame</id>
     <coordinates>
-      <x>153</x>
-      <y>1152</y>
-      <w>432</w>
-      <h>99</h>
+      <x>410</x>
+      <y>1280</y>
+      <w>480</w>
+      <h>110</h>
     </coordinates>
     <panel_attributes>ALT
 bg=#ffaaaa
@@ -649,10 +649,10 @@ layer=1</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>189</x>
-      <y>1206</y>
-      <w>396</w>
-      <h>36</h>
+      <x>450</x>
+      <y>1340</y>
+      <w>440</w>
+      <h>40</h>
     </coordinates>
     <panel_attributes>lt=&lt;.
 5b.1a.1a un turno non rispetta i vincoli
@@ -663,10 +663,10 @@ layer=2</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>189</x>
-      <y>1278</y>
-      <w>396</w>
-      <h>36</h>
+      <x>450</x>
+      <y>1420</y>
+      <w>440</w>
+      <h>40</h>
     </coordinates>
     <panel_attributes>lt=-&gt;&gt;&gt;
 5b.1b togliTurno(turni, turno)</panel_attributes>
@@ -675,10 +675,10 @@ layer=2</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>189</x>
-      <y>1314</y>
-      <w>396</w>
-      <h>36</h>
+      <x>450</x>
+      <y>1460</y>
+      <w>440</w>
+      <h>40</h>
     </coordinates>
     <panel_attributes>lt=&lt;.
 ok</panel_attributes>
@@ -687,10 +687,10 @@ ok</panel_attributes>
   <element>
     <id>UMLFrame</id>
     <coordinates>
-      <x>153</x>
-      <y>1449</y>
-      <w>432</w>
-      <h>90</h>
+      <x>410</x>
+      <y>1610</y>
+      <w>480</w>
+      <h>100</h>
     </coordinates>
     <panel_attributes>ALT
 bg=#ffaaaa
@@ -704,10 +704,10 @@ layer=0</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>189</x>
-      <y>1503</y>
-      <w>396</w>
-      <h>36</h>
+      <x>450</x>
+      <y>1670</y>
+      <w>440</w>
+      <h>40</h>
     </coordinates>
     <panel_attributes>lt=&lt;.
 6.1a la data di fine è antecedente alla data di inizio
@@ -717,10 +717,10 @@ fg=red</panel_attributes>
   <element>
     <id>UMLFrame</id>
     <coordinates>
-      <x>153</x>
-      <y>1611</y>
-      <w>432</w>
-      <h>108</h>
+      <x>410</x>
+      <y>1790</y>
+      <w>480</w>
+      <h>120</h>
     </coordinates>
     <panel_attributes>ALT
 bg=#ffaaaa
@@ -735,10 +735,10 @@ layer=0</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>189</x>
-      <y>1674</y>
-      <w>396</w>
-      <h>36</h>
+      <x>450</x>
+      <y>1860</y>
+      <w>440</w>
+      <h>40</h>
     </coordinates>
     <panel_attributes>lt=&lt;.
 7.1a la data è antecedente alla data del turno
@@ -748,10 +748,10 @@ fg=red</panel_attributes>
   <element>
     <id>UMLFrame</id>
     <coordinates>
-      <x>90</x>
-      <y>1377</y>
-      <w>513</w>
-      <h>180</h>
+      <x>340</x>
+      <y>1530</y>
+      <w>570</w>
+      <h>200</h>
     </coordinates>
     <panel_attributes>LOOP
 fg=blue
@@ -762,10 +762,10 @@ layer=-1</panel_attributes>
   <element>
     <id>UMLSpecialState</id>
     <coordinates>
-      <x>558</x>
-      <y>1683</y>
-      <w>18</w>
-      <h>18</h>
+      <x>860</x>
+      <y>1870</y>
+      <w>20</w>
+      <h>20</h>
     </coordinates>
     <panel_attributes>type=termination
 fg=red
@@ -775,10 +775,10 @@ lw=2</panel_attributes>
   <element>
     <id>UMLFrame</id>
     <coordinates>
-      <x>153</x>
-      <y>1827</y>
-      <w>423</w>
-      <h>108</h>
+      <x>410</x>
+      <y>2030</y>
+      <w>470</w>
+      <h>120</h>
     </coordinates>
     <panel_attributes>ALT
 bg=#ffaaaa
@@ -793,10 +793,10 @@ layer=1</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>189</x>
-      <y>1899</y>
-      <w>396</w>
-      <h>36</h>
+      <x>450</x>
+      <y>2110</y>
+      <w>440</w>
+      <h>40</h>
     </coordinates>
     <panel_attributes>lt=&lt;.
 8.1a un turno non rispetta i vincoli
@@ -807,10 +807,10 @@ layer=2</panel_attributes>
   <element>
     <id>UMLFrame</id>
     <coordinates>
-      <x>18</x>
-      <y>486</y>
-      <w>639</w>
-      <h>1251</h>
+      <x>260</x>
+      <y>540</y>
+      <w>710</w>
+      <h>1390</h>
     </coordinates>
     <panel_attributes>ALT
 fg=#761C8C
@@ -821,16 +821,16 @@ lw=2
 
 
 -.
-layer=-3</panel_attributes>
+layer=-4</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>189</x>
-      <y>504</y>
-      <w>396</w>
-      <h>36</h>
+      <x>450</x>
+      <y>560</y>
+      <w>440</w>
+      <h>40</h>
     </coordinates>
     <panel_attributes>lt=&lt;.
 ok</panel_attributes>
@@ -839,10 +839,10 @@ ok</panel_attributes>
   <element>
     <id>UMLSpecialState</id>
     <coordinates>
-      <x>558</x>
-      <y>513</y>
-      <w>18</w>
-      <h>18</h>
+      <x>860</x>
+      <y>570</y>
+      <w>20</w>
+      <h>20</h>
     </coordinates>
     <panel_attributes>type=termination
 lw=2</panel_attributes>
