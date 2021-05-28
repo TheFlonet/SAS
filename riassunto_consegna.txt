@@ -1,0 +1,46 @@
+DA CONSEGNARE 
+
+FILE 1
+[ ] nome componenti
+GESTIRE I COMPITI
+- sezione requisiti
+[ ] glossario (opzionale)
+[ ] UC dettagliato
+[ ] SSD
+[ ] modello di dominio
+[ ] business rules (opzionali)
+[ ] contratti delle operazioni 
+
+- sezione progettazione
+[ ] DCD
+[ ] DSD di tutte le operazioni
+
+INDICARE LE PROPRIE DISPONIBILITÀ
+- sezione requisiti
+[ ] glossario (opzionale)
+[ ] UC dettagliato
+[ ] SSD
+[ ] modello di dominio
+[ ] business rules (opzionali)
+[ ] contratti delle operazioni 
+
+- sezione progettazione
+[ ] DCD
+[ ] DSD di tutte le operazioni
+
+FILE 2
+[ ] nome componenti 
+GESTIRE TURNI
+- sezione requisiti
+[ ] glossario (opzionale)
+[ ] UC dettagliato
+[ ] SSD
+[ ] modello di dominio
+[ ] business rules (opzionali)
+[ ] contratti delle operazioni 
+
+- sezione progettazione
+[ ] DCD
+[ ] DSD di 5-6 operazioni ad alto rischio
+
+[ ] cartella zip del package businesslogic per GESTIRE COMPITI

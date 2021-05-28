@@ -1,5 +1,0 @@
-[ ] relazioni modello dominio
-[ ] ssd 
-
-OPZIONALE 
-[ ] guardare prossimo UC
