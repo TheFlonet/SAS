@@ -979,7 +979,7 @@ ok</panel_attributes>
     <coordinates>
       <x>315</x>
       <y>954</y>
-      <w>450</w>
+      <w>459</w>
       <h>153</h>
     </coordinates>
     <panel_attributes>OPT
@@ -1035,7 +1035,7 @@ fg=red</panel_attributes>
     <coordinates>
       <x>324</x>
       <y>990</y>
-      <w>432</w>
+      <w>441</w>
       <h>108</h>
     </coordinates>
     <panel_attributes>ALT
@@ -1057,7 +1057,7 @@ layer=0</panel_attributes>
       <h>36</h>
     </coordinates>
     <panel_attributes>lt=&lt;.
-8.1a la data è antecedente alla data del turno
+8.1a la data è successiva alla data del turno
 fg=red</panel_attributes>
     <additional_attributes>10.0;20.0;420.0;20.0</additional_attributes>
   </element>
