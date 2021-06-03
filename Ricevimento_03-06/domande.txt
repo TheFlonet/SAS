@@ -1,0 +1,8 @@
+1. E' possibile indicare eccezioni che fanno ripetere l'ultimo passo, senza inserire un LOOP aggiuntivo nell'SSD?
+2. Come indicare una lista di oggetti in un contesto di classi concettuali (ie. Contratti operazioni)?
+3. operazione "creaTurno()": è possibile lasciarla unica mantenendo tutti i vincoli tra parametri come pre-condizioni, o conviene spezzarla in due casi distinti, uno per ogni tipologia di turno?
+4. Possiamo considerare il Calendario come oggetto globale, liberamente accessibile da tutti, o va passato ogni volta come parametro aggiuntivo?
+5. E' possibile inserire un'informazione ricavata durante l'UC (ad es. il tipo di turno con cui lavoro) nelle precondizioni generali?
+
+DOMANDA BONUS:
+1. Se nel modello di dominio ho una associazione con molteplicità 0..1 da una parte e 0..n dall'altra, bisogna già iniziare a pensare se è un oggetto ad avere il riferimento alla lista, o ogni singolo oggetto il riferimento al contenitore, o entrambi?
