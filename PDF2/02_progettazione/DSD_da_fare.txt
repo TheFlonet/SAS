@@ -1,7 +1,7 @@
 Operazioni DSD Gestione Turni
-[ ] 
-[ ] 
-[ ] 
-[ ] 
-[ ] 
-[ ] 
+[ ] 2. creaTurnoPreparatorio
+[ ] 3. impostaRicorrenza
+[ ] 5a.1 creaGruppoRicorrente
+[ ] 6. modificaTurnoPreparatorio
+[ ] 6b.1 modificaRicorrenzaTurni
+[ ] 7a.1 eliminaTurnoRicorrente
