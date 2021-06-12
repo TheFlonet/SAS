@@ -7,11 +7,12 @@ import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 
 import java.util.ArrayList;
+import java.util.List;
 
 public class MenuManager {
     private final String[] menuFeatures = {"Richiede cucina", "Richiede cuoco", "Finger food", "Buffet", "Piatti caldi"};
     private Menu currentMenu;
-    private final ArrayList<MenuEventReceiver> eventReceivers;
+    private final List<MenuEventReceiver> eventReceivers;
 
     public MenuManager() {
         eventReceivers = new ArrayList<>();

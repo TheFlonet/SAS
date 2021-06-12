@@ -7,11 +7,12 @@ import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.ArrayList;
+import java.util.List;
 
 public class Section {
     private int id;
     private final String name;
-    private final ArrayList<MenuItem> sectionItems;
+    private final List<MenuItem> sectionItems;
 
     public Section(String name) {
         id = 0;
@@ -27,7 +28,7 @@ public class Section {
         return result.toString();
     }
 
-    public static void saveAllNewSections(int menuid, ArrayList<Section> sections) {
+    public static void saveAllNewSections(int menuid, List<Section> sections) {
         String secInsert = "INSERT INTO catering.MenuSections (menu_id, name, position) VALUES (?, ?, ?);";
         PersistenceManager.executeUpdate(secInsert, sections.size(), new BatchUpdateHandler() {
             @Override

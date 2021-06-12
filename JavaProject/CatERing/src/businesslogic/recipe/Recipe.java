@@ -3,6 +3,7 @@ package businesslogic.recipe;
 import persistence.PersistenceManager;
 
 import java.util.ArrayList;
+import java.util.List;
 
 public class Recipe {
     private int id;
@@ -21,8 +22,8 @@ public class Recipe {
         return id;
     }
 
-    public static ArrayList<Recipe> loadAllRecipes() {
-        ArrayList<Recipe> result = new ArrayList<>();
+    public static List<Recipe> loadAllRecipes() {
+        List<Recipe> result = new ArrayList<>();
         String query = "SELECT * FROM Recipes";
         PersistenceManager.executeQuery(query, rs -> {
             Recipe rec = new Recipe(rs.getString("name"));

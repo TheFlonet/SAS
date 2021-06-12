@@ -10,6 +10,7 @@ import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.ArrayList;
+import java.util.List;
 
 public class Menu {
     private int id;
@@ -18,8 +19,8 @@ public class Menu {
     private boolean inUse;
     private final String[] features;
     private final boolean[] featureValues;
-    private final ArrayList<MenuItem> freeItems;
-    private final ArrayList<Section> sections;
+    private final List<MenuItem> freeItems;
+    private final List<Section> sections;
 
     private final User owner;
 

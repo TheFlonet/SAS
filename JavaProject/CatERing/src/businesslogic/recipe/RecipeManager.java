@@ -1,9 +1,9 @@
 package businesslogic.recipe;
 
-import java.util.ArrayList;
+import java.util.List;
 
 public class RecipeManager {
-    private final ArrayList<Recipe> recipes;
+    private final List<Recipe> recipes;
 
     public RecipeManager() {
         recipes = Recipe.loadAllRecipes();

@@ -7,7 +7,7 @@ import persistence.PersistenceManager;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
-import java.util.ArrayList;
+import java.util.List;
 
 public class MenuItem {
     private int id;
@@ -28,7 +28,7 @@ public class MenuItem {
         return description;
     }
 
-    public static void saveAllNewItems(int menuid, int sectionid, ArrayList<MenuItem> items) {
+    public static void saveAllNewItems(int menuid, int sectionid, List<MenuItem> items) {
         String itemInsert = "INSERT INTO catering.MenuItems (menu_id, section_id, description, recipe_id, position) VALUES (?, ?, ?, ?, ?);";
         PersistenceManager.executeUpdate(itemInsert, items.size(), new BatchUpdateHandler() {
             @Override
