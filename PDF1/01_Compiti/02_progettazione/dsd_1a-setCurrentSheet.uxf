@@ -4,7 +4,7 @@
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>512</x>
+      <x>328</x>
       <y>80</y>
       <w>296</w>
       <h>32</h>
@@ -19,7 +19,7 @@ fontsize=20
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>320</x>
+      <x>136</x>
       <y>184</y>
       <w>24</w>
       <h>456</h>
@@ -30,7 +30,7 @@ fontsize=20
   <element>
     <id>UMLPackage</id>
     <coordinates>
-      <x>296</x>
+      <x>112</x>
       <y>136</y>
       <w>72</w>
       <h>56</h>
@@ -41,7 +41,7 @@ fontsize=20
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>320</x>
+      <x>136</x>
       <y>216</y>
       <w>288</w>
       <h>32</h>
@@ -53,7 +53,7 @@ setCurrentSheet(sheet)</panel_attributes>
   <element>
     <id>UMLGeneric</id>
     <coordinates>
-      <x>520</x>
+      <x>336</x>
       <y>152</y>
       <w>160</w>
       <h>40</h>
@@ -64,7 +64,7 @@ setCurrentSheet(sheet)</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>592</x>
+      <x>408</x>
       <y>184</y>
       <w>24</w>
       <h>456</h>
@@ -75,7 +75,7 @@ setCurrentSheet(sheet)</panel_attributes>
   <element>
     <id>UMLGeneric</id>
     <coordinates>
-      <x>592</x>
+      <x>408</x>
       <y>232</y>
       <w>16</w>
       <h>376</h>
@@ -86,7 +86,7 @@ setCurrentSheet(sheet)</panel_attributes>
   <element>
     <id>UMLFrame</id>
     <coordinates>
-      <x>344</x>
+      <x>160</x>
       <y>320</y>
       <w>840</w>
       <h>320</h>
@@ -104,7 +104,7 @@ lw=2
   <element>
     <id>UMLGeneric</id>
     <coordinates>
-      <x>728</x>
+      <x>544</x>
       <y>152</y>
       <w>96</w>
       <h>40</h>
@@ -116,7 +116,7 @@ UserManager</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>768</x>
+      <x>584</x>
       <y>184</y>
       <w>24</w>
       <h>128</h>
@@ -127,7 +127,7 @@ UserManager</panel_attributes>
   <element>
     <id>UMLGeneric</id>
     <coordinates>
-      <x>768</x>
+      <x>584</x>
       <y>248</y>
       <w>16</w>
       <h>24</h>
@@ -138,7 +138,7 @@ UserManager</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>600</x>
+      <x>416</x>
       <y>232</y>
       <w>184</w>
       <h>32</h>
@@ -150,7 +150,7 @@ getCurrentUser()</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>600</x>
+      <x>416</x>
       <y>256</y>
       <w>184</w>
       <h>32</h>
@@ -162,7 +162,7 @@ user</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>320</x>
+      <x>136</x>
       <y>352</y>
       <w>288</w>
       <h>32</h>
@@ -175,7 +175,7 @@ fg=red</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>600</x>
+      <x>416</x>
       <y>464</y>
       <w>256</w>
       <h>48</h>
@@ -187,7 +187,7 @@ notifySetSummarySheet(currentSheet)</panel_attributes>
   <element>
     <id>UMLGeneric</id>
     <coordinates>
-      <x>600</x>
+      <x>416</x>
       <y>496</y>
       <w>16</w>
       <h>80</h>
@@ -198,7 +198,7 @@ notifySetSummarySheet(currentSheet)</panel_attributes>
   <element>
     <id>UMLFrame</id>
     <coordinates>
-      <x>480</x>
+      <x>296</x>
       <y>512</y>
       <w>656</w>
       <h>56</h>
@@ -214,7 +214,7 @@ lw=2
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>608</x>
+      <x>424</x>
       <y>520</y>
       <w>496</w>
       <h>32</h>
@@ -226,7 +226,7 @@ updateSetSummarySheet(currentSheet)</panel_attributes>
   <element>
     <id>UMLGeneric</id>
     <coordinates>
-      <x>1040</x>
+      <x>856</x>
       <y>464</y>
       <w>112</w>
       <h>40</h>
@@ -238,7 +238,7 @@ TaskEventReceiver</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>1088</x>
+      <x>904</x>
       <y>496</y>
       <w>24</w>
       <h>88</h>
@@ -249,7 +249,7 @@ TaskEventReceiver</panel_attributes>
   <element>
     <id>UMLGeneric</id>
     <coordinates>
-      <x>1088</x>
+      <x>904</x>
       <y>536</y>
       <w>16</w>
       <h>24</h>
@@ -260,7 +260,7 @@ TaskEventReceiver</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>320</x>
+      <x>136</x>
       <y>592</y>
       <w>288</w>
       <h>32</h>
@@ -272,7 +272,7 @@ currentSheet</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>600</x>
+      <x>416</x>
       <y>400</y>
       <w>160</w>
       <h>48</h>

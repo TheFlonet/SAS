@@ -5,11 +5,11 @@ import persistence.PersistenceManager;
 import java.util.ArrayList;
 import java.util.List;
 
-public class Recipe {
+public class KitchenProcess {
     private int id;
     private final String name;
 
-    public Recipe(String name) {
+    public KitchenProcess(String name) {
         id = 0;
         this.name = name;
     }
@@ -22,11 +22,11 @@ public class Recipe {
         return id;
     }
 
-    public static List<Recipe> loadAllRecipes() {
-        List<Recipe> result = new ArrayList<>();
+    public static List<KitchenProcess> loadAllRecipes() {
+        List<KitchenProcess> result = new ArrayList<>();
         String query = "SELECT * FROM Recipes";
         PersistenceManager.executeQuery(query, rs -> {
-            Recipe rec = new Recipe(rs.getString("name"));
+            KitchenProcess rec = new KitchenProcess(rs.getString("name"));
             rec.id = rs.getInt("id");
             result.add(rec);
         });

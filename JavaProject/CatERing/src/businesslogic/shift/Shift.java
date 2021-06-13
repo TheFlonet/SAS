@@ -1,6 +1,7 @@
 package businesslogic.shift;
 
 import businesslogic.task.Task;
+import businesslogic.user.User;
 
 import java.util.ArrayList;
 import java.util.Date;
@@ -11,7 +12,7 @@ public abstract class Shift {
     protected double startTime;
     protected double endTime;
     protected List<Task> assignedTasks;
-    protected Cook assignedCook;
+    protected User assignedCook;
 
     public Shift() {
         assignedTasks = new ArrayList<>();

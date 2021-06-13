@@ -1,6 +1,6 @@
 package businesslogic.menu;
 
-import businesslogic.recipe.Recipe;
+import businesslogic.recipe.KitchenProcess;
 import persistence.BatchUpdateHandler;
 import persistence.PersistenceManager;
 
@@ -12,15 +12,15 @@ import java.util.List;
 public class MenuItem {
     private int id;
     private final String description;
-    private final Recipe itemRecipe;
+    private final KitchenProcess itemProcess;
 
-    public MenuItem(Recipe rec) {
+    public MenuItem(KitchenProcess rec) {
         this(rec, rec.getName());
     }
 
-    public MenuItem(Recipe rec, String desc) {
+    public MenuItem(KitchenProcess rec, String desc) {
         id = 0;
-        itemRecipe = rec;
+        itemProcess = rec;
         description = desc;
     }
 
@@ -36,7 +36,7 @@ public class MenuItem {
                 ps.setInt(1, menuid);
                 ps.setInt(2, sectionid);
                 ps.setString(3, items.get(batchCount).description);
-                ps.setInt(4, items.get(batchCount).itemRecipe.getId());
+                ps.setInt(4, items.get(batchCount).itemProcess.getId());
                 ps.setInt(5, batchCount);
             }
 
@@ -45,5 +45,9 @@ public class MenuItem {
                 items.get(count).id = rs.getInt(1);
             }
         });
+    }
+
+    public KitchenProcess getItemProcess() {
+        return itemProcess;
     }
 }

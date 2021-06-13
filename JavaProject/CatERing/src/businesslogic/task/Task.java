@@ -1,9 +1,17 @@
 package businesslogic.task;
 
+import businesslogic.recipe.KitchenProcess;
+import businesslogic.user.User;
+
 public class Task {
+    private final KitchenProcess process;
     private int time;
     private int quantity;
-    private Cook cook;
+    private User cook;
+
+    public Task(KitchenProcess kitchenProcess) {
+        process = kitchenProcess;
+    }
 
     public int getTime() {
         return time;
@@ -21,11 +29,11 @@ public class Task {
         this.quantity = quantity;
     }
 
-    public Cook getCook() {
+    public User getCook() {
         return cook;
     }
 
-    public void setCook(Cook cook) {
+    public void setCook(User cook) {
         this.cook = cook;
     }
 }
