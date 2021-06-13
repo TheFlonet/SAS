@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <diagram program="umlet" version="14.3.0">
-  <zoom_level>7</zoom_level>
+  <zoom_level>17</zoom_level>
   <element>
     <id>UMLActor</id>
     <coordinates>
-      <x>728</x>
+      <x>646</x>
       <y>0</y>
-      <w>42</w>
-      <h>77</h>
+      <w>102</w>
+      <h>187</h>
     </coordinates>
     <panel_attributes>Attore</panel_attributes>
     <additional_attributes/>
@@ -15,10 +15,10 @@
   <element>
     <id>UMLDeployment</id>
     <coordinates>
-      <x>931</x>
-      <y>35</y>
-      <w>77</w>
-      <h>35</h>
+      <x>1139</x>
+      <y>85</y>
+      <w>187</w>
+      <h>85</h>
     </coordinates>
     <panel_attributes>Sistema</panel_attributes>
     <additional_attributes/>
@@ -26,10 +26,10 @@
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>742</x>
-      <y>70</y>
-      <w>21</w>
-      <h>1050</h>
+      <x>680</x>
+      <y>170</y>
+      <w>51</w>
+      <h>2550</h>
     </coordinates>
     <panel_attributes>lt=.
 layer=20</panel_attributes>
@@ -38,10 +38,10 @@ layer=20</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>959</x>
-      <y>70</y>
-      <w>21</w>
-      <h>1050</h>
+      <x>1207</x>
+      <y>170</y>
+      <w>51</w>
+      <h>2550</h>
     </coordinates>
     <panel_attributes>lt=.
 layer=20</panel_attributes>
@@ -50,10 +50,10 @@ layer=20</panel_attributes>
   <element>
     <id>UMLFrame</id>
     <coordinates>
-      <x>707</x>
-      <y>98</y>
-      <w>273</w>
-      <h>189</h>
+      <x>595</x>
+      <y>238</y>
+      <w>663</w>
+      <h>459</h>
     </coordinates>
     <panel_attributes>ALT
 fg=#761C8C
@@ -70,10 +70,10 @@ lw=2
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>742</x>
-      <y>105</y>
-      <w>238</w>
-      <h>28</h>
+      <x>680</x>
+      <y>255</y>
+      <w>578</w>
+      <h>68</h>
     </coordinates>
     <panel_attributes>lt=-&gt;&gt;&gt;
 layer=20
@@ -83,10 +83,10 @@ layer=20
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>742</x>
-      <y>126</y>
-      <w>238</w>
-      <h>28</h>
+      <x>680</x>
+      <y>306</y>
+      <w>578</w>
+      <h>68</h>
     </coordinates>
     <panel_attributes>lt=&lt;.
 layer=20
@@ -96,23 +96,23 @@ restituisce foglio precompilato</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>742</x>
-      <y>161</y>
-      <w>238</w>
-      <h>28</h>
+      <x>680</x>
+      <y>391</y>
+      <w>578</w>
+      <h>68</h>
     </coordinates>
     <panel_attributes>lt=-&gt;&gt;&gt;
 layer=20
-1a.1 consultaFoglio(foglio)</panel_attributes>
+1a.1 impostaFoglioPerModifica(foglio)</panel_attributes>
     <additional_attributes>10.0;20.0;320.0;20.0</additional_attributes>
   </element>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>742</x>
-      <y>196</y>
-      <w>238</w>
-      <h>28</h>
+      <x>680</x>
+      <y>476</y>
+      <w>578</w>
+      <h>68</h>
     </coordinates>
     <panel_attributes>lt=&lt;.
 layer=20
@@ -122,10 +122,10 @@ ok</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>742</x>
-      <y>357</y>
-      <w>238</w>
-      <h>28</h>
+      <x>680</x>
+      <y>867</y>
+      <w>578</w>
+      <h>68</h>
     </coordinates>
     <panel_attributes>lt=-&gt;&gt;&gt;
 layer=20
@@ -135,10 +135,10 @@ layer=20
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>742</x>
-      <y>371</y>
-      <w>238</w>
-      <h>28</h>
+      <x>680</x>
+      <y>901</y>
+      <w>578</w>
+      <h>68</h>
     </coordinates>
     <panel_attributes>lt=&lt;.
 layer=20
@@ -148,10 +148,10 @@ ok</panel_attributes>
   <element>
     <id>UMLFrame</id>
     <coordinates>
-      <x>714</x>
-      <y>350</y>
-      <w>259</w>
-      <h>112</h>
+      <x>612</x>
+      <y>850</y>
+      <w>629</w>
+      <h>272</h>
     </coordinates>
     <panel_attributes>ALT
 fg=#761C8C
@@ -168,10 +168,10 @@ lw=2
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>742</x>
-      <y>413</y>
-      <w>238</w>
-      <h>28</h>
+      <x>680</x>
+      <y>1003</y>
+      <w>578</w>
+      <h>68</h>
     </coordinates>
     <panel_attributes>lt=-&gt;&gt;&gt;
 layer=20
@@ -181,10 +181,10 @@ layer=20
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>742</x>
-      <y>427</y>
-      <w>238</w>
-      <h>28</h>
+      <x>680</x>
+      <y>1037</y>
+      <w>578</w>
+      <h>68</h>
     </coordinates>
     <panel_attributes>lt=&lt;.
 layer=20
@@ -194,10 +194,10 @@ ok</panel_attributes>
   <element>
     <id>UMLFrame</id>
     <coordinates>
-      <x>700</x>
-      <y>322</y>
-      <w>280</w>
-      <h>147</h>
+      <x>578</x>
+      <y>782</y>
+      <w>680</w>
+      <h>357</h>
     </coordinates>
     <panel_attributes>OPT
 fg=#128C86
@@ -209,10 +209,10 @@ lw=2</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>742</x>
-      <y>490</y>
-      <w>238</w>
-      <h>28</h>
+      <x>680</x>
+      <y>1190</y>
+      <w>578</w>
+      <h>68</h>
     </coordinates>
     <panel_attributes>lt=-&gt;&gt;&gt;
 layer=20
@@ -222,10 +222,10 @@ layer=20
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>742</x>
-      <y>511</y>
-      <w>238</w>
-      <h>28</h>
+      <x>680</x>
+      <y>1241</y>
+      <w>578</w>
+      <h>68</h>
     </coordinates>
     <panel_attributes>lt=&lt;.
 layer=20
@@ -235,10 +235,10 @@ ok</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>742</x>
-      <y>560</y>
-      <w>238</w>
-      <h>28</h>
+      <x>680</x>
+      <y>1360</y>
+      <w>578</w>
+      <h>68</h>
     </coordinates>
     <panel_attributes>lt=-&gt;&gt;&gt;
 layer=20
@@ -248,10 +248,10 @@ layer=20
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>742</x>
-      <y>581</y>
-      <w>238</w>
-      <h>28</h>
+      <x>680</x>
+      <y>1411</y>
+      <w>578</w>
+      <h>68</h>
     </coordinates>
     <panel_attributes>lt=&lt;.
 layer=20
@@ -261,10 +261,10 @@ restituisce tabellone turni</panel_attributes>
   <element>
     <id>UMLFrame</id>
     <coordinates>
-      <x>714</x>
-      <y>476</y>
-      <w>259</w>
-      <h>63</h>
+      <x>612</x>
+      <y>1156</y>
+      <w>629</w>
+      <h>153</h>
     </coordinates>
     <panel_attributes>OPT
 fg=#128C86
@@ -276,10 +276,10 @@ lw=2</panel_attributes>
   <element>
     <id>UMLFrame</id>
     <coordinates>
-      <x>714</x>
-      <y>546</y>
-      <w>259</w>
-      <h>63</h>
+      <x>612</x>
+      <y>1326</y>
+      <w>629</w>
+      <h>153</h>
     </coordinates>
     <panel_attributes>OPT
 fg=#128C86
@@ -291,10 +291,10 @@ lw=2</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>742</x>
-      <y>952</y>
-      <w>238</w>
-      <h>28</h>
+      <x>680</x>
+      <y>2312</y>
+      <w>578</w>
+      <h>68</h>
     </coordinates>
     <panel_attributes>lt=-&gt;&gt;&gt;
 layer=20
@@ -304,10 +304,10 @@ layer=20
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>742</x>
-      <y>973</y>
-      <w>238</w>
-      <h>28</h>
+      <x>680</x>
+      <y>2363</y>
+      <w>578</w>
+      <h>68</h>
     </coordinates>
     <panel_attributes>lt=&lt;.
 layer=20
@@ -317,10 +317,10 @@ ok</panel_attributes>
   <element>
     <id>UMLFrame</id>
     <coordinates>
-      <x>693</x>
-      <y>294</y>
-      <w>294</w>
-      <h>322</h>
+      <x>561</x>
+      <y>714</y>
+      <w>714</w>
+      <h>782</h>
     </coordinates>
     <panel_attributes>OPT
 fg=#128C86
@@ -332,10 +332,10 @@ lw=2</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>742</x>
-      <y>847</y>
-      <w>238</w>
-      <h>28</h>
+      <x>680</x>
+      <y>2057</y>
+      <w>578</w>
+      <h>68</h>
     </coordinates>
     <panel_attributes>lt=&lt;.
 layer=20
@@ -345,10 +345,10 @@ ok</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>742</x>
-      <y>805</y>
-      <w>238</w>
-      <h>35</h>
+      <x>680</x>
+      <y>1955</y>
+      <w>578</w>
+      <h>85</h>
     </coordinates>
     <panel_attributes>lt=-&gt;&gt;&gt;
 layer=20
@@ -359,10 +359,10 @@ nuovoCuoco?, tempo?, porzioni?)</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>742</x>
-      <y>665</y>
-      <w>238</w>
-      <h>35</h>
+      <x>680</x>
+      <y>1615</y>
+      <w>578</w>
+      <h>85</h>
     </coordinates>
     <panel_attributes>lt=-&gt;&gt;&gt;
 layer=20
@@ -373,10 +373,10 @@ tempo?, porzioni?)</panel_attributes>
   <element>
     <id>UMLFrame</id>
     <coordinates>
-      <x>707</x>
-      <y>651</y>
-      <w>273</w>
-      <h>420</h>
+      <x>595</x>
+      <y>1581</y>
+      <w>663</w>
+      <h>1020</h>
     </coordinates>
     <panel_attributes>ALT
 fg=#761C8C
@@ -424,10 +424,10 @@ lw=2
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>742</x>
-      <y>1043</y>
-      <w>238</w>
-      <h>28</h>
+      <x>680</x>
+      <y>2533</y>
+      <w>578</w>
+      <h>68</h>
     </coordinates>
     <panel_attributes>lt=&lt;.
 layer=20
@@ -437,10 +437,10 @@ ok</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>742</x>
-      <y>1015</y>
-      <w>238</w>
-      <h>35</h>
+      <x>680</x>
+      <y>2465</y>
+      <w>578</w>
+      <h>85</h>
     </coordinates>
     <panel_attributes>lt=-&gt;&gt;&gt;
 layer=20
@@ -451,10 +451,10 @@ quantità?, porzioni?)</panel_attributes>
   <element>
     <id>UMLFrame</id>
     <coordinates>
-      <x>700</x>
-      <y>623</y>
-      <w>287</w>
-      <h>455</h>
+      <x>578</x>
+      <y>1513</y>
+      <w>697</w>
+      <h>1105</h>
     </coordinates>
     <panel_attributes>LOOP
 fg=blue
@@ -466,10 +466,10 @@ lw=2</panel_attributes>
   <element>
     <id>UMLFrame</id>
     <coordinates>
-      <x>714</x>
-      <y>189</y>
-      <w>259</w>
-      <h>91</h>
+      <x>612</x>
+      <y>459</y>
+      <w>629</w>
+      <h>221</h>
     </coordinates>
     <panel_attributes>ALT
 bg=#ffaaaa
@@ -485,10 +485,10 @@ lw=2</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>742</x>
-      <y>245</y>
-      <w>238</w>
-      <h>28</h>
+      <x>680</x>
+      <y>595</y>
+      <w>578</w>
+      <h>68</h>
     </coordinates>
     <panel_attributes>lt=&lt;.
 layer=20
@@ -499,10 +499,10 @@ fg=red</panel_attributes>
   <element>
     <id>UMLSpecialState</id>
     <coordinates>
-      <x>959</x>
-      <y>252</y>
-      <w>14</w>
-      <h>14</h>
+      <x>1207</x>
+      <y>612</y>
+      <w>34</w>
+      <h>34</h>
     </coordinates>
     <panel_attributes>type=termination
 fg=red
@@ -513,10 +513,10 @@ lw=2</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>742</x>
-      <y>896</y>
-      <w>238</w>
-      <h>35</h>
+      <x>680</x>
+      <y>2176</y>
+      <w>578</w>
+      <h>85</h>
     </coordinates>
     <panel_attributes>lt=&lt;.
 layer=20
@@ -529,10 +529,10 @@ layer=20</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>742</x>
-      <y>707</y>
-      <w>238</w>
-      <h>28</h>
+      <x>680</x>
+      <y>1717</y>
+      <w>578</w>
+      <h>68</h>
     </coordinates>
     <panel_attributes>lt=&lt;.
 layer=20
@@ -542,10 +542,10 @@ ok</panel_attributes>
   <element>
     <id>UMLFrame</id>
     <coordinates>
-      <x>714</x>
-      <y>700</y>
-      <w>259</w>
-      <h>91</h>
+      <x>612</x>
+      <y>1700</y>
+      <w>629</w>
+      <h>221</h>
     </coordinates>
     <panel_attributes>ALT
 bg=#ffaaaa
@@ -561,10 +561,10 @@ lw=2</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>742</x>
-      <y>756</y>
-      <w>238</w>
-      <h>35</h>
+      <x>680</x>
+      <y>1836</y>
+      <w>578</w>
+      <h>85</h>
     </coordinates>
     <panel_attributes>lt=&lt;.
 layer=20
@@ -577,10 +577,10 @@ layer=20</panel_attributes>
   <element>
     <id>UMLFrame</id>
     <coordinates>
-      <x>714</x>
-      <y>840</y>
-      <w>259</w>
-      <h>91</h>
+      <x>612</x>
+      <y>2040</y>
+      <w>629</w>
+      <h>221</h>
     </coordinates>
     <panel_attributes>ALT
 bg=#ffaaaa
