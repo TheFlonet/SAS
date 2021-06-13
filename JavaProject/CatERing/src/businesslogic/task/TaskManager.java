@@ -1,11 +1,13 @@
 package businesslogic.task;
 
+import businesslogic.shift.Shift;
+
 import java.util.ArrayList;
 import java.util.List;
 
 public class TaskManager {
     private SummarySheet currentSheet;
-    private List<TaskEventReceiver> eventReceivers;
+    private final List<TaskEventReceiver> eventReceivers;
 
     public TaskManager() {
         eventReceivers = new ArrayList<>();
