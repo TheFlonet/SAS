@@ -422,7 +422,7 @@ fg=gray</panel_attributes>
       <x>1269</x>
       <y>801</y>
       <w>135</w>
-      <h>117</h>
+      <h>135</h>
     </coordinates>
     <panel_attributes>Task
 --
@@ -459,6 +459,9 @@ fg=gray</panel_attributes>
 - notifyAddedTask(task: Task)
 - notifyRemovedTask(task: Task)
 - notifyMovedTask(task: Task, pos: int)
+- notifyRemovedAssignment(task: Task)
+- notifySpecificationsAdded(task: Task, cook?: User,
+  time?: int, qty?: int)
 --
 *operations methods*
 + createSummarySheet(ser: Service)
@@ -468,7 +471,11 @@ fg=gray</panel_attributes>
 + setCurrentSheet(sheet: SummarySheet)
 + addTaskToSheet(process: KitchenProcess)
 + removeTaskfromSheet(task: Task)
-+ moveTask(task: Task, pos: in)</panel_attributes>
++ moveTask(task: Task, pos: in)
++ getShiftBoard()
++ removeAssignment(task: Task)
++ addSpecifications(task: Task, cook?: User,
+   time?: int, qty?: int)</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
@@ -508,16 +515,16 @@ m1=0..1</panel_attributes>
     <id>Relation</id>
     <coordinates>
       <x>1197</x>
-      <y>909</y>
-      <w>135</w>
-      <h>72</h>
+      <y>855</y>
+      <w>90</w>
+      <h>54</h>
     </coordinates>
     <panel_attributes>lt=&lt;-
 
 
 tasks
 m1=0..n</panel_attributes>
-    <additional_attributes>100.0;10.0;100.0;60.0;10.0;60.0</additional_attributes>
+    <additional_attributes>80.0;20.0;10.0;20.0</additional_attributes>
   </element>
   <element>
     <id>UMLClass</id>
@@ -655,15 +662,15 @@ m1=0..1</panel_attributes>
     <id>Relation</id>
     <coordinates>
       <x>1332</x>
-      <y>909</y>
+      <y>927</y>
       <w>72</w>
-      <h>423</h>
+      <h>405</h>
     </coordinates>
     <panel_attributes>lt=&lt;-
 assigned
 Tasks
 m1=0..n</panel_attributes>
-    <additional_attributes>10.0;10.0;10.0;450.0</additional_attributes>
+    <additional_attributes>10.0;10.0;10.0;430.0</additional_attributes>
   </element>
   <element>
     <id>Relation</id>
@@ -748,7 +755,9 @@ fg=gray</panel_attributes>
 /+ updateEditedAssignment(s: Shift, t: Task)/
 /+ updateAddedTask(task: Task)/
 /+ updateRemovedTask(task: Task)/
-/+ updateMovedTask(task: Task, pos: int)/</panel_attributes>
+/+ updateMovedTask(task: Task, pos: int)/
+/+ updateRemovedAssignment(task: Task)/
+/+ updateSpecificationsAdded(task: Task, cook?: User, time?: int, qty?: int)/</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
@@ -900,19 +909,6 @@ _+ getInstance(): ShiftBoard_
 + addShift(s: Shift)
 + removeShift(s: Shift)</panel_attributes>
     <additional_attributes/>
-  </element>
-  <element>
-    <id>Relation</id>
-    <coordinates>
-      <x>864</x>
-      <y>1359</y>
-      <w>90</w>
-      <h>45</h>
-    </coordinates>
-    <panel_attributes>lt=-&gt;
-board
-m2=1</panel_attributes>
-    <additional_attributes>10.0;20.0;80.0;20.0</additional_attributes>
   </element>
   <element>
     <id>Relation</id>
@@ -1110,19 +1106,6 @@ _instance: ShiftCalendar_
 --
 _getInstance(): ShiftCalendar_</panel_attributes>
     <additional_attributes/>
-  </element>
-  <element>
-    <id>Relation</id>
-    <coordinates>
-      <x>864</x>
-      <y>1494</y>
-      <w>117</w>
-      <h>45</h>
-    </coordinates>
-    <panel_attributes>lt=&lt;-
-calendar
-m1=1</panel_attributes>
-    <additional_attributes>110.0;20.0;10.0;20.0</additional_attributes>
   </element>
   <element>
     <id>Relation</id>
@@ -1337,5 +1320,31 @@ style=wordwrap</panel_attributes>
 owner
 m1=1</panel_attributes>
     <additional_attributes>560.0;10.0;390.0;10.0;390.0;410.0;10.0;410.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>864</x>
+      <y>1494</y>
+      <w>117</w>
+      <h>45</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-
+calendar
+m1=1</panel_attributes>
+    <additional_attributes>110.0;20.0;10.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>864</x>
+      <y>1359</y>
+      <w>90</w>
+      <h>45</h>
+    </coordinates>
+    <panel_attributes>lt=-&gt;
+board
+m2=1</panel_attributes>
+    <additional_attributes>10.0;20.0;80.0;20.0</additional_attributes>
   </element>
 </diagram>

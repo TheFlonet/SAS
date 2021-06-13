@@ -4,8 +4,8 @@
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>380</x>
-      <y>80</y>
+      <x>510</x>
+      <y>50</y>
       <w>370</w>
       <h>40</h>
     </coordinates>
@@ -19,19 +19,19 @@ fontsize=20
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>140</x>
-      <y>220</y>
+      <x>270</x>
+      <y>190</y>
       <w>30</w>
-      <h>650</h>
+      <h>430</h>
     </coordinates>
     <panel_attributes>lt=.</panel_attributes>
-    <additional_attributes>10.0;10.0;10.0;630.0</additional_attributes>
+    <additional_attributes>10.0;10.0;10.0;410.0</additional_attributes>
   </element>
   <element>
     <id>UMLPackage</id>
     <coordinates>
-      <x>110</x>
-      <y>160</y>
+      <x>240</x>
+      <y>130</y>
       <w>90</w>
       <h>70</h>
     </coordinates>
@@ -41,8 +41,8 @@ fontsize=20
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>140</x>
-      <y>260</y>
+      <x>270</x>
+      <y>230</y>
       <w>360</w>
       <h>40</h>
     </coordinates>
@@ -53,8 +53,8 @@ removeTaskFromSheet(task)</panel_attributes>
   <element>
     <id>UMLGeneric</id>
     <coordinates>
-      <x>390</x>
-      <y>180</y>
+      <x>520</x>
+      <y>150</y>
       <w>200</w>
       <h>50</h>
     </coordinates>
@@ -64,21 +64,21 @@ removeTaskFromSheet(task)</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>480</x>
-      <y>220</y>
+      <x>610</x>
+      <y>190</y>
       <w>30</w>
-      <h>650</h>
+      <h>430</h>
     </coordinates>
     <panel_attributes>lt=.</panel_attributes>
-    <additional_attributes>10.0;10.0;10.0;630.0</additional_attributes>
+    <additional_attributes>10.0;10.0;10.0;410.0</additional_attributes>
   </element>
   <element>
     <id>UMLGeneric</id>
     <coordinates>
-      <x>480</x>
-      <y>280</y>
+      <x>610</x>
+      <y>250</y>
       <w>20</w>
-      <h>550</h>
+      <h>330</h>
     </coordinates>
     <panel_attributes/>
     <additional_attributes/>
@@ -86,15 +86,12 @@ removeTaskFromSheet(task)</panel_attributes>
   <element>
     <id>UMLFrame</id>
     <coordinates>
-      <x>170</x>
-      <y>390</y>
-      <w>1120</w>
-      <h>460</h>
+      <x>300</x>
+      <y>360</y>
+      <w>770</w>
+      <h>260</h>
     </coordinates>
-    <panel_attributes>ALT [ !(user.isChef() &amp;&amp;
-        taskMgr.currentSheet != null &amp;&amp;
-        taskMgr.currentSheet.getOwner().equals(user) &amp;&amp;
-        taskMgr.currentSheet.getTasks().contains(task)) ]
+    <panel_attributes>ALT [ !user.isChef() ]
 fg=#761C8C
 lw=2
 --
@@ -107,8 +104,8 @@ lw=2
   <element>
     <id>UMLGeneric</id>
     <coordinates>
-      <x>650</x>
-      <y>180</y>
+      <x>780</x>
+      <y>150</y>
       <w>120</w>
       <h>50</h>
     </coordinates>
@@ -119,8 +116,8 @@ UserManager</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>700</x>
-      <y>220</y>
+      <x>830</x>
+      <y>190</y>
       <w>30</w>
       <h>160</h>
     </coordinates>
@@ -130,8 +127,8 @@ UserManager</panel_attributes>
   <element>
     <id>UMLGeneric</id>
     <coordinates>
-      <x>700</x>
-      <y>300</y>
+      <x>830</x>
+      <y>270</y>
       <w>20</w>
       <h>30</h>
     </coordinates>
@@ -141,8 +138,8 @@ UserManager</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>490</x>
-      <y>280</y>
+      <x>620</x>
+      <y>250</y>
       <w>230</w>
       <h>40</h>
     </coordinates>
@@ -153,8 +150,8 @@ getCurrentUser()</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>490</x>
-      <y>310</y>
+      <x>620</x>
+      <y>280</y>
       <w>230</w>
       <h>40</h>
     </coordinates>
@@ -165,8 +162,8 @@ user</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>140</x>
-      <y>460</y>
+      <x>270</x>
+      <y>400</y>
       <w>360</w>
       <h>40</h>
     </coordinates>
@@ -178,178 +175,71 @@ fg=red</panel_attributes>
   <element>
     <id>UMLGeneric</id>
     <coordinates>
-      <x>800</x>
-      <y>180</y>
+      <x>930</x>
+      <y>150</y>
       <w>140</w>
       <h>50</h>
     </coordinates>
-    <panel_attributes>taskMgr.currentSheet:
-SummarySheet</panel_attributes>
+    <panel_attributes>shiftMgr:
+ShiftManager</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>870</x>
-      <y>560</y>
-      <w>160</w>
-      <h>40</h>
-    </coordinates>
-    <panel_attributes>lt=-&gt;&gt;&gt;
-remove(task)</panel_attributes>
-    <additional_attributes>10.0;20.0;140.0;20.0</additional_attributes>
-  </element>
-  <element>
-    <id>UMLGeneric</id>
-    <coordinates>
-      <x>960</x>
-      <y>180</y>
-      <w>120</w>
-      <h>50</h>
-    </coordinates>
-    <panel_attributes>currentSheet.tasks:
-ArrayList&lt;Task&gt;</panel_attributes>
-    <additional_attributes/>
-  </element>
-  <element>
-    <id>Relation</id>
-    <coordinates>
-      <x>860</x>
-      <y>220</y>
+      <x>990</x>
+      <y>190</y>
       <w>30</w>
-      <h>460</h>
+      <h>400</h>
     </coordinates>
     <panel_attributes>lt=.</panel_attributes>
-    <additional_attributes>10.0;10.0;10.0;440.0</additional_attributes>
+    <additional_attributes>10.0;10.0;10.0;380.0</additional_attributes>
   </element>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>490</x>
-      <y>540</y>
+      <x>620</x>
+      <y>460</y>
       <w>390</w>
       <h>40</h>
     </coordinates>
     <panel_attributes>lt=-&gt;&gt;&gt;
-removeTask(task)</panel_attributes>
+getShiftBoard()</panel_attributes>
     <additional_attributes>10.0;20.0;370.0;20.0</additional_attributes>
   </element>
   <element>
     <id>UMLGeneric</id>
     <coordinates>
-      <x>860</x>
-      <y>560</y>
+      <x>990</x>
+      <y>480</y>
       <w>20</w>
-      <h>70</h>
-    </coordinates>
-    <panel_attributes/>
-    <additional_attributes/>
-  </element>
-  <element>
-    <id>Relation</id>
-    <coordinates>
-      <x>1010</x>
-      <y>220</y>
-      <w>30</w>
-      <h>430</h>
-    </coordinates>
-    <panel_attributes>lt=.</panel_attributes>
-    <additional_attributes>10.0;10.0;10.0;410.0</additional_attributes>
-  </element>
-  <element>
-    <id>UMLGeneric</id>
-    <coordinates>
-      <x>1010</x>
-      <y>580</y>
-      <w>20</w>
-      <h>30</h>
-    </coordinates>
-    <panel_attributes/>
-    <additional_attributes/>
-  </element>
-  <element>
-    <id>Relation</id>
-    <coordinates>
-      <x>490</x>
-      <y>650</y>
-      <w>240</w>
-      <h>60</h>
-    </coordinates>
-    <panel_attributes>lt=-&gt;&gt;&gt;
-notifyRemovedTask(task)</panel_attributes>
-    <additional_attributes>10.0;10.0;60.0;10.0;60.0;40.0;20.0;40.0</additional_attributes>
-  </element>
-  <element>
-    <id>UMLGeneric</id>
-    <coordinates>
-      <x>490</x>
-      <y>690</y>
-      <w>20</w>
-      <h>120</h>
-    </coordinates>
-    <panel_attributes/>
-    <additional_attributes/>
-  </element>
-  <element>
-    <id>UMLFrame</id>
-    <coordinates>
-      <x>350</x>
-      <y>710</y>
-      <w>910</w>
-      <h>80</h>
-    </coordinates>
-    <panel_attributes>LOOP for all er
-in eventReceivers
---
-fg=blue
-lw=2
-</panel_attributes>
-    <additional_attributes/>
-  </element>
-  <element>
-    <id>Relation</id>
-    <coordinates>
-      <x>500</x>
-      <y>720</y>
-      <w>620</w>
-      <h>40</h>
-    </coordinates>
-    <panel_attributes>lt=-&gt;&gt;&gt;
-updateRemovedTask(task)</panel_attributes>
-    <additional_attributes>10.0;20.0;600.0;20.0</additional_attributes>
-  </element>
-  <element>
-    <id>UMLGeneric</id>
-    <coordinates>
-      <x>1040</x>
-      <y>650</y>
-      <w>140</w>
       <h>50</h>
     </coordinates>
-    <panel_attributes>er:
-TaskEventReceiver</panel_attributes>
+    <panel_attributes/>
     <additional_attributes/>
   </element>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>1100</x>
-      <y>690</y>
-      <w>30</w>
-      <h>110</h>
+      <x>620</x>
+      <y>510</y>
+      <w>390</w>
+      <h>40</h>
     </coordinates>
-    <panel_attributes>lt=.</panel_attributes>
-    <additional_attributes>10.0;90.0;10.0;10.0</additional_attributes>
+    <panel_attributes>lt=&lt;.
+board</panel_attributes>
+    <additional_attributes>10.0;20.0;370.0;20.0</additional_attributes>
   </element>
   <element>
-    <id>UMLGeneric</id>
+    <id>Relation</id>
     <coordinates>
-      <x>1100</x>
-      <y>740</y>
-      <w>20</w>
-      <h>30</h>
+      <x>270</x>
+      <y>560</y>
+      <w>360</w>
+      <h>40</h>
     </coordinates>
-    <panel_attributes/>
-    <additional_attributes/>
+    <panel_attributes>lt=&lt;.
+board</panel_attributes>
+    <additional_attributes>10.0;20.0;340.0;20.0</additional_attributes>
   </element>
 </diagram>
