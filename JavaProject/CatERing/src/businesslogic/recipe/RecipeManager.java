@@ -3,13 +3,13 @@ package businesslogic.recipe;
 import java.util.List;
 
 public class RecipeManager {
-    private final List<Recipe> recipes;
+    private final List<KitchenProcess> kitchenProcesses;
 
     public RecipeManager() {
-        recipes = Recipe.loadAllRecipes();
+        kitchenProcesses = KitchenProcess.loadAllRecipes();
     }
 
-    public Recipe[] getRecipes() {
-        return this.recipes.toArray(new Recipe[recipes.size()]);
+    public KitchenProcess[] getKitchenProcesses() {
+        return this.kitchenProcesses.toArray(new KitchenProcess[kitchenProcesses.size()]);
     }
 }

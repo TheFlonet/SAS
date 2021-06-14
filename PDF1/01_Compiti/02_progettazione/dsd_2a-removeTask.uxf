@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <diagram program="umlet" version="14.3.0">
-  <zoom_level>8</zoom_level>
+  <zoom_level>12</zoom_level>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>424</x>
-      <y>120</y>
-      <w>296</w>
-      <h>32</h>
+      <x>372</x>
+      <y>0</y>
+      <w>444</w>
+      <h>48</h>
     </coordinates>
     <panel_attributes>halign=center
 *2a.1 - removeTaskFromSheet*
@@ -19,10 +19,10 @@ fontsize=20
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>232</x>
-      <y>232</y>
-      <w>24</w>
-      <h>520</h>
+      <x>84</x>
+      <y>168</y>
+      <w>36</w>
+      <h>780</h>
     </coordinates>
     <panel_attributes>lt=.</panel_attributes>
     <additional_attributes>10.0;10.0;10.0;630.0</additional_attributes>
@@ -30,10 +30,10 @@ fontsize=20
   <element>
     <id>UMLPackage</id>
     <coordinates>
-      <x>208</x>
-      <y>184</y>
-      <w>72</w>
-      <h>56</h>
+      <x>48</x>
+      <y>96</y>
+      <w>108</w>
+      <h>84</h>
     </coordinates>
     <panel_attributes>UI</panel_attributes>
     <additional_attributes/>
@@ -41,10 +41,10 @@ fontsize=20
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>232</x>
-      <y>264</y>
-      <w>288</w>
-      <h>32</h>
+      <x>84</x>
+      <y>216</y>
+      <w>432</w>
+      <h>48</h>
     </coordinates>
     <panel_attributes>lt=-&gt;&gt;&gt;
 removeTaskFromSheet(task)</panel_attributes>
@@ -53,10 +53,10 @@ removeTaskFromSheet(task)</panel_attributes>
   <element>
     <id>UMLGeneric</id>
     <coordinates>
-      <x>432</x>
-      <y>200</y>
-      <w>160</w>
-      <h>40</h>
+      <x>384</x>
+      <y>120</y>
+      <w>240</w>
+      <h>60</h>
     </coordinates>
     <panel_attributes>taskMgr: TaskManager</panel_attributes>
     <additional_attributes/>
@@ -64,10 +64,10 @@ removeTaskFromSheet(task)</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>504</x>
-      <y>232</y>
-      <w>24</w>
-      <h>520</h>
+      <x>492</x>
+      <y>168</y>
+      <w>36</w>
+      <h>780</h>
     </coordinates>
     <panel_attributes>lt=.</panel_attributes>
     <additional_attributes>10.0;10.0;10.0;630.0</additional_attributes>
@@ -75,10 +75,10 @@ removeTaskFromSheet(task)</panel_attributes>
   <element>
     <id>UMLGeneric</id>
     <coordinates>
-      <x>504</x>
-      <y>280</y>
-      <w>16</w>
-      <h>440</h>
+      <x>492</x>
+      <y>240</y>
+      <w>24</w>
+      <h>660</h>
     </coordinates>
     <panel_attributes/>
     <additional_attributes/>
@@ -86,10 +86,10 @@ removeTaskFromSheet(task)</panel_attributes>
   <element>
     <id>UMLFrame</id>
     <coordinates>
-      <x>256</x>
-      <y>368</y>
-      <w>896</w>
-      <h>368</h>
+      <x>120</x>
+      <y>372</y>
+      <w>1344</w>
+      <h>552</h>
     </coordinates>
     <panel_attributes>ALT [ !(user.isChef() &amp;&amp;
         taskMgr.currentSheet != null &amp;&amp;
@@ -107,10 +107,10 @@ lw=2
   <element>
     <id>UMLGeneric</id>
     <coordinates>
-      <x>640</x>
-      <y>200</y>
-      <w>96</w>
-      <h>40</h>
+      <x>696</x>
+      <y>120</y>
+      <w>144</w>
+      <h>60</h>
     </coordinates>
     <panel_attributes>userMgr:
 UserManager</panel_attributes>
@@ -119,10 +119,10 @@ UserManager</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>680</x>
-      <y>232</y>
-      <w>24</w>
-      <h>128</h>
+      <x>756</x>
+      <y>168</y>
+      <w>36</w>
+      <h>192</h>
     </coordinates>
     <panel_attributes>lt=.</panel_attributes>
     <additional_attributes>10.0;10.0;10.0;140.0</additional_attributes>
@@ -130,10 +130,10 @@ UserManager</panel_attributes>
   <element>
     <id>UMLGeneric</id>
     <coordinates>
-      <x>680</x>
-      <y>296</y>
-      <w>16</w>
-      <h>24</h>
+      <x>756</x>
+      <y>264</y>
+      <w>24</w>
+      <h>36</h>
     </coordinates>
     <panel_attributes/>
     <additional_attributes/>
@@ -141,10 +141,10 @@ UserManager</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>512</x>
-      <y>280</y>
-      <w>184</w>
-      <h>32</h>
+      <x>504</x>
+      <y>240</y>
+      <w>276</w>
+      <h>48</h>
     </coordinates>
     <panel_attributes>lt=-&gt;&gt;&gt;
 getCurrentUser()</panel_attributes>
@@ -153,10 +153,10 @@ getCurrentUser()</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>512</x>
-      <y>304</y>
-      <w>184</w>
-      <h>32</h>
+      <x>504</x>
+      <y>276</y>
+      <w>276</w>
+      <h>48</h>
     </coordinates>
     <panel_attributes>lt=&lt;.
 user</panel_attributes>
@@ -165,10 +165,10 @@ user</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>232</x>
-      <y>424</y>
-      <w>288</w>
-      <h>32</h>
+      <x>84</x>
+      <y>456</y>
+      <w>432</w>
+      <h>48</h>
     </coordinates>
     <panel_attributes>lt=&lt;.
 throw UseCaseLogicException
@@ -178,10 +178,10 @@ fg=red</panel_attributes>
   <element>
     <id>UMLGeneric</id>
     <coordinates>
-      <x>760</x>
-      <y>200</y>
-      <w>112</w>
-      <h>40</h>
+      <x>876</x>
+      <y>120</y>
+      <w>168</w>
+      <h>60</h>
     </coordinates>
     <panel_attributes>taskMgr.currentSheet:
 SummarySheet</panel_attributes>
@@ -190,10 +190,10 @@ SummarySheet</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>816</x>
-      <y>504</y>
-      <w>128</w>
-      <h>32</h>
+      <x>960</x>
+      <y>576</y>
+      <w>192</w>
+      <h>48</h>
     </coordinates>
     <panel_attributes>lt=-&gt;&gt;&gt;
 remove(task)</panel_attributes>
@@ -202,10 +202,10 @@ remove(task)</panel_attributes>
   <element>
     <id>UMLGeneric</id>
     <coordinates>
-      <x>888</x>
-      <y>200</y>
-      <w>96</w>
-      <h>40</h>
+      <x>1068</x>
+      <y>120</y>
+      <w>144</w>
+      <h>60</h>
     </coordinates>
     <panel_attributes>currentSheet.tasks:
 ArrayList&lt;Task&gt;</panel_attributes>
@@ -214,10 +214,10 @@ ArrayList&lt;Task&gt;</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>808</x>
-      <y>232</y>
-      <w>24</w>
-      <h>368</h>
+      <x>948</x>
+      <y>168</y>
+      <w>36</w>
+      <h>552</h>
     </coordinates>
     <panel_attributes>lt=.</panel_attributes>
     <additional_attributes>10.0;10.0;10.0;440.0</additional_attributes>
@@ -225,10 +225,10 @@ ArrayList&lt;Task&gt;</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>512</x>
-      <y>488</y>
-      <w>312</w>
-      <h>32</h>
+      <x>504</x>
+      <y>552</y>
+      <w>468</w>
+      <h>48</h>
     </coordinates>
     <panel_attributes>lt=-&gt;&gt;&gt;
 removeTask(task)</panel_attributes>
@@ -237,10 +237,10 @@ removeTask(task)</panel_attributes>
   <element>
     <id>UMLGeneric</id>
     <coordinates>
-      <x>808</x>
-      <y>504</y>
-      <w>16</w>
-      <h>56</h>
+      <x>948</x>
+      <y>576</y>
+      <w>24</w>
+      <h>84</h>
     </coordinates>
     <panel_attributes/>
     <additional_attributes/>
@@ -248,10 +248,10 @@ removeTask(task)</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>928</x>
-      <y>232</y>
-      <w>24</w>
-      <h>344</h>
+      <x>1128</x>
+      <y>168</y>
+      <w>36</w>
+      <h>516</h>
     </coordinates>
     <panel_attributes>lt=.</panel_attributes>
     <additional_attributes>10.0;10.0;10.0;410.0</additional_attributes>
@@ -259,10 +259,10 @@ removeTask(task)</panel_attributes>
   <element>
     <id>UMLGeneric</id>
     <coordinates>
-      <x>928</x>
-      <y>520</y>
-      <w>16</w>
-      <h>24</h>
+      <x>1128</x>
+      <y>600</y>
+      <w>24</w>
+      <h>36</h>
     </coordinates>
     <panel_attributes/>
     <additional_attributes/>
@@ -270,10 +270,10 @@ removeTask(task)</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>512</x>
-      <y>576</y>
-      <w>192</w>
-      <h>48</h>
+      <x>504</x>
+      <y>684</y>
+      <w>288</w>
+      <h>72</h>
     </coordinates>
     <panel_attributes>lt=-&gt;&gt;&gt;
 notifyRemovedTask(task)</panel_attributes>
@@ -282,10 +282,10 @@ notifyRemovedTask(task)</panel_attributes>
   <element>
     <id>UMLGeneric</id>
     <coordinates>
-      <x>512</x>
-      <y>608</y>
-      <w>16</w>
-      <h>96</h>
+      <x>504</x>
+      <y>732</y>
+      <w>24</w>
+      <h>144</h>
     </coordinates>
     <panel_attributes/>
     <additional_attributes/>
@@ -293,10 +293,10 @@ notifyRemovedTask(task)</panel_attributes>
   <element>
     <id>UMLFrame</id>
     <coordinates>
-      <x>400</x>
-      <y>624</y>
-      <w>728</w>
-      <h>64</h>
+      <x>336</x>
+      <y>756</y>
+      <w>1092</w>
+      <h>96</h>
     </coordinates>
     <panel_attributes>LOOP for all er
 in eventReceivers
@@ -309,10 +309,10 @@ lw=2
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>520</x>
-      <y>632</y>
-      <w>496</w>
-      <h>32</h>
+      <x>516</x>
+      <y>768</y>
+      <w>744</w>
+      <h>48</h>
     </coordinates>
     <panel_attributes>lt=-&gt;&gt;&gt;
 updateRemovedTask(task)</panel_attributes>
@@ -321,10 +321,10 @@ updateRemovedTask(task)</panel_attributes>
   <element>
     <id>UMLGeneric</id>
     <coordinates>
-      <x>952</x>
-      <y>576</y>
-      <w>112</w>
-      <h>40</h>
+      <x>1164</x>
+      <y>684</y>
+      <w>168</w>
+      <h>60</h>
     </coordinates>
     <panel_attributes>er:
 TaskEventReceiver</panel_attributes>
@@ -333,10 +333,10 @@ TaskEventReceiver</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>1000</x>
-      <y>608</y>
-      <w>24</w>
-      <h>88</h>
+      <x>1236</x>
+      <y>732</y>
+      <w>36</w>
+      <h>132</h>
     </coordinates>
     <panel_attributes>lt=.</panel_attributes>
     <additional_attributes>10.0;90.0;10.0;10.0</additional_attributes>
@@ -344,10 +344,10 @@ TaskEventReceiver</panel_attributes>
   <element>
     <id>UMLGeneric</id>
     <coordinates>
-      <x>1000</x>
-      <y>648</y>
-      <w>16</w>
-      <h>24</h>
+      <x>1236</x>
+      <y>792</y>
+      <w>24</w>
+      <h>36</h>
     </coordinates>
     <panel_attributes/>
     <additional_attributes/>

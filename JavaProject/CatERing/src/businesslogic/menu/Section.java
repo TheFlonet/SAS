@@ -51,4 +51,8 @@ public class Section {
             }
         }
     }
+
+    public List<MenuItem> getSectionItems() {
+        return sectionItems;
+    }
 }

@@ -1,7 +1,7 @@
 package businesslogic.menu;
 
 import businesslogic.CatERing;
-import businesslogic.recipe.Recipe;
+import businesslogic.recipe.KitchenProcess;
 import businesslogic.user.User;
 import persistence.BatchUpdateHandler;
 import persistence.PersistenceManager;
@@ -73,7 +73,7 @@ public class Menu {
         this.sections.add(new Section("Secondi"));
         this.sections.add(new Section("Dessert"));
 
-        Recipe[] all = CatERing.getInstance().getRecipeManager().getRecipes();
+        KitchenProcess[] all = CatERing.getInstance().getRecipeManager().getKitchenProcesses();
         freeItems.add(new MenuItem(all[3]));
         freeItems.add(new MenuItem(all[4]));
         freeItems.add(new MenuItem(all[5]));
@@ -125,5 +125,13 @@ public class Menu {
                 MenuItem.saveAllNewItems(m.id, 0, m.freeItems);
             }
         }
+    }
+
+    public List<Section> getSections() {
+        return sections;
+    }
+
+    public List<MenuItem> getFreeItems() {
+        return freeItems;
     }
 }
