@@ -5,7 +5,7 @@ import businesslogic.user.User;
 
 public class Task {
     private final KitchenProcess process;
-    private int time;
+    private long time;
     private int quantity;
     private User cook;
 
@@ -13,11 +13,11 @@ public class Task {
         process = kitchenProcess;
     }
 
-    public int getTime() {
+    public long getTime() {
         return time;
     }
 
-    public void setTime(int time) {
+    public void setTime(long time) {
         this.time = time;
     }
 

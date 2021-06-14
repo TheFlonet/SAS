@@ -40,15 +40,23 @@ public class SummarySheet {
         owner = user;
     }
 
-    public void createTask(KitchenProcess process) {
-        //TODO
+    public User getOwner() {
+        return owner;
+    }
+
+    public List<Task> getTasks() {
+        return tasks;
+    }
+
+    public Task createTask(KitchenProcess process) {
+        return new Task(process);
     }
 
     public void removeTask(Task task) {
-        //TODO
+        tasks.remove(task);
     }
 
     public void addTask(Task task, int pos) {
-        //TODO
+        tasks.add(pos, task);
     }
 }

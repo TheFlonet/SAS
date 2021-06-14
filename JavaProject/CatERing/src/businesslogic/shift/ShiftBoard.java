@@ -20,15 +20,25 @@ public class ShiftBoard {
     }
 
     public Shift findShiftOf(Task task) {
-        //TODO
-        return null;
+        Shift shift = null;
+
+        for (Shift s : assignedShifts) {
+            int index = s.assignedTasks.indexOf(task);
+            if (index > -1) shift = s;
+        }
+
+        return shift;
+    }
+
+    public List<Shift> getAssignedShifts() {
+        return assignedShifts;
     }
 
     public void addShift(Shift shift) {
-        //TODO
+        assignedShifts.add(shift);
     }
 
     public void removeShift(Shift shift) {
-        //TODO
+        assignedShifts.remove(shift);
     }
 }
