@@ -353,7 +353,7 @@ ok</panel_attributes>
     <panel_attributes>lt=-&gt;&gt;&gt;
 layer=20
 5a.1 modificaAssegnamento(compito, nuovoTurno,
-nuovoCuoco?, tempo?, porzioni?)</panel_attributes>
+nuovoCuoco?, tempo?, quantita?)</panel_attributes>
     <additional_attributes>10.0;20.0;320.0;20.0</additional_attributes>
   </element>
   <element>
@@ -367,7 +367,7 @@ nuovoCuoco?, tempo?, porzioni?)</panel_attributes>
     <panel_attributes>lt=-&gt;&gt;&gt;
 layer=20
 5. assegnaCompito(compito, turno, cuoco?,
-tempo?, porzioni?)</panel_attributes>
+tempo?, quantita?)</panel_attributes>
     <additional_attributes>10.0;20.0;320.0;20.0</additional_attributes>
   </element>
   <element>
@@ -445,7 +445,7 @@ ok</panel_attributes>
     <panel_attributes>lt=-&gt;&gt;&gt;
 layer=20
 5c.1 aggiungiSpecifica(compito, cuoco?,
-tempo?, porzioni?)</panel_attributes>
+tempo?, quantita?)</panel_attributes>
     <additional_attributes>10.0;20.0;320.0;20.0</additional_attributes>
   </element>
   <element>
