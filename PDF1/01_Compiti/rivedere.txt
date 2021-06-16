@@ -1,9 +1,0 @@
-contratti:
-1: 
-	mettere eccezione per le precondizioni
-	ch proprietario di f
-5:
-	aggiungere ch è proprietario di f
-	aggiungere concetto tabellone turni
-5a:
-	rifare tutto

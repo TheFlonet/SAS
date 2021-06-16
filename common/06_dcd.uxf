@@ -1507,6 +1507,10 @@ m1=1</panel_attributes>
     </coordinates>
     <panel_attributes>lt=&lt;-
 
+
+
+
+
 assignedCooks
 m1=0..n</panel_attributes>
     <additional_attributes>510.0;10.0;380.0;10.0;380.0;720.0;10.0;720.0;10.0;750.0</additional_attributes>
@@ -1531,9 +1535,11 @@ m1=0..n</panel_attributes>
       <x>1192</x>
       <y>592</y>
       <w>416</w>
-      <h>824</h>
+      <h>832</h>
     </coordinates>
     <panel_attributes>lt=&lt;-
+
+
 shiftAvailability
 
 

@@ -240,7 +240,7 @@ findShiftOf(task)</panel_attributes>
       <h>132</h>
     </coordinates>
     <panel_attributes>LOOP for all sh in
-shiftMgr.board.assignedShifts
+shiftMgr.board.getAssignedShifts()
 fg=blue
 lw=2</panel_attributes>
     <additional_attributes/>
@@ -452,7 +452,7 @@ remove(shift)</panel_attributes>
           taskMgr.currentSheet.getTasks().contains(task) &amp;&amp;
           shift != null &amp;&amp;
           shift.getDate().after(new Date()) &amp;&amp;
-          board.getAssignedShifts.contains(shift))]
+          board.getAssignedShifts().contains(shift))]
 fg=#761C8C
 lw=2
 --
