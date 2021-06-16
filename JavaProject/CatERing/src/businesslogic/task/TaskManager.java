@@ -30,9 +30,9 @@ public class TaskManager {
         this.eventReceivers.remove(taskEventReceiver);
     }
 
-    private void notifyCreatedSummarySheet(SummarySheet summarySheet) { //TODO capire se serve il parametro
+    private void notifyCreatedSummarySheet(SummarySheet summarySheet) {
         for (TaskEventReceiver receiver : eventReceivers)
-            receiver.updateCreatedSummarySheet(currentSheet);
+            receiver.updateCreatedSummarySheet(summarySheet);
     }
 
     private void notifyAssignedTask(Shift s, Task t) {
@@ -45,9 +45,9 @@ public class TaskManager {
             receiver.updateEditedAssignment(s, t);
     }
 
-    private void notifySetSummarySheet(SummarySheet summarySheet) { //TODO capire se serve il parametro
+    private void notifySetSummarySheet(SummarySheet summarySheet) {
         for (TaskEventReceiver receiver : eventReceivers)
-            receiver.updateSetSummarySheet(currentSheet);
+            receiver.updateSetSummarySheet(summarySheet);
     }
 
     private void notifyAddedTask(Task task) {
@@ -141,7 +141,7 @@ public class TaskManager {
                 && currentSheet.getTasks().contains(task)))
             throw new UseCaseLogicException();
 
-        if (shift.getDate().before(new Date())) throw new PastShiftException(); //TODO è giusto SHIFT?
+        if (shift.getDate().before(new Date())) throw new PastShiftException("Shift in the past");
 
         if (cook != null && !shift.getAssignedCooks().contains(cook)) throw new UnavailableCookException();
 
@@ -199,7 +199,7 @@ public class TaskManager {
                 && newShift.getAssignedCooks().contains(newCook)))
             throw new UnavailableCookException();
 
-        if (newShift.getDate().before(new Date())) throw new PastShiftException();
+        if (newShift.getDate().before(new Date())) throw new PastShiftException("Shift in the past");
 
         shift.removeTask(task);
 
@@ -211,7 +211,7 @@ public class TaskManager {
         if (time > 0) task.setTime(time);
         if (quantity > 0) task.setQuantity(quantity);
 
-        if (!board.getAssignedShifts().contains(newShift)) board.addShift(newShift); //TODO shift o newShift?
+        if (!board.getAssignedShifts().contains(newShift)) board.addShift(newShift);
 
         notifyEditedAssignment(newShift, task);
     }

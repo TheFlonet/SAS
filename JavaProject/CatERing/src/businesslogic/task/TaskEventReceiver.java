@@ -4,8 +4,8 @@ import businesslogic.shift.Shift;
 import businesslogic.user.User;
 
 public interface TaskEventReceiver {
-    void updateCreatedSummarySheet(SummarySheet summarySheet); //TODO la firma è giusta (?)
-    void updateSetSummarySheet(SummarySheet summarySheet); //TODO la firma è giusta (?)
+    void updateCreatedSummarySheet(SummarySheet summarySheet);
+    void updateSetSummarySheet(SummarySheet summarySheet);
     void updateAssignedTask(Shift s, Task t);
     void updateEditedAssignment(Shift s, Task t);
     void updateAddedTask(Task task);

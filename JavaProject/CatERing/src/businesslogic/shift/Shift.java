@@ -19,15 +19,13 @@ public abstract class Shift {
         assignedCooks = new ArrayList<>();
     }
 
-    public void addTask(Task t) {
+    public void  addTask(Task t) {
         assignedTasks.add(t);
     }
 
     public void removeTask(Task t) {
         assignedTasks.remove(t);
     }
-
-    public abstract String getLocation();
 
     public Date getDate() {
         return date;
