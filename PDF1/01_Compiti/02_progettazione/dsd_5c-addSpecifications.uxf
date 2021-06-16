@@ -471,7 +471,7 @@ updateSpecificationsAdded(task, cook?, time?, qty?)</panel_attributes>
       <h>25</h>
     </coordinates>
     <panel_attributes>tr:
-TaskReceiver</panel_attributes>
+TaskEventReceiver</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
