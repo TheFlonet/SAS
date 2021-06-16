@@ -24,14 +24,14 @@ fontsize=10
 
 
 // This text will be stored with each diagram;  use it for notes.</help_text>
-  <zoom_level>5</zoom_level>
+  <zoom_level>13</zoom_level>
   <element>
     <id>UMLActor</id>
     <coordinates>
-      <x>55</x>
-      <y>75</y>
-      <w>60</w>
-      <h>55</h>
+      <x>78</x>
+      <y>78</y>
+      <w>156</w>
+      <h>143</h>
     </coordinates>
     <panel_attributes>Cuoco o 
 Personale di servizio</panel_attributes>
@@ -40,10 +40,10 @@ Personale di servizio</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>80</x>
-      <y>165</y>
-      <w>220</w>
-      <h>20</h>
+      <x>143</x>
+      <y>312</y>
+      <w>572</w>
+      <h>52</h>
     </coordinates>
     <panel_attributes>lt=-&gt;&gt;&gt;
 1. consultaCalendario()</panel_attributes>
@@ -52,10 +52,10 @@ Personale di servizio</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>80</x>
-      <y>125</y>
-      <w>15</w>
-      <h>785</h>
+      <x>143</x>
+      <y>208</y>
+      <w>39</w>
+      <h>2041</h>
     </coordinates>
     <panel_attributes>lt=.</panel_attributes>
     <additional_attributes>10.0;10.0;10.0;1550.0</additional_attributes>
@@ -63,10 +63,10 @@ Personale di servizio</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>285</x>
-      <y>125</y>
-      <w>15</w>
-      <h>790</h>
+      <x>676</x>
+      <y>208</y>
+      <w>39</w>
+      <h>2054</h>
     </coordinates>
     <panel_attributes>lt=.</panel_attributes>
     <additional_attributes>10.0;10.0;10.0;1560.0</additional_attributes>
@@ -74,10 +74,10 @@ Personale di servizio</panel_attributes>
   <element>
     <id>UMLDeployment</id>
     <coordinates>
-      <x>265</x>
-      <y>105</y>
-      <w>55</w>
-      <h>25</h>
+      <x>624</x>
+      <y>156</y>
+      <w>143</w>
+      <h>65</h>
     </coordinates>
     <panel_attributes>Sistema</panel_attributes>
     <additional_attributes/>
@@ -85,10 +85,10 @@ Personale di servizio</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>80</x>
-      <y>180</y>
-      <w>220</w>
-      <h>20</h>
+      <x>143</x>
+      <y>351</y>
+      <w>572</w>
+      <h>52</h>
     </coordinates>
     <panel_attributes>lt=&lt;.
 restituisce il calendario</panel_attributes>
@@ -97,10 +97,10 @@ restituisce il calendario</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>80</x>
-      <y>590</y>
-      <w>220</w>
-      <h>20</h>
+      <x>143</x>
+      <y>1417</y>
+      <w>572</w>
+      <h>52</h>
     </coordinates>
     <panel_attributes>lt=-&gt;&gt;&gt;
 2. indicaDisponibilità(turno)</panel_attributes>
@@ -109,10 +109,10 @@ restituisce il calendario</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>80</x>
-      <y>615</y>
-      <w>220</w>
-      <h>20</h>
+      <x>143</x>
+      <y>1482</y>
+      <w>572</w>
+      <h>52</h>
     </coordinates>
     <panel_attributes>lt=&lt;.
 ok</panel_attributes>
@@ -121,10 +121,10 @@ ok</panel_attributes>
   <element>
     <id>UMLFrame</id>
     <coordinates>
-      <x>35</x>
-      <y>575</y>
-      <w>275</w>
-      <h>305</h>
+      <x>26</x>
+      <y>1378</y>
+      <w>715</w>
+      <h>793</h>
     </coordinates>
     <panel_attributes>LOOP
 fg=blue
@@ -135,10 +135,10 @@ layer=-2</panel_attributes>
   <element>
     <id>UMLFrame</id>
     <coordinates>
-      <x>25</x>
-      <y>145</y>
-      <w>290</w>
-      <h>740</h>
+      <x>0</x>
+      <y>260</y>
+      <w>754</w>
+      <h>1924</h>
     </coordinates>
     <panel_attributes>LOOP
 fg=blue
@@ -149,10 +149,10 @@ layer=-4</panel_attributes>
   <element>
     <id>UMLFrame</id>
     <coordinates>
-      <x>60</x>
-      <y>610</y>
-      <w>240</w>
-      <h>130</h>
+      <x>91</x>
+      <y>1469</y>
+      <w>624</w>
+      <h>338</h>
     </coordinates>
     <panel_attributes>ALT
 bg=#ffaaaa
@@ -181,10 +181,10 @@ layer=0</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>80</x>
-      <y>640</y>
-      <w>220</w>
-      <h>20</h>
+      <x>143</x>
+      <y>1547</y>
+      <w>572</w>
+      <h>52</h>
     </coordinates>
     <panel_attributes>lt=&lt;.
 2.1a personale di servizio indica disponibilità per turno preparatorio
@@ -194,10 +194,10 @@ fg=red</panel_attributes>
   <element>
     <id>UMLSpecialState</id>
     <coordinates>
-      <x>285</x>
-      <y>645</y>
-      <w>10</w>
-      <h>10</h>
+      <x>676</x>
+      <y>1560</y>
+      <w>26</w>
+      <h>26</h>
     </coordinates>
     <panel_attributes>type=termination
 fg=red
@@ -207,10 +207,10 @@ lw=2</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>80</x>
-      <y>665</y>
-      <w>220</w>
-      <h>20</h>
+      <x>143</x>
+      <y>1612</y>
+      <w>572</w>
+      <h>52</h>
     </coordinates>
     <panel_attributes>lt=&lt;.
 2.1b il turno è nel passato
@@ -220,10 +220,10 @@ fg=red</panel_attributes>
   <element>
     <id>UMLSpecialState</id>
     <coordinates>
-      <x>285</x>
-      <y>670</y>
-      <w>10</w>
-      <h>10</h>
+      <x>676</x>
+      <y>1625</y>
+      <w>26</w>
+      <h>26</h>
     </coordinates>
     <panel_attributes>type=termination
 fg=red
@@ -233,10 +233,10 @@ lw=2</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>80</x>
-      <y>690</y>
-      <w>220</w>
-      <h>20</h>
+      <x>143</x>
+      <y>1677</y>
+      <w>572</w>
+      <h>52</h>
     </coordinates>
     <panel_attributes>lt=&lt;.
 2.1c la data di termine modifica del turno è nel passato
@@ -246,10 +246,10 @@ fg=red</panel_attributes>
   <element>
     <id>UMLSpecialState</id>
     <coordinates>
-      <x>285</x>
-      <y>695</y>
-      <w>10</w>
-      <h>10</h>
+      <x>676</x>
+      <y>1690</y>
+      <w>26</w>
+      <h>26</h>
     </coordinates>
     <panel_attributes>type=termination
 fg=red
@@ -259,10 +259,10 @@ lw=2</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>80</x>
-      <y>715</y>
-      <w>220</w>
-      <h>20</h>
+      <x>143</x>
+      <y>1742</y>
+      <w>572</w>
+      <h>52</h>
     </coordinates>
     <panel_attributes>lt=&lt;.
 2.1d si sta indicando la disponibilità 
@@ -273,10 +273,10 @@ fg=red</panel_attributes>
   <element>
     <id>UMLSpecialState</id>
     <coordinates>
-      <x>285</x>
-      <y>720</y>
-      <w>10</w>
-      <h>10</h>
+      <x>676</x>
+      <y>1755</y>
+      <w>26</w>
+      <h>26</h>
     </coordinates>
     <panel_attributes>type=termination
 fg=red
@@ -286,10 +286,10 @@ lw=2</panel_attributes>
   <element>
     <id>UMLFrame</id>
     <coordinates>
-      <x>30</x>
-      <y>160</y>
-      <w>280</w>
-      <h>410</h>
+      <x>13</x>
+      <y>299</y>
+      <w>728</w>
+      <h>1066</h>
     </coordinates>
     <panel_attributes>ALT
 fg=#761C8C
@@ -308,10 +308,10 @@ layer=-2</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>80</x>
-      <y>215</y>
-      <w>220</w>
-      <h>20</h>
+      <x>143</x>
+      <y>442</y>
+      <w>572</w>
+      <h>52</h>
     </coordinates>
     <panel_attributes>lt=-&gt;&gt;&gt;
 1a.1 consultaDisponibilitaI()</panel_attributes>
@@ -320,10 +320,10 @@ layer=-2</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>80</x>
-      <y>230</y>
-      <w>220</w>
-      <h>20</h>
+      <x>143</x>
+      <y>481</y>
+      <w>572</w>
+      <h>52</h>
     </coordinates>
     <panel_attributes>lt=&lt;.
 restituisce i turni per cui si ha dato disponibilità</panel_attributes>
@@ -332,10 +332,10 @@ restituisce i turni per cui si ha dato disponibilità</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>80</x>
-      <y>265</y>
-      <w>220</w>
-      <h>20</h>
+      <x>143</x>
+      <y>572</y>
+      <w>572</w>
+      <h>52</h>
     </coordinates>
     <panel_attributes>lt=-&gt;&gt;&gt;
 1a.2 eliminaDisponibilità(turno)</panel_attributes>
@@ -344,10 +344,10 @@ restituisce i turni per cui si ha dato disponibilità</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>80</x>
-      <y>290</y>
-      <w>220</w>
-      <h>20</h>
+      <x>143</x>
+      <y>637</y>
+      <w>572</w>
+      <h>52</h>
     </coordinates>
     <panel_attributes>lt=&lt;.
 ok</panel_attributes>
@@ -356,10 +356,10 @@ ok</panel_attributes>
   <element>
     <id>UMLFrame</id>
     <coordinates>
-      <x>35</x>
-      <y>255</y>
-      <w>270</w>
-      <h>310</h>
+      <x>26</x>
+      <y>546</y>
+      <w>702</w>
+      <h>806</h>
     </coordinates>
     <panel_attributes>LOOP
 fg=blue
@@ -370,10 +370,10 @@ layer=-1</panel_attributes>
   <element>
     <id>UMLFrame</id>
     <coordinates>
-      <x>65</x>
-      <y>285</y>
-      <w>230</w>
-      <h>135</h>
+      <x>104</x>
+      <y>624</y>
+      <w>598</w>
+      <h>351</h>
     </coordinates>
     <panel_attributes>ALT
 bg=#ffaaaa
@@ -403,10 +403,10 @@ layer=1</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>80</x>
-      <y>315</y>
-      <w>220</w>
-      <h>20</h>
+      <x>143</x>
+      <y>702</y>
+      <w>572</w>
+      <h>52</h>
     </coordinates>
     <panel_attributes>lt=&lt;.
 1a.2.1a il turno è nel passato
@@ -417,10 +417,10 @@ layer=2</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>80</x>
-      <y>345</y>
-      <w>220</w>
-      <h>20</h>
+      <x>143</x>
+      <y>780</y>
+      <w>572</w>
+      <h>52</h>
     </coordinates>
     <panel_attributes>lt=&lt;.
 1a.2.1b la data di scadenza per la modifica della disponibilità del turno è passata
@@ -431,10 +431,10 @@ layer=2</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>80</x>
-      <y>370</y>
-      <w>220</w>
-      <h>20</h>
+      <x>143</x>
+      <y>845</y>
+      <w>572</w>
+      <h>52</h>
     </coordinates>
     <panel_attributes>lt=&lt;.
 1a.2.1c l'utente è stato assegnato a quel turno dall'organizzatore
@@ -445,10 +445,10 @@ layer=2</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>80</x>
-      <y>395</y>
-      <w>220</w>
-      <h>20</h>
+      <x>143</x>
+      <y>910</y>
+      <w>572</w>
+      <h>52</h>
     </coordinates>
     <panel_attributes>lt=&lt;.
 1a.2.1d il turno fa parte di un gruppo di turni
@@ -459,10 +459,10 @@ layer=2</panel_attributes>
   <element>
     <id>UMLFrame</id>
     <coordinates>
-      <x>60</x>
-      <y>260</y>
-      <w>240</w>
-      <h>300</h>
+      <x>91</x>
+      <y>559</y>
+      <w>624</w>
+      <h>780</h>
     </coordinates>
     <panel_attributes>ALT
 fg=#761C8C
@@ -500,10 +500,10 @@ lw=2
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>80</x>
-      <y>430</y>
-      <w>220</w>
-      <h>20</h>
+      <x>143</x>
+      <y>1001</y>
+      <w>572</w>
+      <h>52</h>
     </coordinates>
     <panel_attributes>lt=-&gt;&gt;&gt;
 1a.2a eliminaDisponibilitàGruppo(utente, turni)</panel_attributes>
@@ -512,10 +512,10 @@ lw=2
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>80</x>
-      <y>455</y>
-      <w>220</w>
-      <h>20</h>
+      <x>143</x>
+      <y>1066</y>
+      <w>572</w>
+      <h>52</h>
     </coordinates>
     <panel_attributes>lt=&lt;.
 ok</panel_attributes>
@@ -524,10 +524,10 @@ ok</panel_attributes>
   <element>
     <id>UMLFrame</id>
     <coordinates>
-      <x>65</x>
-      <y>450</y>
-      <w>230</w>
-      <h>105</h>
+      <x>104</x>
+      <y>1053</y>
+      <w>598</w>
+      <h>273</h>
     </coordinates>
     <panel_attributes>ALT
 bg=#ffaaaa
@@ -557,10 +557,10 @@ layer=1</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>80</x>
-      <y>480</y>
-      <w>220</w>
-      <h>20</h>
+      <x>143</x>
+      <y>1131</y>
+      <w>572</w>
+      <h>52</h>
     </coordinates>
     <panel_attributes>lt=&lt;.
 1a.2a.1a almeno uno dei turni è nel passato
@@ -571,10 +571,10 @@ layer=2</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>80</x>
-      <y>505</y>
-      <w>220</w>
-      <h>20</h>
+      <x>143</x>
+      <y>1196</y>
+      <w>572</w>
+      <h>52</h>
     </coordinates>
     <panel_attributes>lt=&lt;.
 1a.2a.1b la data di scadenza per la modifica della disponibillità 
@@ -586,10 +586,10 @@ layer=2</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>80</x>
-      <y>535</y>
-      <w>220</w>
-      <h>20</h>
+      <x>143</x>
+      <y>1274</y>
+      <w>572</w>
+      <h>52</h>
     </coordinates>
     <panel_attributes>lt=&lt;.
 1a.2a.1c l'utente è stato assegnato a quel gruppo di turni dall'organizzatore
@@ -600,10 +600,10 @@ layer=2</panel_attributes>
   <element>
     <id>UMLFrame</id>
     <coordinates>
-      <x>55</x>
-      <y>585</y>
-      <w>250</w>
-      <h>290</h>
+      <x>78</x>
+      <y>1404</y>
+      <w>650</w>
+      <h>754</h>
     </coordinates>
     <panel_attributes>ALT
 fg=#761C8C
@@ -641,10 +641,10 @@ layer=-1</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>80</x>
-      <y>750</y>
-      <w>220</w>
-      <h>20</h>
+      <x>143</x>
+      <y>1833</y>
+      <w>572</w>
+      <h>52</h>
     </coordinates>
     <panel_attributes>lt=-&gt;&gt;&gt;
 2a inserisciDisponibilitàGruppo(turni)</panel_attributes>
@@ -653,10 +653,10 @@ layer=-1</panel_attributes>
   <element>
     <id>UMLFrame</id>
     <coordinates>
-      <x>65</x>
-      <y>770</y>
-      <w>235</w>
-      <h>100</h>
+      <x>104</x>
+      <y>1885</y>
+      <w>611</w>
+      <h>260</h>
     </coordinates>
     <panel_attributes>ALT
 bg=#ffaaaa
@@ -680,10 +680,10 @@ layer=0</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>80</x>
-      <y>775</y>
-      <w>220</w>
-      <h>20</h>
+      <x>143</x>
+      <y>1898</y>
+      <w>572</w>
+      <h>52</h>
     </coordinates>
     <panel_attributes>lt=&lt;.
 ok</panel_attributes>
@@ -692,10 +692,10 @@ ok</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>80</x>
-      <y>800</y>
-      <w>220</w>
-      <h>20</h>
+      <x>143</x>
+      <y>1963</y>
+      <w>572</w>
+      <h>52</h>
     </coordinates>
     <panel_attributes>lt=&lt;.
 2a.1a si sta indicando la disponibilità in un gruppo di turni preparatori
@@ -706,10 +706,10 @@ fg=red</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>80</x>
-      <y>825</y>
-      <w>220</w>
-      <h>20</h>
+      <x>143</x>
+      <y>2028</y>
+      <w>572</w>
+      <h>52</h>
     </coordinates>
     <panel_attributes>lt=&lt;.
 2a.1b almeno un turno è nel passato
@@ -719,10 +719,10 @@ fg=red</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>80</x>
-      <y>850</y>
-      <w>220</w>
-      <h>20</h>
+      <x>143</x>
+      <y>2093</y>
+      <w>572</w>
+      <h>52</h>
     </coordinates>
     <panel_attributes>lt=&lt;.
 2a.1c la data di termine modifica di almeno uno dei turni è nel passato
@@ -732,10 +732,10 @@ fg=red</panel_attributes>
   <element>
     <id>UMLSpecialState</id>
     <coordinates>
-      <x>285</x>
-      <y>805</y>
-      <w>10</w>
-      <h>10</h>
+      <x>676</x>
+      <y>1976</y>
+      <w>26</w>
+      <h>26</h>
     </coordinates>
     <panel_attributes>type=termination
 fg=red
@@ -745,10 +745,10 @@ lw=2</panel_attributes>
   <element>
     <id>UMLSpecialState</id>
     <coordinates>
-      <x>285</x>
-      <y>830</y>
-      <w>10</w>
-      <h>10</h>
+      <x>676</x>
+      <y>2041</y>
+      <w>26</w>
+      <h>26</h>
     </coordinates>
     <panel_attributes>type=termination
 fg=red
@@ -758,10 +758,10 @@ lw=2</panel_attributes>
   <element>
     <id>UMLSpecialState</id>
     <coordinates>
-      <x>285</x>
-      <y>855</y>
-      <w>10</w>
-      <h>10</h>
+      <x>676</x>
+      <y>2106</y>
+      <w>26</w>
+      <h>26</h>
     </coordinates>
     <panel_attributes>type=termination
 fg=red
@@ -771,10 +771,10 @@ lw=2</panel_attributes>
   <element>
     <id>UMLDeployment</id>
     <coordinates>
-      <x>590</x>
-      <y>110</y>
-      <w>55</w>
-      <h>25</h>
+      <x>1469</x>
+      <y>169</y>
+      <w>143</w>
+      <h>65</h>
     </coordinates>
     <panel_attributes>Sistema</panel_attributes>
     <additional_attributes/>
@@ -782,10 +782,10 @@ lw=2</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>610</x>
-      <y>130</y>
-      <w>15</w>
-      <h>790</h>
+      <x>1521</x>
+      <y>221</y>
+      <w>39</w>
+      <h>2054</h>
     </coordinates>
     <panel_attributes>lt=.
 layer=20</panel_attributes>
@@ -794,10 +794,10 @@ layer=20</panel_attributes>
   <element>
     <id>UMLActor</id>
     <coordinates>
-      <x>430</x>
-      <y>80</y>
-      <w>60</w>
-      <h>55</h>
+      <x>1053</x>
+      <y>91</y>
+      <w>156</w>
+      <h>143</h>
     </coordinates>
     <panel_attributes>Cuoco o 
 Personale di servizio</panel_attributes>
@@ -806,10 +806,10 @@ Personale di servizio</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>455</x>
-      <y>130</y>
-      <w>15</w>
-      <h>785</h>
+      <x>1118</x>
+      <y>221</y>
+      <w>39</w>
+      <h>2041</h>
     </coordinates>
     <panel_attributes>lt=.
 layer=20</panel_attributes>
@@ -818,10 +818,10 @@ layer=20</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>455</x>
-      <y>155</y>
-      <w>170</w>
-      <h>20</h>
+      <x>1118</x>
+      <y>286</y>
+      <w>442</w>
+      <h>52</h>
     </coordinates>
     <panel_attributes>lt=-&gt;&gt;&gt;
 layer=20
@@ -831,10 +831,10 @@ layer=20
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>455</x>
-      <y>165</y>
-      <w>170</w>
-      <h>20</h>
+      <x>1118</x>
+      <y>312</y>
+      <w>442</w>
+      <h>52</h>
     </coordinates>
     <panel_attributes>lt=&lt;.
 layer=20
@@ -844,10 +844,10 @@ restituisce il calendario</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>455</x>
-      <y>205</y>
-      <w>170</w>
-      <h>20</h>
+      <x>1118</x>
+      <y>416</y>
+      <w>442</w>
+      <h>52</h>
     </coordinates>
     <panel_attributes>lt=-&gt;&gt;&gt;
 layer=20
@@ -857,10 +857,10 @@ layer=20
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>455</x>
-      <y>225</y>
-      <w>170</w>
-      <h>20</h>
+      <x>1118</x>
+      <y>468</y>
+      <w>442</w>
+      <h>52</h>
     </coordinates>
     <panel_attributes>lt=&lt;.
 layer=20
@@ -870,10 +870,10 @@ ok</panel_attributes>
   <element>
     <id>UMLFrame</id>
     <coordinates>
-      <x>425</x>
-      <y>150</y>
-      <w>210</w>
-      <h>720</h>
+      <x>1040</x>
+      <y>273</y>
+      <w>546</w>
+      <h>1872</h>
     </coordinates>
     <panel_attributes>ALT
 fg=#761C8C
@@ -952,10 +952,10 @@ lw=2
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>455</x>
-      <y>565</y>
-      <w>170</w>
-      <h>20</h>
+      <x>1118</x>
+      <y>1352</y>
+      <w>442</w>
+      <h>52</h>
     </coordinates>
     <panel_attributes>lt=-&gt;&gt;&gt;
 layer=20
@@ -965,10 +965,10 @@ layer=20
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>455</x>
-      <y>575</y>
-      <w>170</w>
-      <h>20</h>
+      <x>1118</x>
+      <y>1378</y>
+      <w>442</w>
+      <h>52</h>
     </coordinates>
     <panel_attributes>lt=&lt;.
 layer=20
@@ -978,10 +978,10 @@ restituisce turni e gruppi per cui è indicata la disponibilità</panel_attribut
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>455</x>
-      <y>615</y>
-      <w>170</w>
-      <h>20</h>
+      <x>1118</x>
+      <y>1482</y>
+      <w>442</w>
+      <h>52</h>
     </coordinates>
     <panel_attributes>lt=-&gt;&gt;&gt;
 layer=20
@@ -991,10 +991,10 @@ layer=20
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>455</x>
-      <y>635</y>
-      <w>170</w>
-      <h>20</h>
+      <x>1118</x>
+      <y>1534</y>
+      <w>442</w>
+      <h>52</h>
     </coordinates>
     <panel_attributes>lt=&lt;.
 layer=20
@@ -1004,10 +1004,10 @@ ok</panel_attributes>
   <element>
     <id>UMLFrame</id>
     <coordinates>
-      <x>430</x>
-      <y>185</y>
-      <w>200</w>
-      <h>370</h>
+      <x>1053</x>
+      <y>364</y>
+      <w>520</w>
+      <h>962</h>
     </coordinates>
     <panel_attributes>LOOP
 fg=blue
@@ -1019,10 +1019,10 @@ lw=2</panel_attributes>
   <element>
     <id>UMLFrame</id>
     <coordinates>
-      <x>430</x>
-      <y>595</y>
-      <w>200</w>
-      <h>270</h>
+      <x>1053</x>
+      <y>1430</y>
+      <w>520</w>
+      <h>702</h>
     </coordinates>
     <panel_attributes>LOOP
 fg=blue
@@ -1034,10 +1034,10 @@ lw=2</panel_attributes>
   <element>
     <id>UMLFrame</id>
     <coordinates>
-      <x>440</x>
-      <y>630</y>
-      <w>180</w>
-      <h>75</h>
+      <x>1079</x>
+      <y>1521</y>
+      <w>468</w>
+      <h>195</h>
     </coordinates>
     <panel_attributes>ALT
 fg=#D3001B
@@ -1058,10 +1058,10 @@ lw=2
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>455</x>
-      <y>660</y>
-      <w>170</w>
-      <h>20</h>
+      <x>1118</x>
+      <y>1599</y>
+      <w>442</w>
+      <h>52</h>
     </coordinates>
     <panel_attributes>lt=&lt;.
 fg=red
@@ -1072,10 +1072,10 @@ layer=20
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>455</x>
-      <y>685</y>
-      <w>170</w>
-      <h>20</h>
+      <x>1118</x>
+      <y>1664</y>
+      <w>442</w>
+      <h>52</h>
     </coordinates>
     <panel_attributes>lt=&lt;.
 fg=red
@@ -1086,10 +1086,10 @@ layer=20
   <element>
     <id>UMLFrame</id>
     <coordinates>
-      <x>435</x>
-      <y>610</y>
-      <w>190</w>
-      <h>250</h>
+      <x>1066</x>
+      <y>1469</y>
+      <w>494</w>
+      <h>650</h>
     </coordinates>
     <panel_attributes>ALT
 fg=#761C8C
@@ -1130,23 +1130,23 @@ lw=2
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>455</x>
-      <y>715</y>
-      <w>170</w>
-      <h>20</h>
+      <x>1118</x>
+      <y>1742</y>
+      <w>442</w>
+      <h>52</h>
     </coordinates>
     <panel_attributes>lt=-&gt;&gt;&gt;
 layer=20
-1a.2a.1 rimuoviDisponibilitaTurnoPreparatorio(turnoS)</panel_attributes>
+1a.2a.1 rimuoviDisponibilitaTurnoServizio(turnoS)</panel_attributes>
     <additional_attributes>10.0;20.0;320.0;20.0</additional_attributes>
   </element>
   <element>
     <id>UMLFrame</id>
     <coordinates>
-      <x>440</x>
-      <y>730</y>
-      <w>180</w>
-      <h>50</h>
+      <x>1079</x>
+      <y>1781</y>
+      <w>468</w>
+      <h>130</h>
     </coordinates>
     <panel_attributes>ALT
 fg=#D3001B
@@ -1167,10 +1167,10 @@ lw=2
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>455</x>
-      <y>760</y>
-      <w>170</w>
-      <h>20</h>
+      <x>1118</x>
+      <y>1859</y>
+      <w>442</w>
+      <h>52</h>
     </coordinates>
     <panel_attributes>lt=&lt;.
 fg=red
@@ -1181,10 +1181,10 @@ layer=20
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>455</x>
-      <y>735</y>
-      <w>170</w>
-      <h>20</h>
+      <x>1118</x>
+      <y>1794</y>
+      <w>442</w>
+      <h>52</h>
     </coordinates>
     <panel_attributes>lt=&lt;.
 layer=20
@@ -1194,10 +1194,10 @@ ok</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>455</x>
-      <y>790</y>
-      <w>170</w>
-      <h>20</h>
+      <x>1118</x>
+      <y>1937</y>
+      <w>442</w>
+      <h>52</h>
     </coordinates>
     <panel_attributes>lt=-&gt;&gt;&gt;
 layer=20
@@ -1207,10 +1207,10 @@ layer=20
   <element>
     <id>UMLFrame</id>
     <coordinates>
-      <x>440</x>
-      <y>805</y>
-      <w>180</w>
-      <h>50</h>
+      <x>1079</x>
+      <y>1976</y>
+      <w>468</w>
+      <h>130</h>
     </coordinates>
     <panel_attributes>ALT
 fg=#D3001B
@@ -1231,10 +1231,10 @@ lw=2
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>455</x>
-      <y>835</y>
-      <w>170</w>
-      <h>20</h>
+      <x>1118</x>
+      <y>2054</y>
+      <w>442</w>
+      <h>52</h>
     </coordinates>
     <panel_attributes>lt=&lt;.
 fg=red
@@ -1245,10 +1245,10 @@ layer=20
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>455</x>
-      <y>810</y>
-      <w>170</w>
-      <h>20</h>
+      <x>1118</x>
+      <y>1989</y>
+      <w>442</w>
+      <h>52</h>
     </coordinates>
     <panel_attributes>lt=&lt;.
 layer=20
@@ -1258,10 +1258,10 @@ ok</panel_attributes>
   <element>
     <id>UMLFrame</id>
     <coordinates>
-      <x>440</x>
-      <y>220</y>
-      <w>180</w>
-      <h>105</h>
+      <x>1079</x>
+      <y>455</y>
+      <w>468</w>
+      <h>273</h>
     </coordinates>
     <panel_attributes>ALT
 fg=#D3001B
@@ -1287,10 +1287,10 @@ lw=2
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>455</x>
-      <y>250</y>
-      <w>170</w>
-      <h>20</h>
+      <x>1118</x>
+      <y>533</y>
+      <w>442</w>
+      <h>52</h>
     </coordinates>
     <panel_attributes>lt=&lt;.
 fg=red
@@ -1301,10 +1301,10 @@ layer=20
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>455</x>
-      <y>280</y>
-      <w>170</w>
-      <h>20</h>
+      <x>1118</x>
+      <y>611</y>
+      <w>442</w>
+      <h>52</h>
     </coordinates>
     <panel_attributes>lt=&lt;.
 fg=red
@@ -1315,10 +1315,10 @@ layer=20
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>455</x>
-      <y>305</y>
-      <w>170</w>
-      <h>20</h>
+      <x>1118</x>
+      <y>676</y>
+      <w>442</w>
+      <h>52</h>
     </coordinates>
     <panel_attributes>lt=&lt;.
 fg=red
@@ -1329,10 +1329,10 @@ layer=20
   <element>
     <id>UMLFrame</id>
     <coordinates>
-      <x>435</x>
-      <y>200</y>
-      <w>190</w>
-      <h>350</h>
+      <x>1066</x>
+      <y>403</y>
+      <w>494</w>
+      <h>910</h>
     </coordinates>
     <panel_attributes>ALT
 fg=#761C8C
@@ -1384,10 +1384,10 @@ lw=2
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>455</x>
-      <y>335</y>
-      <w>170</w>
-      <h>20</h>
+      <x>1118</x>
+      <y>754</y>
+      <w>442</w>
+      <h>52</h>
     </coordinates>
     <panel_attributes>lt=-&gt;&gt;&gt;
 layer=20
@@ -1397,10 +1397,10 @@ layer=20
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>455</x>
-      <y>355</y>
-      <w>170</w>
-      <h>20</h>
+      <x>1118</x>
+      <y>806</y>
+      <w>442</w>
+      <h>52</h>
     </coordinates>
     <panel_attributes>lt=&lt;.
 layer=20
@@ -1410,10 +1410,10 @@ ok</panel_attributes>
   <element>
     <id>UMLFrame</id>
     <coordinates>
-      <x>440</x>
-      <y>350</y>
-      <w>180</w>
-      <h>85</h>
+      <x>1079</x>
+      <y>793</y>
+      <w>468</w>
+      <h>221</h>
     </coordinates>
     <panel_attributes>ALT
 fg=#D3001B
@@ -1435,10 +1435,10 @@ lw=2
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>455</x>
-      <y>385</y>
-      <w>170</w>
-      <h>20</h>
+      <x>1118</x>
+      <y>884</y>
+      <w>442</w>
+      <h>52</h>
     </coordinates>
     <panel_attributes>lt=&lt;.
 fg=red
@@ -1449,10 +1449,10 @@ layer=20
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>455</x>
-      <y>415</y>
-      <w>170</w>
-      <h>20</h>
+      <x>1118</x>
+      <y>962</y>
+      <w>442</w>
+      <h>52</h>
     </coordinates>
     <panel_attributes>lt=&lt;.
 fg=red
@@ -1463,10 +1463,10 @@ layer=20
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>455</x>
-      <y>445</y>
-      <w>170</w>
-      <h>20</h>
+      <x>1118</x>
+      <y>1040</y>
+      <w>442</w>
+      <h>52</h>
     </coordinates>
     <panel_attributes>lt=-&gt;&gt;&gt;
 layer=20
@@ -1476,10 +1476,10 @@ layer=20
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>455</x>
-      <y>465</y>
-      <w>170</w>
-      <h>20</h>
+      <x>1118</x>
+      <y>1092</y>
+      <w>442</w>
+      <h>52</h>
     </coordinates>
     <panel_attributes>lt=&lt;.
 layer=20
@@ -1489,10 +1489,10 @@ ok</panel_attributes>
   <element>
     <id>UMLFrame</id>
     <coordinates>
-      <x>440</x>
-      <y>460</y>
-      <w>180</w>
-      <h>85</h>
+      <x>1079</x>
+      <y>1079</y>
+      <w>468</w>
+      <h>221</h>
     </coordinates>
     <panel_attributes>ALT
 fg=#D3001B
@@ -1514,10 +1514,10 @@ lw=2
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>440</x>
-      <y>495</y>
-      <w>180</w>
-      <h>20</h>
+      <x>1105</x>
+      <y>1170</y>
+      <w>468</w>
+      <h>52</h>
     </coordinates>
     <panel_attributes>lt=&lt;.
 fg=red
@@ -1529,10 +1529,10 @@ da turni preparatori</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>455</x>
-      <y>525</y>
-      <w>170</w>
-      <h>20</h>
+      <x>1118</x>
+      <y>1248</y>
+      <w>442</w>
+      <h>52</h>
     </coordinates>
     <panel_attributes>lt=&lt;.
 fg=red
@@ -1543,10 +1543,10 @@ layer=20
   <element>
     <id>UMLNote</id>
     <coordinates>
-      <x>500</x>
-      <y>45</y>
-      <w>65</w>
-      <h>35</h>
+      <x>1235</x>
+      <y>0</y>
+      <w>169</w>
+      <h>91</h>
     </coordinates>
     <panel_attributes>SSD NUOVO
 bg=yellow
@@ -1556,10 +1556,10 @@ fontsize=20</panel_attributes>
   <element>
     <id>UMLNote</id>
     <coordinates>
-      <x>140</x>
-      <y>45</y>
-      <w>75</w>
-      <h>35</h>
+      <x>299</x>
+      <y>0</y>
+      <w>195</w>
+      <h>91</h>
     </coordinates>
     <panel_attributes>SSD VECCHIO
 bg=yellow
