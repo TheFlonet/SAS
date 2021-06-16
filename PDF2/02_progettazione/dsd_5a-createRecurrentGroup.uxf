@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<diagram program="umlet" version="14.3.0">
+  <zoom_level>7</zoom_level>
+  <element>
+    <id>UMLPackage</id>
+    <coordinates>
+      <x>70</x>
+      <y>63</y>
+      <w>63</w>
+      <h>49</h>
+    </coordinates>
+    <panel_attributes>UI</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Text</id>
+    <coordinates>
+      <x>322</x>
+      <y>7</y>
+      <w>203</w>
+      <h>49</h>
+    </coordinates>
+    <panel_attributes>*5a - createRecurrentGroup*
+style=wordwrap
+fontsize=20</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLGeneric</id>
+    <coordinates>
+      <x>336</x>
+      <y>77</y>
+      <w>98</w>
+      <h>35</h>
+    </coordinates>
+    <panel_attributes>shiftMgr:
+ShiftManager</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>91</x>
+      <y>147</y>
+      <w>301</w>
+      <h>28</h>
+    </coordinates>
+    <panel_attributes>lt=-&gt;&gt;&gt;
+createRecurrentGroup(shifts, endDate)</panel_attributes>
+    <additional_attributes>10.0;20.0;410.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>385</x>
+      <y>175</y>
+      <w>105</w>
+      <h>28</h>
+    </coordinates>
+    <panel_attributes>lt=-&gt;&gt;&gt;
+getCurrentUser()</panel_attributes>
+    <additional_attributes>10.0;20.0;130.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>385</x>
+      <y>196</y>
+      <w>105</w>
+      <h>28</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;.
+user</panel_attributes>
+    <additional_attributes>10.0;20.0;130.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>476</x>
+      <y>105</y>
+      <w>21</w>
+      <h>126</h>
+    </coordinates>
+    <panel_attributes>lt=.</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;160.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLGeneric</id>
+    <coordinates>
+      <x>476</x>
+      <y>189</y>
+      <w>14</w>
+      <h>21</h>
+    </coordinates>
+    <panel_attributes/>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLGeneric</id>
+    <coordinates>
+      <x>441</x>
+      <y>77</y>
+      <w>84</w>
+      <h>35</h>
+    </coordinates>
+    <panel_attributes>userMgr:
+UserManager</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>91</x>
+      <y>105</y>
+      <w>21</w>
+      <h>1078</h>
+    </coordinates>
+    <panel_attributes>lt=.</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;1520.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLGeneric</id>
+    <coordinates>
+      <x>378</x>
+      <y>161</y>
+      <w>14</w>
+      <h>1008</h>
+    </coordinates>
+    <panel_attributes/>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>378</x>
+      <y>105</y>
+      <w>21</w>
+      <h>1078</h>
+    </coordinates>
+    <panel_attributes>lt=.</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;1520.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>385</x>
+      <y>343</y>
+      <w>175</w>
+      <h>42</h>
+    </coordinates>
+    <panel_attributes>lt=-&gt;&gt;&gt;
+type = shifts.get(0).getType()</panel_attributes>
+    <additional_attributes>10.0;10.0;50.0;10.0;50.0;40.0;10.0;40.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLFrame</id>
+    <coordinates>
+      <x>63</x>
+      <y>266</y>
+      <w>490</w>
+      <h>203</h>
+    </coordinates>
+    <panel_attributes>ALT [ !(user.isOrganizer() 
+&amp;&amp; shifts.isEmpty()) ]
+fg=#761C8C
+lw=2
+--
+
+
+
+
+-.</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>91</x>
+      <y>294</y>
+      <w>301</w>
+      <h>28</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;.
+throw UseCaseLogicException
+fg=red</panel_attributes>
+    <additional_attributes>10.0;20.0;410.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLFrame</id>
+    <coordinates>
+      <x>154</x>
+      <y>385</y>
+      <w>259</w>
+      <h>77</h>
+    </coordinates>
+    <panel_attributes>LOOP [ for all shift in shifts ]
+fg=blue</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLFrame</id>
+    <coordinates>
+      <x>161</x>
+      <y>406</y>
+      <w>245</w>
+      <h>49</h>
+    </coordinates>
+    <panel_attributes>OPT [ shift.getType() != type ]
+fg=#128C86</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>91</x>
+      <y>427</y>
+      <w>301</w>
+      <h>28</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;.
+throw UseCaseLogicException
+fg=red</panel_attributes>
+    <additional_attributes>10.0;20.0;410.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLNote</id>
+    <coordinates>
+      <x>175</x>
+      <y>490</y>
+      <w>168</w>
+      <h>56</h>
+    </coordinates>
+    <panel_attributes>problema per la prima
+precondizione, non posso
+passare dal turno alla ricorenza
+per contrallare che siano compatibili</panel_attributes>
+    <additional_attributes/>
+  </element>
+</diagram>

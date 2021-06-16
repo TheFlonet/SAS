@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<diagram program="umlet" version="14.3.0">
+  <zoom_level>6</zoom_level>
+  <element>
+    <id>UMLPackage</id>
+    <coordinates>
+      <x>96</x>
+      <y>48</y>
+      <w>54</w>
+      <h>42</h>
+    </coordinates>
+    <panel_attributes>UI</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Text</id>
+    <coordinates>
+      <x>312</x>
+      <y>0</y>
+      <w>156</w>
+      <h>42</h>
+    </coordinates>
+    <panel_attributes>*7a - deleteRecurrentShift*
+style=wordwrap
+fontsize=20</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLGeneric</id>
+    <coordinates>
+      <x>324</x>
+      <y>60</y>
+      <w>84</w>
+      <h>30</h>
+    </coordinates>
+    <panel_attributes>shiftMgr:
+ShiftManager</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>114</x>
+      <y>84</y>
+      <w>18</w>
+      <h>924</h>
+    </coordinates>
+    <panel_attributes>lt=.</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;1520.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>114</x>
+      <y>120</y>
+      <w>258</w>
+      <h>24</h>
+    </coordinates>
+    <panel_attributes>lt=-&gt;&gt;&gt;
+deleterRecurrentShift(shiftRec: ShiftRecurrence)</panel_attributes>
+    <additional_attributes>10.0;20.0;410.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>360</x>
+      <y>84</y>
+      <w>18</w>
+      <h>924</h>
+    </coordinates>
+    <panel_attributes>lt=.</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;1520.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLGeneric</id>
+    <coordinates>
+      <x>360</x>
+      <y>132</y>
+      <w>12</w>
+      <h>864</h>
+    </coordinates>
+    <panel_attributes/>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>366</x>
+      <y>144</y>
+      <w>90</w>
+      <h>24</h>
+    </coordinates>
+    <panel_attributes>lt=-&gt;&gt;&gt;
+getCurrentUser()</panel_attributes>
+    <additional_attributes>10.0;20.0;130.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>366</x>
+      <y>162</y>
+      <w>90</w>
+      <h>24</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;.
+user</panel_attributes>
+    <additional_attributes>10.0;20.0;130.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>444</x>
+      <y>84</y>
+      <w>18</w>
+      <h>108</h>
+    </coordinates>
+    <panel_attributes>lt=.</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;160.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLGeneric</id>
+    <coordinates>
+      <x>444</x>
+      <y>156</y>
+      <w>12</w>
+      <h>18</h>
+    </coordinates>
+    <panel_attributes/>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLGeneric</id>
+    <coordinates>
+      <x>414</x>
+      <y>60</y>
+      <w>72</w>
+      <h>30</h>
+    </coordinates>
+    <panel_attributes>userMgr:
+UserManager</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLFrame</id>
+    <coordinates>
+      <x>186</x>
+      <y>264</y>
+      <w>480</w>
+      <h>162</h>
+    </coordinates>
+    <panel_attributes>LOOP [ for all shift in shiftRec.getShifts() ]
+fg=blue</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLGeneric</id>
+    <coordinates>
+      <x>492</x>
+      <y>60</y>
+      <w>72</w>
+      <h>30</h>
+    </coordinates>
+    <panel_attributes>shift: 
+Shift</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>522</x>
+      <y>84</y>
+      <w>18</w>
+      <h>414</h>
+    </coordinates>
+    <panel_attributes>lt=.</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;670.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLGeneric</id>
+    <coordinates>
+      <x>522</x>
+      <y>276</y>
+      <w>12</w>
+      <h>144</h>
+    </coordinates>
+    <panel_attributes/>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLNote</id>
+    <coordinates>
+      <x>378</x>
+      <y>300</y>
+      <w>138</w>
+      <h>114</h>
+    </coordinates>
+    <panel_attributes>in java non abbiamo il concetto 
+di distruzione di oggetto
+inoltre al momento non è presente 
+un collegamente che permetta di 
+risalire dal singolo turno al 
+gruppo se non in n^2
+l'ultima operazione invece 
+dovrebbe essere implecita 
+in quanto l'oggetto ricorrenza 
+non dovebbre avere riferimenti 
+ad altri oggetti</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLFrame</id>
+    <coordinates>
+      <x>156</x>
+      <y>192</y>
+      <w>522</w>
+      <h>264</h>
+    </coordinates>
+    <panel_attributes>ALT [ !user.isOrganizer() ]
+fg=#761C8C
+lw=2
+--
+
+
+
+-.</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>120</x>
+      <y>210</y>
+      <w>252</w>
+      <h>24</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;.
+throw UseCaseLogicException
+fg=red</panel_attributes>
+    <additional_attributes>10.0;20.0;400.0;20.0</additional_attributes>
+  </element>
+</diagram>

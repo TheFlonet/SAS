@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<diagram program="umlet" version="14.3.0">
+  <zoom_level>9</zoom_level>
+  <element>
+    <id>UMLPackage</id>
+    <coordinates>
+      <x>81</x>
+      <y>153</y>
+      <w>81</w>
+      <h>63</h>
+    </coordinates>
+    <panel_attributes>UI</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>108</x>
+      <y>207</y>
+      <w>27</w>
+      <h>1386</h>
+    </coordinates>
+    <panel_attributes>lt=.</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;1520.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>108</x>
+      <y>261</y>
+      <w>351</w>
+      <h>45</h>
+    </coordinates>
+    <panel_attributes>lt=-&gt;&gt;&gt;
+editPreparatoryShift(prepShift: PreparatoryShift, date?,
+startTime?, endTime?, location?, deadlineEditAvalilability)</panel_attributes>
+    <additional_attributes>10.0;20.0;370.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLGeneric</id>
+    <coordinates>
+      <x>387</x>
+      <y>171</y>
+      <w>126</w>
+      <h>45</h>
+    </coordinates>
+    <panel_attributes>shiftMgr:
+ShiftManager</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLGeneric</id>
+    <coordinates>
+      <x>522</x>
+      <y>171</y>
+      <w>108</w>
+      <h>45</h>
+    </coordinates>
+    <panel_attributes>userMgr:
+UserManager</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>567</x>
+      <y>207</y>
+      <w>27</w>
+      <h>162</h>
+    </coordinates>
+    <panel_attributes>lt=.</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;160.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>450</x>
+      <y>297</y>
+      <w>135</w>
+      <h>36</h>
+    </coordinates>
+    <panel_attributes>lt=-&gt;&gt;&gt;
+getCurrentUser()</panel_attributes>
+    <additional_attributes>10.0;20.0;130.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>450</x>
+      <y>324</y>
+      <w>135</w>
+      <h>36</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;.
+user</panel_attributes>
+    <additional_attributes>10.0;20.0;130.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLGeneric</id>
+    <coordinates>
+      <x>567</x>
+      <y>315</y>
+      <w>18</w>
+      <h>27</h>
+    </coordinates>
+    <panel_attributes/>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>441</x>
+      <y>207</y>
+      <w>27</w>
+      <h>1386</h>
+    </coordinates>
+    <panel_attributes>lt=.</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;1520.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLGeneric</id>
+    <coordinates>
+      <x>441</x>
+      <y>279</y>
+      <w>18</w>
+      <h>1296</h>
+    </coordinates>
+    <panel_attributes/>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLFrame</id>
+    <coordinates>
+      <x>144</x>
+      <y>396</y>
+      <w>405</w>
+      <h>243</h>
+    </coordinates>
+    <panel_attributes>ALT [ !(user.isOrganizer() 
+&amp;&amp; prepShift.getAssignedCooks().isEmpty() 
+&amp;&amp; ((startTime == null &amp;&amp; endTime == null) 
+|| (startTime != null &amp;&amp; endTime != null))) ]
+fg=#761C8C
+lw=2
+--
+
+
+
+-.</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>108</x>
+      <y>459</y>
+      <w>351</w>
+      <h>36</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;.
+throw UseCaseLogicException
+fg=red</panel_attributes>
+    <additional_attributes>10.0;20.0;370.0;20.0</additional_attributes>
+  </element>
+</diagram>
