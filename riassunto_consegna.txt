@@ -1,43 +1,39 @@
 DA CONSEGNARE 
 
 FILE 1
-[ ] nome componenti
+[v] nome componenti
 GESTIRE I COMPITI
 - sezione requisiti
-[ ] glossario (opzionale)
 [ ] UC dettagliato
-[ ] SSD
-[ ] modello di dominio
-[ ] business rules (opzionali)
-[ ] contratti delle operazioni 
+[v] SSD
+[v] modello di dominio
+[v] contratti delle operazioni 
 
 - sezione progettazione
 [ ] DCD
-[ ] DSD di tutte le operazioni
-
-INDICARE LE PROPRIE DISPONIBILITÀ
-- sezione requisiti
-[ ] glossario (opzionale)
-[ ] UC dettagliato
-[ ] SSD
-[ ] modello di dominio
-[ ] business rules (opzionali)
-[ ] contratti delle operazioni 
-
-- sezione progettazione
-[ ] DCD
-[ ] DSD di tutte le operazioni
+[v] DSD di tutte le operazioni
 
 FILE 2
-[ ] nome componenti 
+[v] nome componenti
+INDICARE LE PROPRIE DISPONIBILITÀ
+- sezione requisiti
+[v] UC dettagliato
+[v] SSD
+[v] modello di dominio
+[ ] contratti delle operazioni 
+
+- sezione progettazione
+[ ] DCD
+[ ] DSD di tutte le operazioni (opzionali)
+
+FILE 3
+[v] nome componenti 
 GESTIRE TURNI
 - sezione requisiti
-[ ] glossario (opzionale)
-[ ] UC dettagliato
-[ ] SSD
-[ ] modello di dominio
-[ ] business rules (opzionali)
-[ ] contratti delle operazioni 
+[v] UC dettagliato
+[v] SSD
+[v] modello di dominio
+[v] contratti delle operazioni 
 
 - sezione progettazione
 [ ] DCD
