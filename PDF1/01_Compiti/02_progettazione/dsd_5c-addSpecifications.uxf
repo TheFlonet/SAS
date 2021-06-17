@@ -495,7 +495,7 @@ TaskEventReceiver</panel_attributes>
     </coordinates>
     <panel_attributes>ALT [ cook != null &amp;&amp; !(
             shift != null &amp;&amp;
-            shift.getDate().after(new Date()) &amp;&amp;
+            shift.getDate().after(LocalDate.now()) &amp;&amp;
             shift.getAssignedCooks().contains(cook))]
 fg=#761C8C
 lw=2
