@@ -1,0 +1,378 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<diagram program="umlet" version="14.3.0">
+  <zoom_level>6</zoom_level>
+  <element>
+    <id>UMLActor</id>
+    <coordinates>
+      <x>324</x>
+      <y>18</y>
+      <w>60</w>
+      <h>66</h>
+    </coordinates>
+    <panel_attributes>Organizzatore</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLDeployment</id>
+    <coordinates>
+      <x>510</x>
+      <y>48</y>
+      <w>66</w>
+      <h>30</h>
+    </coordinates>
+    <panel_attributes>Sistema</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>534</x>
+      <y>72</y>
+      <w>18</w>
+      <h>522</h>
+    </coordinates>
+    <panel_attributes>lt=.
+layer=20</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;850.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>348</x>
+      <y>72</y>
+      <w>18</w>
+      <h>534</h>
+    </coordinates>
+    <panel_attributes>lt=.
+layer=20</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;870.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>348</x>
+      <y>78</y>
+      <w>204</w>
+      <h>24</h>
+    </coordinates>
+    <panel_attributes>lt=-&gt;&gt;&gt;
+fg=gray
+1. consultaCalendario()</panel_attributes>
+    <additional_attributes>10.0;20.0;320.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>348</x>
+      <y>96</y>
+      <w>204</w>
+      <h>24</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;.
+fg=gray
+restituisce il calendario</panel_attributes>
+    <additional_attributes>10.0;20.0;320.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>348</x>
+      <y>378</y>
+      <w>204</w>
+      <h>24</h>
+    </coordinates>
+    <panel_attributes>lt=-&gt;&gt;&gt;
+layer=20
+5. creaGruppo(turni)
+fg=gray</panel_attributes>
+    <additional_attributes>10.0;20.0;320.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>348</x>
+      <y>444</y>
+      <w>204</w>
+      <h>36</h>
+    </coordinates>
+    <panel_attributes>lt=-&gt;&gt;&gt;
+layer=20
+6. modificaTurnoPreparatorio
+(turnoP, data?, oraInizio?, oraFine?, sede?,
+dataScadenzaDisponibilita?)
+fg=gray</panel_attributes>
+    <additional_attributes>10.0;20.0;320.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLFrame</id>
+    <coordinates>
+      <x>312</x>
+      <y>426</y>
+      <w>252</w>
+      <h>84</h>
+    </coordinates>
+    <panel_attributes>LOOP
+fg=gray
+layer=1
+lw=2</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLFrame</id>
+    <coordinates>
+      <x>282</x>
+      <y>114</y>
+      <w>288</w>
+      <h>462</h>
+    </coordinates>
+    <panel_attributes>LOOP
+fg=gray
+layer=0
+lw=2</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>348</x>
+      <y>522</y>
+      <w>204</w>
+      <h>24</h>
+    </coordinates>
+    <panel_attributes>lt=-&gt;&gt;&gt;
+fg=gray
+layer=20
+7. eliminaTurno(turno)</panel_attributes>
+    <additional_attributes>10.0;20.0;320.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLFrame</id>
+    <coordinates>
+      <x>312</x>
+      <y>516</y>
+      <w>252</w>
+      <h>48</h>
+    </coordinates>
+    <panel_attributes>LOOP
+fg=gray
+layer=1
+lw=2</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>348</x>
+      <y>540</y>
+      <w>204</w>
+      <h>24</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;.
+fg=gray
+ok
+layer=20</panel_attributes>
+    <additional_attributes>10.0;20.0;320.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLFrame</id>
+    <coordinates>
+      <x>312</x>
+      <y>366</y>
+      <w>252</w>
+      <h>54</h>
+    </coordinates>
+    <panel_attributes>LOOP
+fg=gray
+layer=1
+lw=2</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>348</x>
+      <y>396</y>
+      <w>204</w>
+      <h>24</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;.
+ok
+layer=20
+fg=gray</panel_attributes>
+    <additional_attributes>10.0;20.0;320.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>348</x>
+      <y>480</y>
+      <w>204</w>
+      <h>24</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;.
+fg=gray
+ok
+layer=20</panel_attributes>
+    <additional_attributes>10.0;20.0;320.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>348</x>
+      <y>162</y>
+      <w>204</w>
+      <h>24</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;.
+fg=gray
+ok
+layer=20</panel_attributes>
+    <additional_attributes>10.0;20.0;320.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>348</x>
+      <y>144</y>
+      <w>204</w>
+      <h>30</h>
+    </coordinates>
+    <panel_attributes>lt=-&gt;&gt;&gt;
+fg=gray
+layer=20
+2. creaTurnoPreparatorio
+(data, oraInizio, oraFine, sede?)</panel_attributes>
+    <additional_attributes>10.0;20.0;320.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLFrame</id>
+    <coordinates>
+      <x>312</x>
+      <y>132</y>
+      <w>252</w>
+      <h>228</h>
+    </coordinates>
+    <panel_attributes>LOOP
+fg=gray
+layer=1
+lw=2</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLFrame</id>
+    <coordinates>
+      <x>324</x>
+      <y>252</y>
+      <w>228</w>
+      <h>96</h>
+    </coordinates>
+    <panel_attributes>OPT
+fg=#128C86
+bg=#B8E0E0
+lw=2
+layer=2</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>348</x>
+      <y>258</y>
+      <w>204</w>
+      <h>24</h>
+    </coordinates>
+    <panel_attributes>lt=-&gt;&gt;&gt;
+layer=20
+4. impostaDataScadenza(data)</panel_attributes>
+    <additional_attributes>10.0;20.0;320.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>348</x>
+      <y>282</y>
+      <w>204</w>
+      <h>24</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;.
+ok
+layer=20</panel_attributes>
+    <additional_attributes>10.0;20.0;320.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLFrame</id>
+    <coordinates>
+      <x>330</x>
+      <y>276</y>
+      <w>216</w>
+      <h>66</h>
+    </coordinates>
+    <panel_attributes>ALT
+bg=#ffaaaa
+fg=#D3001B
+layer=3
+lw=2
+--
+
+
+-.</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>348</x>
+      <y>318</y>
+      <w>204</w>
+      <h>30</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;.
+4a.1/4b.1 la data è nel passato/la data 
+è successiva alla data del turno
+fg=red
+layer=20</panel_attributes>
+    <additional_attributes>10.0;20.0;320.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>342</x>
+      <y>198</y>
+      <w>216</w>
+      <h>24</h>
+    </coordinates>
+    <panel_attributes>lt=-&gt;&gt;&gt;
+fg=gray
+layer=20
+3. impostaRicorrenza(frequenza, dataInizio, dataFine)</panel_attributes>
+    <additional_attributes>20.0;20.0;330.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>348</x>
+      <y>216</y>
+      <w>204</w>
+      <h>24</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;.
+ok
+layer=20
+fg=gray</panel_attributes>
+    <additional_attributes>10.0;20.0;320.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLFrame</id>
+    <coordinates>
+      <x>324</x>
+      <y>186</y>
+      <w>228</w>
+      <h>60</h>
+    </coordinates>
+    <panel_attributes>OPT
+fg=gray
+lw=2
+layer=2</panel_attributes>
+    <additional_attributes/>
+  </element>
+</diagram>

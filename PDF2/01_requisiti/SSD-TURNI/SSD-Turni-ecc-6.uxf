@@ -1,0 +1,666 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<diagram program="umlet" version="14.3.0">
+  <zoom_level>3</zoom_level>
+  <element>
+    <id>UMLActor</id>
+    <coordinates>
+      <x>588</x>
+      <y>0</y>
+      <w>30</w>
+      <h>33</h>
+    </coordinates>
+    <panel_attributes>Organizzatore</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLDeployment</id>
+    <coordinates>
+      <x>681</x>
+      <y>15</y>
+      <w>33</w>
+      <h>15</h>
+    </coordinates>
+    <panel_attributes>Sistema</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>597</x>
+      <y>27</y>
+      <w>12</w>
+      <h>540</h>
+    </coordinates>
+    <panel_attributes>lt=.
+layer=20</panel_attributes>
+    <additional_attributes>20.0;10.0;10.0;1780.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>600</x>
+      <y>30</y>
+      <w>102</w>
+      <h>12</h>
+    </coordinates>
+    <panel_attributes>lt=-&gt;&gt;&gt;
+fg=gray
+1. consultaCalendario()</panel_attributes>
+    <additional_attributes>10.0;20.0;320.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>600</x>
+      <y>39</y>
+      <w>102</w>
+      <h>12</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;.
+fg=gray
+restituisce il calendario</panel_attributes>
+    <additional_attributes>10.0;20.0;320.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLFrame</id>
+    <coordinates>
+      <x>567</x>
+      <y>48</y>
+      <w>147</w>
+      <h>504</h>
+    </coordinates>
+    <panel_attributes>LOOP
+fg=gray
+layer=0
+lw=2</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>600</x>
+      <y>522</y>
+      <w>102</w>
+      <h>12</h>
+    </coordinates>
+    <panel_attributes>lt=-&gt;&gt;&gt;
+fg=gray
+layer=20
+7. eliminaTurno(turno)</panel_attributes>
+    <additional_attributes>10.0;20.0;320.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLFrame</id>
+    <coordinates>
+      <x>582</x>
+      <y>519</y>
+      <w>126</w>
+      <h>24</h>
+    </coordinates>
+    <panel_attributes>LOOP
+fg=gray
+layer=1
+lw=2</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>600</x>
+      <y>531</y>
+      <w>102</w>
+      <h>12</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;.
+fg=gray
+ok
+layer=20</panel_attributes>
+    <additional_attributes>10.0;20.0;320.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>600</x>
+      <y>72</y>
+      <w>102</w>
+      <h>12</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;.
+fg=gray
+ok
+layer=20</panel_attributes>
+    <additional_attributes>10.0;20.0;320.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>600</x>
+      <y>63</y>
+      <w>102</w>
+      <h>15</h>
+    </coordinates>
+    <panel_attributes>lt=-&gt;&gt;&gt;
+fg=gray
+layer=20
+2. creaTurnoPreparatorio
+(data, oraInizio, oraFine, sede?)</panel_attributes>
+    <additional_attributes>10.0;20.0;320.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLFrame</id>
+    <coordinates>
+      <x>582</x>
+      <y>57</y>
+      <w>126</w>
+      <h>102</h>
+    </coordinates>
+    <panel_attributes>LOOP
+fg=gray
+layer=1
+lw=2</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>597</x>
+      <y>90</y>
+      <w>108</w>
+      <h>12</h>
+    </coordinates>
+    <panel_attributes>lt=-&gt;&gt;&gt;
+fg=gray
+layer=20
+3. impostaRicorrenza(frequenza, dataInizio, dataFine)</panel_attributes>
+    <additional_attributes>20.0;20.0;330.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>600</x>
+      <y>99</y>
+      <w>102</w>
+      <h>12</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;.
+ok
+layer=20
+fg=gray</panel_attributes>
+    <additional_attributes>10.0;20.0;320.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLFrame</id>
+    <coordinates>
+      <x>588</x>
+      <y>84</y>
+      <w>114</w>
+      <h>30</h>
+    </coordinates>
+    <panel_attributes>OPT
+fg=gray
+lw=2
+layer=2</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>600</x>
+      <y>126</y>
+      <w>102</w>
+      <h>12</h>
+    </coordinates>
+    <panel_attributes>lt=-&gt;&gt;&gt;
+layer=20
+4. impostaDataScadenza(data)
+fg=gray</panel_attributes>
+    <additional_attributes>10.0;20.0;320.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLFrame</id>
+    <coordinates>
+      <x>588</x>
+      <y>120</y>
+      <w>114</w>
+      <h>30</h>
+    </coordinates>
+    <panel_attributes>OPT
+fg=gray
+lw=2
+layer=2</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>600</x>
+      <y>135</y>
+      <w>102</w>
+      <h>12</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;.
+ok
+layer=20
+fg=gray</panel_attributes>
+    <additional_attributes>10.0;20.0;320.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>600</x>
+      <y>168</y>
+      <w>102</w>
+      <h>12</h>
+    </coordinates>
+    <panel_attributes>lt=-&gt;&gt;&gt;
+layer=20
+5. creaGruppo(turni)
+fg=gray</panel_attributes>
+    <additional_attributes>10.0;20.0;320.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>600</x>
+      <y>177</y>
+      <w>102</w>
+      <h>12</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;.
+ok
+layer=20
+fg=gray</panel_attributes>
+    <additional_attributes>10.0;20.0;320.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLFrame</id>
+    <coordinates>
+      <x>582</x>
+      <y>162</y>
+      <w>126</w>
+      <h>27</h>
+    </coordinates>
+    <panel_attributes>LOOP
+fg=gray
+layer=1
+lw=2</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>693</x>
+      <y>24</y>
+      <w>9</w>
+      <h>543</h>
+    </coordinates>
+    <panel_attributes>lt=.
+layer=20</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;1790.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLFrame</id>
+    <coordinates>
+      <x>582</x>
+      <y>195</y>
+      <w>126</w>
+      <h>318</h>
+    </coordinates>
+    <panel_attributes>LOOP
+fg=blue
+bg=#8CB4FF
+layer=1
+lw=2</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLFrame</id>
+    <coordinates>
+      <x>588</x>
+      <y>204</y>
+      <w>117</w>
+      <h>300</h>
+    </coordinates>
+    <panel_attributes>ALT
+fg=#761C8C
+bg=#e7bfff
+layer=2
+lw=2
+--
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+-.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+-.</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLFrame</id>
+    <coordinates>
+      <x>591</x>
+      <y>228</y>
+      <w>111</w>
+      <h>93</h>
+    </coordinates>
+    <panel_attributes>ALT
+bg=#ffaaaa
+fg=#D3001B
+layer=3
+lw=2
+--
+
+
+-.
+
+
+
+-.
+
+
+
+
+-.
+
+
+
+
+-.</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>597</x>
+      <y>231</y>
+      <w>102</w>
+      <h>12</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;.
+ok
+layer=20</panel_attributes>
+    <additional_attributes>10.0;20.0;320.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>597</x>
+      <y>249</y>
+      <w>102</w>
+      <h>12</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;.
+6a.1 la data selezionata è nel passato
+fg=red
+layer=20</panel_attributes>
+    <additional_attributes>10.0;20.0;320.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>594</x>
+      <y>267</y>
+      <w>108</w>
+      <h>12</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;.
+6b.1 sovrapposizione di turni preparatori sul calendario
+fg=red
+layer=20</panel_attributes>
+    <additional_attributes>20.0;20.0;330.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>597</x>
+      <y>291</y>
+      <w>102</w>
+      <h>12</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;.
+6c.1 l'ora di fine è antecedente all'ora di inizio
+fg=red
+layer=20</panel_attributes>
+    <additional_attributes>10.0;20.0;320.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>600</x>
+      <y>309</y>
+      <w>102</w>
+      <h>12</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;.
+6d.1 sono già indicate disponbilità per il turno
+fg=red
+layer=20</panel_attributes>
+    <additional_attributes>10.0;20.0;320.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>600</x>
+      <y>210</y>
+      <w>102</w>
+      <h>18</h>
+    </coordinates>
+    <panel_attributes>lt=-&gt;&gt;&gt;
+layer=20
+6. modificaTurnoPreparatorio
+(turnoP, data?, oraInizio?, oraFine?, sede?,
+dataScadenzaDisponibilita?)</panel_attributes>
+    <additional_attributes>10.0;20.0;320.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLFrame</id>
+    <coordinates>
+      <x>591</x>
+      <y>345</y>
+      <w>111</w>
+      <h>57</h>
+    </coordinates>
+    <panel_attributes>ALT
+bg=#ffaaaa
+fg=#D3001B
+layer=3
+lw=2
+--
+
+
+-.
+
+
+
+
+-.</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLFrame</id>
+    <coordinates>
+      <x>591</x>
+      <y>426</y>
+      <w>111</w>
+      <h>72</h>
+    </coordinates>
+    <panel_attributes>ALT
+bg=#ffaaaa
+fg=#D3001B
+layer=3
+lw=2
+--
+
+
+-.
+
+
+
+-.
+
+
+
+
+-.</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>591</x>
+      <y>330</y>
+      <w>120</w>
+      <h>15</h>
+    </coordinates>
+    <panel_attributes>lt=-&gt;&gt;&gt;
+layer=20
+6a.1 modificaTurnoServizio(turnoS, tempoAggiuntivoPrima?,
+tempoAggiuntivoDopo?, dataScadenzaDisponibilita?)</panel_attributes>
+    <additional_attributes>40.0;20.0;350.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>597</x>
+      <y>351</y>
+      <w>102</w>
+      <h>12</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;.
+ok
+layer=20</panel_attributes>
+    <additional_attributes>10.0;20.0;320.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>597</x>
+      <y>369</y>
+      <w>102</w>
+      <h>12</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;.
+6a.1a.1 sono già indicate disponbilità per il turno
+fg=red
+layer=20</panel_attributes>
+    <additional_attributes>10.0;20.0;320.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>597</x>
+      <y>387</y>
+      <w>102</w>
+      <h>12</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;.
+6a.1b.1 data nel passato o successiva al turno
+fg=red
+layer=20</panel_attributes>
+    <additional_attributes>10.0;20.0;320.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>594</x>
+      <y>411</y>
+      <w>105</w>
+      <h>12</h>
+    </coordinates>
+    <panel_attributes>lt=-&gt;&gt;&gt;
+layer=20
+6b.1 modificaRicorrenzaTurni(ricT, oraInizio, oraFine)</panel_attributes>
+    <additional_attributes>20.0;20.0;330.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>597</x>
+      <y>429</y>
+      <w>102</w>
+      <h>12</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;.
+ok
+layer=20</panel_attributes>
+    <additional_attributes>10.0;20.0;320.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>591</x>
+      <y>447</y>
+      <w>114</w>
+      <h>12</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;.
+6b.1b.1 sovrapposizione di turni preparatori sul calendario
+fg=red
+layer=20</panel_attributes>
+    <additional_attributes>30.0;20.0;340.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>594</x>
+      <y>465</y>
+      <w>108</w>
+      <h>12</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;.
+6b.1c.1 l'orario di fine è antecedente all'orario di inizio
+fg=red
+layer=20</panel_attributes>
+    <additional_attributes>20.0;20.0;330.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>585</x>
+      <y>483</y>
+      <w>120</w>
+      <h>12</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;.
+6b.1d.1 sono già indicate disponbilità per turni della ricorrenza
+fg=red
+layer=20</panel_attributes>
+    <additional_attributes>40.0;20.0;350.0;20.0</additional_attributes>
+  </element>
+</diagram>
