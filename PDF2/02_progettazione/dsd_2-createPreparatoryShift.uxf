@@ -4,7 +4,7 @@
   <element>
     <id>UMLPackage</id>
     <coordinates>
-      <x>70</x>
+      <x>14</x>
       <y>56</y>
       <w>63</w>
       <h>49</h>
@@ -15,7 +15,7 @@
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>91</x>
+      <x>35</x>
       <y>98</y>
       <w>21</w>
       <h>1078</h>
@@ -26,7 +26,7 @@
   <element>
     <id>Text</id>
     <coordinates>
-      <x>294</x>
+      <x>238</x>
       <y>0</y>
       <w>182</w>
       <h>49</h>
@@ -39,7 +39,7 @@ fontsize=20</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>91</x>
+      <x>35</x>
       <y>140</y>
       <w>273</w>
       <h>28</h>
@@ -51,7 +51,7 @@ createPreparatoryShift(date, startTime, endTime, location?)</panel_attributes>
   <element>
     <id>UMLGeneric</id>
     <coordinates>
-      <x>308</x>
+      <x>252</x>
       <y>70</y>
       <w>98</w>
       <h>35</h>
@@ -63,18 +63,18 @@ ShiftManager</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>350</x>
+      <x>294</x>
       <y>98</y>
       <w>21</w>
-      <h>1078</h>
+      <h>1169</h>
     </coordinates>
     <panel_attributes>lt=.</panel_attributes>
-    <additional_attributes>10.0;10.0;10.0;1520.0</additional_attributes>
+    <additional_attributes>10.0;10.0;10.0;1650.0</additional_attributes>
   </element>
   <element>
     <id>UMLGeneric</id>
     <coordinates>
-      <x>413</x>
+      <x>357</x>
       <y>70</y>
       <w>84</w>
       <h>35</h>
@@ -86,7 +86,7 @@ UserManager</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>357</x>
+      <x>301</x>
       <y>168</y>
       <w>105</w>
       <h>28</h>
@@ -98,7 +98,7 @@ getCurrentUser()</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>357</x>
+      <x>301</x>
       <y>189</y>
       <w>105</w>
       <h>28</h>
@@ -110,7 +110,7 @@ user</panel_attributes>
   <element>
     <id>UMLGeneric</id>
     <coordinates>
-      <x>448</x>
+      <x>392</x>
       <y>182</y>
       <w>14</w>
       <h>21</h>
@@ -121,7 +121,7 @@ user</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>448</x>
+      <x>392</x>
       <y>98</y>
       <w>21</w>
       <h>126</h>
@@ -132,10 +132,10 @@ user</panel_attributes>
   <element>
     <id>UMLGeneric</id>
     <coordinates>
-      <x>350</x>
+      <x>294</x>
       <y>154</y>
       <w>14</w>
-      <h>1008</h>
+      <h>1085</h>
     </coordinates>
     <panel_attributes/>
     <additional_attributes/>
@@ -143,10 +143,10 @@ user</panel_attributes>
   <element>
     <id>UMLFrame</id>
     <coordinates>
-      <x>77</x>
+      <x>21</x>
       <y>434</y>
       <w>1022</w>
-      <h>756</h>
+      <h>840</h>
     </coordinates>
     <panel_attributes>ALT [ !(user.isOrganizer() &amp;&amp;
              cat.contains(loc)) ]
@@ -162,7 +162,7 @@ lw=2
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>539</x>
+      <x>483</x>
       <y>98</y>
       <w>21</w>
       <h>294</h>
@@ -173,7 +173,7 @@ lw=2
   <element>
     <id>UMLGeneric</id>
     <coordinates>
-      <x>504</x>
+      <x>448</x>
       <y>70</y>
       <w>84</w>
       <h>35</h>
@@ -185,7 +185,7 @@ LocationManager</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>357</x>
+      <x>301</x>
       <y>231</y>
       <w>196</w>
       <h>28</h>
@@ -197,7 +197,7 @@ getLocationCatalogue()</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>357</x>
+      <x>301</x>
       <y>252</y>
       <w>196</w>
       <h>28</h>
@@ -209,7 +209,7 @@ cat</panel_attributes>
   <element>
     <id>UMLGeneric</id>
     <coordinates>
-      <x>539</x>
+      <x>483</x>
       <y>245</y>
       <w>14</w>
       <h>21</h>
@@ -220,7 +220,7 @@ cat</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>91</x>
+      <x>35</x>
       <y>469</y>
       <w>273</w>
       <h>28</h>
@@ -233,10 +233,10 @@ fg=red</panel_attributes>
   <element>
     <id>UMLFrame</id>
     <coordinates>
-      <x>112</x>
+      <x>56</x>
       <y>511</y>
       <w>980</w>
-      <h>665</h>
+      <h>742</h>
     </coordinates>
     <panel_attributes>ALT [ !(date.after(new Date()) &amp;&amp;
            startTime.isBefore(endTime)) ]
@@ -252,7 +252,7 @@ lw=2
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>91</x>
+      <x>35</x>
       <y>546</y>
       <w>273</w>
       <h>28</h>
@@ -265,7 +265,7 @@ fg=red</panel_attributes>
   <element>
     <id>UMLFrame</id>
     <coordinates>
-      <x>231</x>
+      <x>175</x>
       <y>287</y>
       <w>350</w>
       <h>133</h>
@@ -282,7 +282,7 @@ lw=2
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>357</x>
+      <x>301</x>
       <y>294</y>
       <w>105</w>
       <h>42</h>
@@ -294,7 +294,7 @@ loc = location</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>357</x>
+      <x>301</x>
       <y>378</y>
       <w>98</w>
       <h>42</h>
@@ -306,7 +306,7 @@ loc = defLoc</panel_attributes>
   <element>
     <id>UMLGeneric</id>
     <coordinates>
-      <x>539</x>
+      <x>483</x>
       <y>350</y>
       <w>14</w>
       <h>21</h>
@@ -317,7 +317,7 @@ loc = defLoc</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>357</x>
+      <x>301</x>
       <y>357</y>
       <w>196</w>
       <h>28</h>
@@ -329,7 +329,7 @@ defLoc</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>357</x>
+      <x>301</x>
       <y>336</y>
       <w>196</w>
       <h>28</h>
@@ -341,7 +341,7 @@ getDefaultLocation()</panel_attributes>
   <element>
     <id>UMLFrame</id>
     <coordinates>
-      <x>126</x>
+      <x>70</x>
       <y>595</y>
       <w>301</w>
       <h>154</h>
@@ -355,7 +355,7 @@ lw=2</panel_attributes>
   <element>
     <id>UMLFrame</id>
     <coordinates>
-      <x>140</x>
+      <x>84</x>
       <y>630</y>
       <w>273</w>
       <h>105</h>
@@ -371,7 +371,7 @@ lw=2</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>91</x>
+      <x>35</x>
       <y>693</y>
       <w>273</w>
       <h>28</h>
@@ -384,7 +384,7 @@ fg=red</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>637</x>
+      <x>581</x>
       <y>805</y>
       <w>189</w>
       <h>28</h>
@@ -396,7 +396,7 @@ create(date, startTime, endTime, loc )</panel_attributes>
   <element>
     <id>UMLGeneric</id>
     <coordinates>
-      <x>812</x>
+      <x>756</x>
       <y>805</y>
       <w>84</w>
       <h>35</h>
@@ -408,7 +408,7 @@ PrepartoryShift</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>847</x>
+      <x>791</x>
       <y>833</y>
       <w>21</w>
       <h>154</h>
@@ -419,7 +419,7 @@ PrepartoryShift</panel_attributes>
   <element>
     <id>UMLGeneric</id>
     <coordinates>
-      <x>847</x>
+      <x>791</x>
       <y>840</y>
       <w>14</w>
       <h>119</h>
@@ -430,7 +430,7 @@ PrepartoryShift</panel_attributes>
   <element>
     <id>UMLGeneric</id>
     <coordinates>
-      <x>854</x>
+      <x>798</x>
       <y>875</y>
       <w>14</w>
       <h>42</h>
@@ -441,7 +441,7 @@ PrepartoryShift</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>854</x>
+      <x>798</x>
       <y>847</y>
       <w>203</w>
       <h>42</h>
@@ -453,7 +453,7 @@ super(date, startTime, endTime)</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>854</x>
+      <x>798</x>
       <y>917</y>
       <w>105</w>
       <h>42</h>
@@ -465,7 +465,7 @@ location = loc</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>637</x>
+      <x>581</x>
       <y>945</y>
       <w>224</w>
       <h>28</h>
@@ -477,7 +477,7 @@ prepShift</panel_attributes>
   <element>
     <id>UMLGeneric</id>
     <coordinates>
-      <x>595</x>
+      <x>539</x>
       <y>70</y>
       <w>84</w>
       <h>35</h>
@@ -489,7 +489,7 @@ ShiftCalendar</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>630</x>
+      <x>574</x>
       <y>98</y>
       <w>21</w>
       <h>952</h>
@@ -500,7 +500,7 @@ ShiftCalendar</panel_attributes>
   <element>
     <id>Text</id>
     <coordinates>
-      <x>665</x>
+      <x>609</x>
       <y>70</y>
       <w>21</w>
       <h>21</h>
@@ -512,7 +512,7 @@ style=wordwrap</panel_attributes>
   <element>
     <id>UMLGeneric</id>
     <coordinates>
-      <x>630</x>
+      <x>574</x>
       <y>791</y>
       <w>14</w>
       <h>217</h>
@@ -523,7 +523,7 @@ style=wordwrap</panel_attributes>
   <element>
     <id>UMLGeneric</id>
     <coordinates>
-      <x>931</x>
+      <x>875</x>
       <y>70</y>
       <w>84</w>
       <h>35</h>
@@ -535,7 +535,7 @@ ArrayList&lt;Shift&gt;</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>966</x>
+      <x>910</x>
       <y>98</y>
       <w>21</w>
       <h>952</h>
@@ -546,7 +546,7 @@ ArrayList&lt;Shift&gt;</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>637</x>
+      <x>581</x>
       <y>980</y>
       <w>343</w>
       <h>28</h>
@@ -558,7 +558,7 @@ add(prepShift)</panel_attributes>
   <element>
     <id>UMLGeneric</id>
     <coordinates>
-      <x>966</x>
+      <x>910</x>
       <y>994</y>
       <w>14</w>
       <h>14</h>
@@ -569,8 +569,8 @@ add(prepShift)</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>357</x>
-      <y>1029</y>
+      <x>301</x>
+      <y>1099</y>
       <w>175</w>
       <h>56</h>
     </coordinates>
@@ -581,8 +581,8 @@ notifyCreatedShift(prepShift)</panel_attributes>
   <element>
     <id>UMLGeneric</id>
     <coordinates>
-      <x>357</x>
-      <y>1071</y>
+      <x>301</x>
+      <y>1141</y>
       <w>14</w>
       <h>77</h>
     </coordinates>
@@ -592,8 +592,8 @@ notifyCreatedShift(prepShift)</panel_attributes>
   <element>
     <id>UMLFrame</id>
     <coordinates>
-      <x>189</x>
-      <y>1078</y>
+      <x>133</x>
+      <y>1148</y>
       <w>896</w>
       <h>63</h>
     </coordinates>
@@ -607,8 +607,8 @@ lw=2
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>364</x>
-      <y>1092</y>
+      <x>308</x>
+      <y>1162</y>
       <w>714</w>
       <h>28</h>
     </coordinates>
@@ -619,8 +619,8 @@ updateCreatedShift(prepShift)</panel_attributes>
   <element>
     <id>UMLGeneric</id>
     <coordinates>
-      <x>1064</x>
-      <y>1106</y>
+      <x>1008</x>
+      <y>1176</y>
       <w>14</w>
       <h>14</h>
     </coordinates>
@@ -630,7 +630,7 @@ updateCreatedShift(prepShift)</panel_attributes>
   <element>
     <id>UMLGeneric</id>
     <coordinates>
-      <x>1022</x>
+      <x>966</x>
       <y>70</y>
       <w>98</w>
       <h>35</h>
@@ -642,18 +642,18 @@ ShiftEventReceiver</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>1064</x>
+      <x>1008</x>
       <y>98</y>
       <w>21</w>
-      <h>1057</h>
+      <h>1127</h>
     </coordinates>
     <panel_attributes>lt=.</panel_attributes>
-    <additional_attributes>10.0;10.0;10.0;1490.0</additional_attributes>
+    <additional_attributes>10.0;10.0;10.0;1590.0</additional_attributes>
   </element>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>357</x>
+      <x>301</x>
       <y>777</y>
       <w>287</w>
       <h>28</h>
@@ -665,7 +665,7 @@ createPreparatoryShift(date, startTime, endTime, loc)</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>357</x>
+      <x>301</x>
       <y>994</y>
       <w>287</w>
       <h>28</h>
@@ -673,5 +673,17 @@ createPreparatoryShift(date, startTime, endTime, loc)</panel_attributes>
     <panel_attributes>lt=&lt;.
 prepShift</panel_attributes>
     <additional_attributes>10.0;20.0;390.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>301</x>
+      <y>1036</y>
+      <w>147</w>
+      <h>56</h>
+    </coordinates>
+    <panel_attributes>lt=-&gt;&gt;&gt;
+currentShift = prepShift</panel_attributes>
+    <additional_attributes>10.0;10.0;50.0;10.0;50.0;60.0;10.0;60.0</additional_attributes>
   </element>
 </diagram>

@@ -1,7 +1,7 @@
 Operazioni DSD Gestione Turni
 [v] 2. creaTurnoPreparatorio
-[?] 2a.2a.1 precompilaTurniServizio
-[ ] 3. impostaRicorrenza
+[v] 2a.2a.1 precompilaTurniServizio
+[v] 3. impostaRicorrenza
 [ ] 5a.1 creaGruppoRicorrente
 [ ] 6. modificaTurnoPreparatorio
 [ ] 7a.1 eliminaTurnoRicorrente
