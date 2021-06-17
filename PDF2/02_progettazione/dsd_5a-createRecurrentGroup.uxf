@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <diagram program="umlet" version="14.3.0">
-  <zoom_level>7</zoom_level>
+  <zoom_level>9</zoom_level>
   <element>
     <id>UMLPackage</id>
     <coordinates>
-      <x>70</x>
-      <y>63</y>
-      <w>63</w>
-      <h>49</h>
+      <x>54</x>
+      <y>72</y>
+      <w>81</w>
+      <h>63</h>
     </coordinates>
     <panel_attributes>UI</panel_attributes>
     <additional_attributes/>
@@ -15,10 +15,10 @@
   <element>
     <id>Text</id>
     <coordinates>
-      <x>322</x>
-      <y>7</y>
-      <w>203</w>
-      <h>49</h>
+      <x>378</x>
+      <y>0</y>
+      <w>261</w>
+      <h>63</h>
     </coordinates>
     <panel_attributes>*5a - createRecurrentGroup*
 style=wordwrap
@@ -28,10 +28,10 @@ fontsize=20</panel_attributes>
   <element>
     <id>UMLGeneric</id>
     <coordinates>
-      <x>336</x>
-      <y>77</y>
-      <w>98</w>
-      <h>35</h>
+      <x>396</x>
+      <y>90</y>
+      <w>126</w>
+      <h>45</h>
     </coordinates>
     <panel_attributes>shiftMgr:
 ShiftManager</panel_attributes>
@@ -40,22 +40,22 @@ ShiftManager</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>91</x>
-      <y>147</y>
-      <w>301</w>
-      <h>28</h>
+      <x>81</x>
+      <y>180</y>
+      <w>387</w>
+      <h>36</h>
     </coordinates>
     <panel_attributes>lt=-&gt;&gt;&gt;
-createRecurrentGroup(shifts, endDate)</panel_attributes>
+createRecurrentGroup(shifts, startDate, endDate, freqQty, freqUnit)</panel_attributes>
     <additional_attributes>10.0;20.0;410.0;20.0</additional_attributes>
   </element>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>385</x>
-      <y>175</y>
-      <w>105</w>
-      <h>28</h>
+      <x>459</x>
+      <y>216</y>
+      <w>135</w>
+      <h>36</h>
     </coordinates>
     <panel_attributes>lt=-&gt;&gt;&gt;
 getCurrentUser()</panel_attributes>
@@ -64,10 +64,10 @@ getCurrentUser()</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>385</x>
-      <y>196</y>
-      <w>105</w>
-      <h>28</h>
+      <x>459</x>
+      <y>243</y>
+      <w>135</w>
+      <h>36</h>
     </coordinates>
     <panel_attributes>lt=&lt;.
 user</panel_attributes>
@@ -76,10 +76,10 @@ user</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>476</x>
-      <y>105</y>
-      <w>21</w>
-      <h>126</h>
+      <x>576</x>
+      <y>126</y>
+      <w>27</w>
+      <h>162</h>
     </coordinates>
     <panel_attributes>lt=.</panel_attributes>
     <additional_attributes>10.0;10.0;10.0;160.0</additional_attributes>
@@ -87,10 +87,10 @@ user</panel_attributes>
   <element>
     <id>UMLGeneric</id>
     <coordinates>
-      <x>476</x>
-      <y>189</y>
-      <w>14</w>
-      <h>21</h>
+      <x>576</x>
+      <y>234</y>
+      <w>18</w>
+      <h>27</h>
     </coordinates>
     <panel_attributes/>
     <additional_attributes/>
@@ -98,10 +98,10 @@ user</panel_attributes>
   <element>
     <id>UMLGeneric</id>
     <coordinates>
-      <x>441</x>
-      <y>77</y>
-      <w>84</w>
-      <h>35</h>
+      <x>531</x>
+      <y>90</y>
+      <w>108</w>
+      <h>45</h>
     </coordinates>
     <panel_attributes>userMgr:
 UserManager</panel_attributes>
@@ -110,10 +110,10 @@ UserManager</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>91</x>
-      <y>105</y>
-      <w>21</w>
-      <h>1078</h>
+      <x>81</x>
+      <y>126</y>
+      <w>27</w>
+      <h>1386</h>
     </coordinates>
     <panel_attributes>lt=.</panel_attributes>
     <additional_attributes>10.0;10.0;10.0;1520.0</additional_attributes>
@@ -121,10 +121,10 @@ UserManager</panel_attributes>
   <element>
     <id>UMLGeneric</id>
     <coordinates>
-      <x>378</x>
-      <y>161</y>
-      <w>14</w>
-      <h>1008</h>
+      <x>450</x>
+      <y>198</y>
+      <w>18</w>
+      <h>1296</h>
     </coordinates>
     <panel_attributes/>
     <additional_attributes/>
@@ -132,36 +132,23 @@ UserManager</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>378</x>
-      <y>105</y>
-      <w>21</w>
-      <h>1078</h>
+      <x>450</x>
+      <y>126</y>
+      <w>27</w>
+      <h>1386</h>
     </coordinates>
     <panel_attributes>lt=.</panel_attributes>
     <additional_attributes>10.0;10.0;10.0;1520.0</additional_attributes>
   </element>
   <element>
-    <id>Relation</id>
-    <coordinates>
-      <x>385</x>
-      <y>343</y>
-      <w>175</w>
-      <h>42</h>
-    </coordinates>
-    <panel_attributes>lt=-&gt;&gt;&gt;
-type = shifts.get(0).getType()</panel_attributes>
-    <additional_attributes>10.0;10.0;50.0;10.0;50.0;40.0;10.0;40.0</additional_attributes>
-  </element>
-  <element>
     <id>UMLFrame</id>
     <coordinates>
-      <x>63</x>
-      <y>266</y>
-      <w>490</w>
-      <h>203</h>
+      <x>45</x>
+      <y>333</y>
+      <w>1782</w>
+      <h>1116</h>
     </coordinates>
-    <panel_attributes>ALT [ !(user.isOrganizer() 
-&amp;&amp; shifts.isEmpty()) ]
+    <panel_attributes>ALT [ !(user.isOrganizer() ]
 fg=#761C8C
 lw=2
 --
@@ -175,10 +162,10 @@ lw=2
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>91</x>
-      <y>294</y>
-      <w>301</w>
-      <h>28</h>
+      <x>81</x>
+      <y>369</y>
+      <w>387</w>
+      <h>36</h>
     </coordinates>
     <panel_attributes>lt=&lt;.
 throw UseCaseLogicException
@@ -186,54 +173,126 @@ fg=red</panel_attributes>
     <additional_attributes>10.0;20.0;410.0;20.0</additional_attributes>
   </element>
   <element>
-    <id>UMLFrame</id>
+    <id>UMLGeneric</id>
     <coordinates>
-      <x>154</x>
-      <y>385</y>
-      <w>259</w>
-      <h>77</h>
+      <x>648</x>
+      <y>90</y>
+      <w>126</w>
+      <h>45</h>
     </coordinates>
-    <panel_attributes>LOOP [ for all shift in shifts ]
-fg=blue</panel_attributes>
-    <additional_attributes/>
-  </element>
-  <element>
-    <id>UMLFrame</id>
-    <coordinates>
-      <x>161</x>
-      <y>406</y>
-      <w>245</w>
-      <h>49</h>
-    </coordinates>
-    <panel_attributes>OPT [ shift.getType() != type ]
-fg=#128C86</panel_attributes>
+    <panel_attributes>calendar:
+ShiftCalendar</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>91</x>
-      <y>427</y>
-      <w>301</w>
-      <h>28</h>
+      <x>702</x>
+      <y>126</y>
+      <w>27</w>
+      <h>1386</h>
+    </coordinates>
+    <panel_attributes>lt=.</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;1520.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLFrame</id>
+    <coordinates>
+      <x>63</x>
+      <y>432</y>
+      <w>1782</w>
+      <h>1035</h>
+    </coordinates>
+    <panel_attributes>ALT [ !(startDate.isBefore(endDate) &amp;&amp; 
+startDate.isAfter(LocalDate.now()) &amp;&amp; 
+endDate.isAfter(LocalDate.now()) &amp;&amp;) ]
+fg=#761C8C
+lw=2
+--
+
+
+
+
+-.</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>81</x>
+      <y>486</y>
+      <w>387</w>
+      <h>36</h>
     </coordinates>
     <panel_attributes>lt=&lt;.
-throw UseCaseLogicException
+throw DateTimeException
 fg=red</panel_attributes>
     <additional_attributes>10.0;20.0;410.0;20.0</additional_attributes>
   </element>
   <element>
+    <id>UMLFrame</id>
+    <coordinates>
+      <x>81</x>
+      <y>558</y>
+      <w>522</w>
+      <h>243</h>
+    </coordinates>
+    <panel_attributes>LOOP for all s in shifts
+fg=blue
+lw=2</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLFrame</id>
+    <coordinates>
+      <x>108</x>
+      <y>594</y>
+      <w>459</w>
+      <h>90</h>
+    </coordinates>
+    <panel_attributes>OPT [ s.getDate().isBefore(LocalDate.now()) ]
+fg=#128C86
+lw=2</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>81</x>
+      <y>630</y>
+      <w>387</w>
+      <h>36</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;.
+throw PastShiftException
+fg=red</panel_attributes>
+    <additional_attributes>10.0;20.0;410.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLFrame</id>
+    <coordinates>
+      <x>108</x>
+      <y>693</y>
+      <w>459</w>
+      <h>90</h>
+    </coordinates>
+    <panel_attributes>OPT [ s.getDate().isBefore(LocalDate.now()) ]
+fg=#128C86
+lw=2</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
     <id>UMLNote</id>
     <coordinates>
-      <x>175</x>
-      <y>490</y>
-      <w>168</w>
-      <h>56</h>
+      <x>783</x>
+      <y>612</y>
+      <w>261</w>
+      <h>90</h>
     </coordinates>
-    <panel_attributes>problema per la prima
-precondizione, non posso
-passare dal turno alla ricorenza
-per contrallare che siano compatibili</panel_attributes>
+    <panel_attributes>CAPIRE COME FARE PER RECUPERARE
+GENTE CHE HA MESSO DISPONIBILITA'
+SU UN TURNO, PARTENDO DAL TURNO
+bg=yellow</panel_attributes>
     <additional_attributes/>
   </element>
 </diagram>
