@@ -28,8 +28,8 @@ fontsize=10
   <element>
     <id>UMLActor</id>
     <coordinates>
-      <x>396</x>
-      <y>66</y>
+      <x>759</x>
+      <y>0</y>
       <w>88</w>
       <h>110</h>
     </coordinates>
@@ -39,8 +39,8 @@ fontsize=10
   <element>
     <id>UMLDeployment</id>
     <coordinates>
-      <x>726</x>
-      <y>121</y>
+      <x>1089</x>
+      <y>55</y>
       <w>121</w>
       <h>55</h>
     </coordinates>
@@ -50,8 +50,8 @@ fontsize=10
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>770</x>
-      <y>165</y>
+      <x>1133</x>
+      <y>99</y>
       <w>33</w>
       <h>3058</h>
     </coordinates>
@@ -62,8 +62,8 @@ layer=20</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>429</x>
-      <y>165</y>
+      <x>792</x>
+      <y>99</y>
       <w>33</w>
       <h>3058</h>
     </coordinates>
@@ -74,8 +74,8 @@ layer=20</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>429</x>
-      <y>187</y>
+      <x>792</x>
+      <y>121</y>
       <w>374</w>
       <h>44</h>
     </coordinates>
@@ -86,8 +86,8 @@ layer=20</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>429</x>
-      <y>209</y>
+      <x>792</x>
+      <y>143</y>
       <w>374</w>
       <h>44</h>
     </coordinates>
@@ -98,8 +98,8 @@ restituisce il calendario</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>429</x>
-      <y>330</y>
+      <x>792</x>
+      <y>264</y>
       <w>374</w>
       <h>44</h>
     </coordinates>
@@ -111,8 +111,8 @@ layer=20
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>429</x>
-      <y>1001</y>
+      <x>792</x>
+      <y>935</y>
       <w>374</w>
       <h>44</h>
     </coordinates>
@@ -124,8 +124,8 @@ layer=20
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>429</x>
-      <y>1177</y>
+      <x>792</x>
+      <y>1111</y>
       <w>374</w>
       <h>44</h>
     </coordinates>
@@ -137,8 +137,8 @@ layer=20
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>429</x>
-      <y>682</y>
+      <x>792</x>
+      <y>616</y>
       <w>374</w>
       <h>44</h>
     </coordinates>
@@ -150,8 +150,8 @@ layer=20
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>429</x>
-      <y>1397</y>
+      <x>792</x>
+      <y>1331</y>
       <w>374</w>
       <h>44</h>
     </coordinates>
@@ -163,8 +163,8 @@ layer=20
   <element>
     <id>UMLFrame</id>
     <coordinates>
-      <x>352</x>
-      <y>286</y>
+      <x>715</x>
+      <y>220</y>
       <w>484</w>
       <h>1056</h>
     </coordinates>
@@ -178,8 +178,8 @@ lw=2</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>429</x>
-      <y>1771</y>
+      <x>792</x>
+      <y>1705</y>
       <w>374</w>
       <h>44</h>
     </coordinates>
@@ -192,8 +192,8 @@ dataScadenzaDisponibilita?)</panel_attributes>
   <element>
     <id>UMLFrame</id>
     <coordinates>
-      <x>385</x>
-      <y>1760</y>
+      <x>748</x>
+      <y>1694</y>
       <w>418</w>
       <h>858</h>
     </coordinates>
@@ -250,8 +250,8 @@ lw=2
   <element>
     <id>UMLFrame</id>
     <coordinates>
-      <x>374</x>
-      <y>1727</y>
+      <x>737</x>
+      <y>1661</y>
       <w>440</w>
       <h>902</h>
     </coordinates>
@@ -265,8 +265,8 @@ lw=2</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>429</x>
-      <y>2101</y>
+      <x>792</x>
+      <y>2035</y>
       <w>374</w>
       <h>44</h>
     </coordinates>
@@ -279,8 +279,8 @@ tempoAggiuntivoDopo?, dataScadenzaDisponibilita?)</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>429</x>
-      <y>2343</y>
+      <x>792</x>
+      <y>2277</y>
       <w>374</w>
       <h>44</h>
     </coordinates>
@@ -292,8 +292,8 @@ layer=20
   <element>
     <id>UMLFrame</id>
     <coordinates>
-      <x>385</x>
-      <y>2673</y>
+      <x>748</x>
+      <y>2607</y>
       <w>418</w>
       <h>440</h>
     </coordinates>
@@ -339,8 +339,8 @@ lw=2
   <element>
     <id>UMLFrame</id>
     <coordinates>
-      <x>341</x>
-      <y>253</y>
+      <x>704</x>
+      <y>187</y>
       <w>506</w>
       <h>2882</h>
     </coordinates>
@@ -354,8 +354,8 @@ lw=2</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>429</x>
-      <y>2673</y>
+      <x>792</x>
+      <y>2607</y>
       <w>374</w>
       <h>44</h>
     </coordinates>
@@ -367,8 +367,8 @@ layer=20
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>429</x>
-      <y>2827</y>
+      <x>792</x>
+      <y>2761</y>
       <w>374</w>
       <h>44</h>
     </coordinates>
@@ -380,8 +380,8 @@ layer=20
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>429</x>
-      <y>1551</y>
+      <x>792</x>
+      <y>1485</y>
       <w>374</w>
       <h>44</h>
     </coordinates>
@@ -393,8 +393,8 @@ layer=20
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>429</x>
-      <y>2970</y>
+      <x>792</x>
+      <y>2904</y>
       <w>374</w>
       <h>44</h>
     </coordinates>
@@ -406,8 +406,8 @@ layer=20
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>429</x>
-      <y>3047</y>
+      <x>792</x>
+      <y>2981</y>
       <w>374</w>
       <h>44</h>
     </coordinates>
@@ -419,8 +419,8 @@ layer=20
   <element>
     <id>UMLFrame</id>
     <coordinates>
-      <x>374</x>
-      <y>2640</y>
+      <x>737</x>
+      <y>2574</y>
       <w>440</w>
       <h>484</h>
     </coordinates>
@@ -434,8 +434,8 @@ lw=2</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>429</x>
-      <y>2750</y>
+      <x>792</x>
+      <y>2684</y>
       <w>374</w>
       <h>44</h>
     </coordinates>
@@ -447,8 +447,8 @@ layer=20
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>429</x>
-      <y>2893</y>
+      <x>792</x>
+      <y>2827</y>
       <w>374</w>
       <h>44</h>
     </coordinates>
@@ -460,8 +460,8 @@ layer=20
   <element>
     <id>UMLFrame</id>
     <coordinates>
-      <x>385</x>
-      <y>671</y>
+      <x>748</x>
+      <y>605</y>
       <w>418</w>
       <h>297</h>
     </coordinates>
@@ -492,8 +492,8 @@ layer=3
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>429</x>
-      <y>605</y>
+      <x>792</x>
+      <y>539</y>
       <w>374</w>
       <h>44</h>
     </coordinates>
@@ -505,8 +505,8 @@ layer=20
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>429</x>
-      <y>902</y>
+      <x>792</x>
+      <y>836</y>
       <w>374</w>
       <h>44</h>
     </coordinates>
@@ -518,8 +518,8 @@ layer=20
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>429</x>
-      <y>374</y>
+      <x>792</x>
+      <y>308</y>
       <w>374</w>
       <h>44</h>
     </coordinates>
@@ -531,8 +531,8 @@ layer=20</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>429</x>
-      <y>429</y>
+      <x>792</x>
+      <y>363</y>
       <w>374</w>
       <h>44</h>
     </coordinates>
@@ -545,8 +545,8 @@ layer=20</panel_attributes>
   <element>
     <id>UMLFrame</id>
     <coordinates>
-      <x>396</x>
-      <y>363</y>
+      <x>759</x>
+      <y>297</y>
       <w>396</w>
       <h>231</h>
     </coordinates>
@@ -574,8 +574,8 @@ lw=2
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>429</x>
-      <y>495</y>
+      <x>792</x>
+      <y>429</y>
       <w>374</w>
       <h>44</h>
     </coordinates>
@@ -588,8 +588,8 @@ layer=20</panel_attributes>
   <element>
     <id>UMLFrame</id>
     <coordinates>
-      <x>385</x>
-      <y>990</y>
+      <x>748</x>
+      <y>924</y>
       <w>418</w>
       <h>165</h>
     </coordinates>
@@ -603,8 +603,8 @@ layer=2</panel_attributes>
   <element>
     <id>UMLFrame</id>
     <coordinates>
-      <x>396</x>
-      <y>1034</y>
+      <x>759</x>
+      <y>968</y>
       <w>396</w>
       <h>110</h>
     </coordinates>
@@ -622,8 +622,8 @@ lw=2
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>429</x>
-      <y>1045</y>
+      <x>792</x>
+      <y>979</y>
       <w>374</w>
       <h>44</h>
     </coordinates>
@@ -635,8 +635,8 @@ layer=20</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>429</x>
-      <y>1100</y>
+      <x>792</x>
+      <y>1034</y>
       <w>374</w>
       <h>44</h>
     </coordinates>
@@ -649,8 +649,8 @@ layer=20</panel_attributes>
   <element>
     <id>UMLFrame</id>
     <coordinates>
-      <x>385</x>
-      <y>1166</y>
+      <x>748</x>
+      <y>1100</y>
       <w>418</w>
       <h>165</h>
     </coordinates>
@@ -664,8 +664,8 @@ layer=2</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>429</x>
-      <y>1221</y>
+      <x>792</x>
+      <y>1155</y>
       <w>374</w>
       <h>44</h>
     </coordinates>
@@ -677,8 +677,8 @@ layer=20</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>429</x>
-      <y>1276</y>
+      <x>792</x>
+      <y>1210</y>
       <w>374</w>
       <h>44</h>
     </coordinates>
@@ -691,8 +691,8 @@ layer=20</panel_attributes>
   <element>
     <id>UMLFrame</id>
     <coordinates>
-      <x>396</x>
-      <y>1210</y>
+      <x>759</x>
+      <y>1144</y>
       <w>396</w>
       <h>110</h>
     </coordinates>
@@ -710,8 +710,8 @@ lw=2
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>429</x>
-      <y>627</y>
+      <x>792</x>
+      <y>561</y>
       <w>374</w>
       <h>44</h>
     </coordinates>
@@ -723,8 +723,8 @@ restituisce le informazioni sull'evento</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>429</x>
-      <y>924</y>
+      <x>792</x>
+      <y>858</y>
       <w>374</w>
       <h>44</h>
     </coordinates>
@@ -736,8 +736,8 @@ layer=20</panel_attributes>
   <element>
     <id>UMLFrame</id>
     <coordinates>
-      <x>396</x>
-      <y>715</y>
+      <x>759</x>
+      <y>649</y>
       <w>396</w>
       <h>176</h>
     </coordinates>
@@ -760,8 +760,8 @@ lw=2
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>429</x>
-      <y>726</y>
+      <x>792</x>
+      <y>660</y>
       <w>374</w>
       <h>44</h>
     </coordinates>
@@ -773,8 +773,8 @@ layer=20</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>429</x>
-      <y>781</y>
+      <x>792</x>
+      <y>715</y>
       <w>374</w>
       <h>44</h>
     </coordinates>
@@ -787,8 +787,8 @@ layer=20</panel_attributes>
   <element>
     <id>UMLFrame</id>
     <coordinates>
-      <x>385</x>
-      <y>1386</y>
+      <x>748</x>
+      <y>1320</y>
       <w>418</w>
       <h>319</h>
     </coordinates>
@@ -815,8 +815,8 @@ layer=2
   <element>
     <id>UMLFrame</id>
     <coordinates>
-      <x>374</x>
-      <y>1353</y>
+      <x>737</x>
+      <y>1287</y>
       <w>440</w>
       <h>363</h>
     </coordinates>
@@ -830,8 +830,8 @@ lw=2</panel_attributes>
   <element>
     <id>UMLFrame</id>
     <coordinates>
-      <x>374</x>
-      <y>319</y>
+      <x>737</x>
+      <y>253</y>
       <w>440</w>
       <h>660</h>
     </coordinates>
@@ -866,8 +866,8 @@ lw=2
   <element>
     <id>UMLSpecialState</id>
     <coordinates>
-      <x>770</x>
-      <y>935</y>
+      <x>1133</x>
+      <y>869</y>
       <w>22</w>
       <h>22</h>
     </coordinates>
@@ -879,8 +879,8 @@ layer=20</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>429</x>
-      <y>1441</y>
+      <x>792</x>
+      <y>1375</y>
       <w>374</w>
       <h>44</h>
     </coordinates>
@@ -892,8 +892,8 @@ layer=20</panel_attributes>
   <element>
     <id>UMLFrame</id>
     <coordinates>
-      <x>396</x>
-      <y>1584</y>
+      <x>759</x>
+      <y>1518</y>
       <w>396</w>
       <h>110</h>
     </coordinates>
@@ -911,8 +911,8 @@ lw=2
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>429</x>
-      <y>1595</y>
+      <x>792</x>
+      <y>1529</y>
       <w>374</w>
       <h>44</h>
     </coordinates>
@@ -924,8 +924,8 @@ layer=20</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>429</x>
-      <y>1650</y>
+      <x>792</x>
+      <y>1584</y>
       <w>374</w>
       <h>44</h>
     </coordinates>
@@ -938,8 +938,8 @@ layer=20</panel_attributes>
   <element>
     <id>UMLFrame</id>
     <coordinates>
-      <x>396</x>
-      <y>1804</y>
+      <x>759</x>
+      <y>1738</y>
       <w>396</w>
       <h>286</h>
     </coordinates>
@@ -972,8 +972,8 @@ lw=2
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>429</x>
-      <y>1815</y>
+      <x>792</x>
+      <y>1749</y>
       <w>374</w>
       <h>44</h>
     </coordinates>
@@ -985,8 +985,8 @@ layer=20</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>429</x>
-      <y>1870</y>
+      <x>792</x>
+      <y>1804</y>
       <w>374</w>
       <h>44</h>
     </coordinates>
@@ -999,8 +999,8 @@ layer=20</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>429</x>
-      <y>1925</y>
+      <x>792</x>
+      <y>1859</y>
       <w>374</w>
       <h>44</h>
     </coordinates>
@@ -1013,8 +1013,8 @@ layer=20</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>429</x>
-      <y>2156</y>
+      <x>792</x>
+      <y>2090</y>
       <w>374</w>
       <h>44</h>
     </coordinates>
@@ -1026,8 +1026,8 @@ layer=20</panel_attributes>
   <element>
     <id>UMLFrame</id>
     <coordinates>
-      <x>396</x>
-      <y>2376</y>
+      <x>759</x>
+      <y>2310</y>
       <w>396</w>
       <h>231</h>
     </coordinates>
@@ -1055,8 +1055,8 @@ lw=2
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>429</x>
-      <y>2387</y>
+      <x>792</x>
+      <y>2321</y>
       <w>374</w>
       <h>44</h>
     </coordinates>
@@ -1068,8 +1068,8 @@ layer=20</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>429</x>
-      <y>2442</y>
+      <x>792</x>
+      <y>2376</y>
       <w>374</w>
       <h>44</h>
     </coordinates>
@@ -1082,8 +1082,8 @@ layer=20</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>429</x>
-      <y>550</y>
+      <x>792</x>
+      <y>484</y>
       <w>374</w>
       <h>44</h>
     </coordinates>
@@ -1096,8 +1096,8 @@ layer=20</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>429</x>
-      <y>2695</y>
+      <x>792</x>
+      <y>2629</y>
       <w>374</w>
       <h>44</h>
     </coordinates>
@@ -1109,8 +1109,8 @@ layer=20</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>429</x>
-      <y>2772</y>
+      <x>792</x>
+      <y>2706</y>
       <w>374</w>
       <h>44</h>
     </coordinates>
@@ -1122,7 +1122,20 @@ layer=20</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>429</x>
+      <x>792</x>
+      <y>2783</y>
+      <w>374</w>
+      <h>44</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;.
+ok
+layer=20</panel_attributes>
+    <additional_attributes>10.0;20.0;320.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>792</x>
       <y>2849</y>
       <w>374</w>
       <h>44</h>
@@ -1135,8 +1148,8 @@ layer=20</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>429</x>
-      <y>2915</y>
+      <x>792</x>
+      <y>2926</y>
       <w>374</w>
       <h>44</h>
     </coordinates>
@@ -1148,8 +1161,8 @@ layer=20</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>429</x>
-      <y>2992</y>
+      <x>792</x>
+      <y>3003</y>
       <w>374</w>
       <h>44</h>
     </coordinates>
@@ -1161,21 +1174,8 @@ layer=20</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>429</x>
-      <y>3069</y>
-      <w>374</w>
-      <h>44</h>
-    </coordinates>
-    <panel_attributes>lt=&lt;.
-ok
-layer=20</panel_attributes>
-    <additional_attributes>10.0;20.0;320.0;20.0</additional_attributes>
-  </element>
-  <element>
-    <id>Relation</id>
-    <coordinates>
-      <x>429</x>
-      <y>847</y>
+      <x>792</x>
+      <y>781</y>
       <w>374</w>
       <h>44</h>
     </coordinates>
@@ -1188,8 +1188,8 @@ layer=20</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>429</x>
-      <y>1991</y>
+      <x>792</x>
+      <y>1925</y>
       <w>374</w>
       <h>44</h>
     </coordinates>
@@ -1202,8 +1202,8 @@ layer=20</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>429</x>
-      <y>2508</y>
+      <x>792</x>
+      <y>2442</y>
       <w>374</w>
       <h>44</h>
     </coordinates>
@@ -1216,8 +1216,8 @@ layer=20</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>429</x>
-      <y>2563</y>
+      <x>792</x>
+      <y>2497</y>
       <w>374</w>
       <h>44</h>
     </coordinates>
@@ -1230,8 +1230,8 @@ layer=20</panel_attributes>
   <element>
     <id>UMLFrame</id>
     <coordinates>
-      <x>396</x>
-      <y>2145</y>
+      <x>759</x>
+      <y>2079</y>
       <w>396</w>
       <h>176</h>
     </coordinates>
@@ -1254,8 +1254,8 @@ lw=2
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>429</x>
-      <y>2211</y>
+      <x>792</x>
+      <y>2145</y>
       <w>374</w>
       <h>44</h>
     </coordinates>
@@ -1268,8 +1268,8 @@ layer=20</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>429</x>
-      <y>2046</y>
+      <x>792</x>
+      <y>1980</y>
       <w>374</w>
       <h>44</h>
     </coordinates>
@@ -1282,8 +1282,8 @@ layer=20</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>429</x>
-      <y>2277</y>
+      <x>792</x>
+      <y>2211</y>
       <w>374</w>
       <h>44</h>
     </coordinates>
@@ -1296,8 +1296,8 @@ layer=20</panel_attributes>
   <element>
     <id>UMLFrame</id>
     <coordinates>
-      <x>396</x>
-      <y>1430</y>
+      <x>759</x>
+      <y>1364</y>
       <w>396</w>
       <h>110</h>
     </coordinates>
@@ -1315,8 +1315,8 @@ lw=2
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>429</x>
-      <y>1496</y>
+      <x>792</x>
+      <y>1430</y>
       <w>374</w>
       <h>44</h>
     </coordinates>

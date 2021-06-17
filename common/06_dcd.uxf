@@ -412,7 +412,7 @@ fg=gray</panel_attributes>
       <x>536</x>
       <y>672</y>
       <w>792</w>
-      <h>456</h>
+      <h>440</h>
     </coordinates>
     <panel_attributes>KitchenTaskManagement</panel_attributes>
     <additional_attributes/>
@@ -421,7 +421,7 @@ fg=gray</panel_attributes>
     <id>UMLClass</id>
     <coordinates>
       <x>1192</x>
-      <y>712</y>
+      <y>704</y>
       <w>120</w>
       <h>120</h>
     </coordinates>
@@ -442,7 +442,7 @@ fg=gray</panel_attributes>
     <id>UMLClass</id>
     <coordinates>
       <x>544</x>
-      <y>728</y>
+      <y>720</y>
       <w>304</w>
       <h>384</h>
     </coordinates>
@@ -483,7 +483,7 @@ fg=gray</panel_attributes>
     <id>UMLClass</id>
     <coordinates>
       <x>920</x>
-      <y>728</y>
+      <y>720</y>
       <w>208</w>
       <h>184</h>
     </coordinates>
@@ -503,7 +503,7 @@ fg=gray</panel_attributes>
     <id>Relation</id>
     <coordinates>
       <x>840</x>
-      <y>824</y>
+      <y>816</y>
       <w>96</w>
       <h>40</h>
     </coordinates>
@@ -516,7 +516,7 @@ m1=0..1</panel_attributes>
     <id>Relation</id>
     <coordinates>
       <x>1120</x>
-      <y>760</y>
+      <y>752</y>
       <w>88</w>
       <h>48</h>
     </coordinates>
@@ -613,7 +613,7 @@ fg=gray
       <x>1304</x>
       <y>328</y>
       <w>120</w>
-      <h>440</h>
+      <h>432</h>
     </coordinates>
     <panel_attributes>lt=&lt;-
 
@@ -625,7 +625,7 @@ fg=gray
 
 process
 m1=1</panel_attributes>
-    <additional_attributes>80.0;10.0;80.0;530.0;10.0;530.0</additional_attributes>
+    <additional_attributes>80.0;10.0;80.0;520.0;10.0;520.0</additional_attributes>
   </element>
   <element>
     <id>Relation</id>
@@ -633,12 +633,12 @@ m1=1</panel_attributes>
       <x>1304</x>
       <y>528</y>
       <w>288</w>
-      <h>272</h>
+      <h>264</h>
     </coordinates>
     <panel_attributes>lt=&lt;-
 cook
 m1=0..1</panel_attributes>
-    <additional_attributes>340.0;10.0;140.0;10.0;140.0;320.0;10.0;320.0</additional_attributes>
+    <additional_attributes>340.0;10.0;140.0;10.0;140.0;310.0;10.0;310.0</additional_attributes>
   </element>
   <element>
     <id>UMLClass</id>
@@ -694,7 +694,7 @@ fg=gray</panel_attributes>
     <id>UMLClass</id>
     <coordinates>
       <x>920</x>
-      <y>920</y>
+      <y>912</y>
       <w>296</w>
       <h>192</h>
     </coordinates>
@@ -719,7 +719,7 @@ fg=gray</panel_attributes>
     <id>Relation</id>
     <coordinates>
       <x>840</x>
-      <y>928</y>
+      <y>920</y>
       <w>96</w>
       <h>40</h>
     </coordinates>
@@ -750,7 +750,9 @@ fg=gray</panel_attributes>
     </coordinates>
     <panel_attributes>Service
 --
-
+- date: LocalDate
+- startTime: LocalTime
+- endTime: LocalTime 
 --
 + setServiceShift(s: ServiceShift)
 fg=gray
@@ -767,7 +769,7 @@ fg=gray
     </coordinates>
     <panel_attributes>Event
 --
-- information: String
+- location: String
 --
 fg=gray</panel_attributes>
     <additional_attributes/>
@@ -780,7 +782,7 @@ fg=gray</panel_attributes>
       <w>64</w>
       <h>88</h>
     </coordinates>
-    <panel_attributes>lt=&lt;-
+    <panel_attributes>lt=&lt;-&gt;&gt;&gt;&gt;
 services
 m1=1..n
 fg=gray</panel_attributes>
@@ -806,12 +808,12 @@ fg=gray</panel_attributes>
       <x>160</x>
       <y>496</y>
       <w>888</w>
-      <h>248</h>
+      <h>240</h>
     </coordinates>
     <panel_attributes>lt=&lt;-
 associatedService
 m1=1</panel_attributes>
-    <additional_attributes>10.0;10.0;10.0;270.0;1090.0;270.0;1090.0;290.0</additional_attributes>
+    <additional_attributes>10.0;10.0;10.0;270.0;1090.0;270.0;1090.0;280.0</additional_attributes>
   </element>
   <element>
     <id>UMLPackage</id>
@@ -897,35 +899,37 @@ fg=gray</panel_attributes>
       <x>1120</x>
       <y>544</y>
       <w>472</w>
-      <h>352</h>
+      <h>344</h>
     </coordinates>
     <panel_attributes>lt=&lt;-
 
 
 owner
 m1=1</panel_attributes>
-    <additional_attributes>570.0;10.0;400.0;10.0;400.0;420.0;10.0;420.0</additional_attributes>
+    <additional_attributes>570.0;10.0;400.0;10.0;400.0;410.0;10.0;410.0</additional_attributes>
   </element>
   <element>
     <id>UMLClass</id>
     <coordinates>
       <x>1104</x>
-      <y>1160</y>
+      <y>1144</y>
       <w>168</w>
-      <h>184</h>
+      <h>208</h>
     </coordinates>
     <panel_attributes>/Shift/
 --
-- date: Date
+- date: LocalDate
 - startTime: LocalTime
 - endTime: LocalTime
 - isComplete: boolean
 - deadlineEditAvalilability: Date
+- type: Type
 --
-+ create(d: Date,
++ create(d: LocalDate,
   s: LocalTime, e: LocalTime)
 + addTask(t: Task)
 + removeTask(t: Task)
++ getDate()
 + getStartTime(): LocalTime
 + getEndTime(): LocalTime
 /+ getType()/</panel_attributes>
@@ -935,9 +939,9 @@ m1=1</panel_attributes>
     <id>UMLPackage</id>
     <coordinates>
       <x>536</x>
-      <y>1136</y>
+      <y>1120</y>
       <w>936</w>
-      <h>824</h>
+      <h>840</h>
     </coordinates>
     <panel_attributes>ShiftManagement</panel_attributes>
     <additional_attributes/>
@@ -948,7 +952,7 @@ m1=1</panel_attributes>
       <x>544</x>
       <y>1520</y>
       <w>296</w>
-      <h>232</h>
+      <h>304</h>
     </coordinates>
     <panel_attributes>ShiftManager
 --
@@ -959,20 +963,25 @@ m1=1</panel_attributes>
 + removeReceiver(sr: ShiftEventReceiver)
 - notifyCreatedShift(s: Shift)
 - notifyPrecompiledEvent(event: Event)
+- notifySetRecurrence(rec: ShiftRecurrence)
 --
 *operations methods*
 + getShiftOf(t: Task)
 + getShiftBoard()
-+ createPreparatoryShift(date: Date, startTime: LocalTime,
-endTime: LocalTime, location?: Location)
-+ precompileServiceShifts(event: Event)</panel_attributes>
++ createPreparatoryShift(date: LocalDate,
+   startTime: LocalTime, endTime: LocalTime,
+   location?: Location)
++ precompileServiceShifts(event: Event)
++ setShiftRecurrence(freqQty: long, freqUnit: ChronoUnit,
+   startDate: LocalDate, endDate: LocalDate)
+</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
     <id>UMLClass</id>
     <coordinates>
       <x>632</x>
-      <y>1168</y>
+      <y>1160</y>
       <w>208</w>
       <h>104</h>
     </coordinates>
@@ -993,14 +1002,15 @@ _+ getInstance(): ShiftBoard_
       <x>1288</x>
       <y>1160</y>
       <w>176</w>
-      <h>80</h>
+      <h>88</h>
     </coordinates>
     <panel_attributes>PreparatoryShift
 --
 
 --
-+ create(d: Date, s: LocalTime,
-e: LocalTime, l: Location)
++ create(d: LocalDate,
+   s: LocalTime, e: LocalTime,
+   l: Location)
 + getLocation()</panel_attributes>
     <additional_attributes/>
   </element>
@@ -1010,24 +1020,24 @@ e: LocalTime, l: Location)
       <x>1288</x>
       <y>1256</y>
       <w>176</w>
-      <h>88</h>
+      <h>80</h>
     </coordinates>
     <panel_attributes>ServiceShift
 --
 
 --
-+ create(d: Date, s: LocalTime,
-   e: LocalTime, e?: Event,
-   s?: Service)</panel_attributes>
++ create(d: LocalDate,
+   s: LocalTime, e: LocalTime,
+   e: Event, s?: Service)</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>608</x>
+      <x>600</x>
       <y>1320</y>
-      <w>232</w>
-      <h>160</h>
+      <w>240</w>
+      <h>192</h>
     </coordinates>
     <panel_attributes>ShiftCalendar
 --
@@ -1036,34 +1046,39 @@ _instance: ShiftCalendar_
 --
 _+ getInstance(): ShiftCalendar_
 + getShifts(): List&lt;Shift&gt;
-+ createPreparatoryShift(date: Date,
++ createPreparatoryShift(date: LocalDate,
    startTime: LocalTime, endTime: LocalTime,
    location: Location)
-+ createServiceShift(date: Date,
++ createServiceShift(date: LocalDate,
    startTime: LocalTime, endTime: LocalTime,
-   event?: Event, service?: Service)</panel_attributes>
+   event?: Event, service?: Service)
++ createShiftRecurrence(shift: Shift,
+   freqQty: long, freqUnit: ChronoUnit,
+   startDate: LocalDate, endDate: LocalDate)</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
     <id>UMLClass</id>
     <coordinates>
       <x>1224</x>
-      <y>1640</y>
-      <w>208</w>
-      <h>72</h>
+      <y>1656</y>
+      <w>224</w>
+      <h>80</h>
     </coordinates>
     <panel_attributes>/Recurrence/
 --
-- startDate: Date
-- endDate: Date
---</panel_attributes>
+- startDate: LocalDate
+- endDate: LocalDate
+--
++ create(startDate: LocalDate,
+   endDate: LocalDate)</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
     <id>UMLClass</id>
     <coordinates>
       <x>992</x>
-      <y>1656</y>
+      <y>1680</y>
       <w>208</w>
       <h>56</h>
     </coordinates>
@@ -1077,15 +1092,17 @@ _+ getInstance(): ShiftCalendar_
     <id>UMLClass</id>
     <coordinates>
       <x>1224</x>
-      <y>1528</y>
-      <w>208</w>
-      <h>72</h>
+      <y>1496</y>
+      <w>224</w>
+      <h>104</h>
     </coordinates>
     <panel_attributes>ShiftRecurrence
 --
 - startTime: LocalTime
 - endTime: LocalTime
---</panel_attributes>
+--
++ create(startDate: LocalDate,
+   endDate: LocalDate, firstShift: Shift)</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
@@ -1129,10 +1146,10 @@ style=wordwrap</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>568</x>
-      <y>1232</y>
-      <w>80</w>
-      <h>304</h>
+      <x>552</x>
+      <y>1224</y>
+      <w>96</w>
+      <h>312</h>
     </coordinates>
     <panel_attributes>lt=-&gt;
 board
@@ -1145,12 +1162,12 @@ board
 
 
 m2=1</panel_attributes>
-    <additional_attributes>10.0;360.0;10.0;10.0;80.0;10.0</additional_attributes>
+    <additional_attributes>10.0;370.0;10.0;10.0;100.0;10.0</additional_attributes>
   </element>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>584</x>
+      <x>568</x>
       <y>1360</y>
       <w>64</w>
       <h>176</h>
@@ -1164,13 +1181,13 @@ m2=1</panel_attributes>
 
 calendar
 m2=1</panel_attributes>
-    <additional_attributes>10.0;200.0;10.0;10.0;30.0;10.0</additional_attributes>
+    <additional_attributes>10.0;200.0;10.0;10.0;40.0;10.0</additional_attributes>
   </element>
   <element>
     <id>Relation</id>
     <coordinates>
       <x>832</x>
-      <y>1184</y>
+      <y>1176</y>
       <w>288</w>
       <h>40</h>
     </coordinates>
@@ -1201,9 +1218,12 @@ m1=0..n</panel_attributes>
       <x>832</x>
       <y>1432</y>
       <w>176</w>
-      <h>272</h>
+      <h>296</h>
     </coordinates>
     <panel_attributes>lt=&lt;-&gt;&gt;&gt;&gt;
+
+
+
 
 
 
@@ -1220,28 +1240,28 @@ m1=0..n</panel_attributes>
 
 groupRecurrences
 m1=0..n</panel_attributes>
-    <additional_attributes>200.0;310.0;90.0;310.0;90.0;10.0;10.0;10.0</additional_attributes>
+    <additional_attributes>200.0;340.0;80.0;340.0;80.0;10.0;10.0;10.0</additional_attributes>
   </element>
   <element>
     <id>Relation</id>
     <coordinates>
       <x>832</x>
       <y>1400</y>
-      <w>608</w>
-      <h>144</h>
+      <w>616</w>
+      <h>112</h>
     </coordinates>
     <panel_attributes>lt=&lt;-&gt;&gt;&gt;&gt;
 shiftRecurrences
 m1=0..n</panel_attributes>
-    <additional_attributes>640.0;160.0;640.0;10.0;10.0;10.0</additional_attributes>
+    <additional_attributes>650.0;120.0;650.0;10.0;10.0;10.0</additional_attributes>
   </element>
   <element>
     <id>Relation</id>
     <coordinates>
       <x>832</x>
-      <y>1248</y>
+      <y>1240</y>
       <w>288</w>
-      <h>176</h>
+      <h>184</h>
     </coordinates>
     <panel_attributes>lt=&lt;-&gt;&gt;&gt;&gt;
 shifts
@@ -1258,20 +1278,20 @@ shifts
 
 
 m1=0..n</panel_attributes>
-    <additional_attributes>340.0;30.0;70.0;30.0;70.0;180.0;10.0;180.0</additional_attributes>
+    <additional_attributes>340.0;30.0;70.0;30.0;70.0;190.0;10.0;190.0</additional_attributes>
   </element>
   <element>
     <id>Relation</id>
     <coordinates>
       <x>1144</x>
-      <y>1336</y>
+      <y>1344</y>
       <w>48</w>
-      <h>224</h>
+      <h>216</h>
     </coordinates>
     <panel_attributes>lt=&lt;-
 shifts
 m1=1..n</panel_attributes>
-    <additional_attributes>10.0;10.0;10.0;260.0</additional_attributes>
+    <additional_attributes>10.0;10.0;10.0;250.0</additional_attributes>
   </element>
   <element>
     <id>Relation</id>
@@ -1279,18 +1299,18 @@ m1=1..n</panel_attributes>
       <x>1104</x>
       <y>1592</y>
       <w>56</w>
-      <h>80</h>
+      <h>104</h>
     </coordinates>
     <panel_attributes>lt=&lt;-
 groups
 m1=1..n</panel_attributes>
-    <additional_attributes>10.0;10.0;10.0;80.0</additional_attributes>
+    <additional_attributes>10.0;10.0;10.0;110.0</additional_attributes>
   </element>
   <element>
     <id>Relation</id>
     <coordinates>
       <x>1192</x>
-      <y>1672</y>
+      <y>1696</y>
       <w>48</w>
       <h>24</h>
     </coordinates>
@@ -1300,26 +1320,26 @@ m1=1..n</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>1320</x>
+      <x>1328</x>
       <y>1592</y>
       <w>24</w>
-      <h>64</h>
+      <h>80</h>
     </coordinates>
     <panel_attributes>lt=&lt;&lt;-</panel_attributes>
-    <additional_attributes>10.0;60.0;10.0;10.0</additional_attributes>
+    <additional_attributes>10.0;80.0;10.0;10.0</additional_attributes>
   </element>
   <element>
     <id>Relation</id>
     <coordinates>
       <x>1240</x>
-      <y>1336</y>
+      <y>1344</y>
       <w>48</w>
-      <h>208</h>
+      <h>168</h>
     </coordinates>
     <panel_attributes>lt=&lt;-
 shifts
 m1=1..n</panel_attributes>
-    <additional_attributes>10.0;10.0;10.0;240.0</additional_attributes>
+    <additional_attributes>10.0;10.0;10.0;190.0</additional_attributes>
   </element>
   <element>
     <id>Relation</id>
@@ -1351,9 +1371,9 @@ m1=1..n</panel_attributes>
       <w>1408</w>
       <h>1944</h>
     </coordinates>
-    <panel_attributes>lt=-&gt;
+    <panel_attributes>lt=&lt;-
 
-serviceShifts
+event
 
 
 
@@ -1425,8 +1445,8 @@ serviceShifts
 
 
 
-m1=0..n</panel_attributes>
-    <additional_attributes>90.0;10.0;10.0;10.0;10.0;1270.0;1250.0;1270.0;1250.0;1350.0;1740.0;1350.0;1740.0;1320.0</additional_attributes>
+m1=1</panel_attributes>
+    <additional_attributes>90.0;10.0;10.0;10.0;10.0;1270.0;1240.0;1270.0;1240.0;1360.0;1740.0;1360.0;1740.0;1310.0</additional_attributes>
   </element>
   <element>
     <id>Relation</id>
@@ -1495,7 +1515,7 @@ serviceShift
 
 
 m1=0..1</panel_attributes>
-    <additional_attributes>50.0;10.0;10.0;10.0;10.0;1050.0;1220.0;1050.0;1220.0;1140.0;1650.0;1140.0;1650.0;1120.0</additional_attributes>
+    <additional_attributes>50.0;10.0;10.0;10.0;10.0;1050.0;1220.0;1050.0;1220.0;1150.0;1650.0;1150.0;1650.0;1110.0</additional_attributes>
   </element>
   <element>
     <id>Relation</id>
@@ -1519,9 +1539,10 @@ m1=1</panel_attributes>
       <x>1168</x>
       <y>560</y>
       <w>424</w>
-      <h>616</h>
+      <h>600</h>
     </coordinates>
     <panel_attributes>lt=&lt;-
+
 
 
 
@@ -1529,21 +1550,21 @@ m1=1</panel_attributes>
 
 assignedCooks
 m1=0..n</panel_attributes>
-    <additional_attributes>510.0;10.0;380.0;10.0;380.0;720.0;10.0;720.0;10.0;750.0</additional_attributes>
+    <additional_attributes>510.0;10.0;380.0;10.0;380.0;710.0;10.0;710.0;10.0;730.0</additional_attributes>
   </element>
   <element>
     <id>Relation</id>
     <coordinates>
       <x>1232</x>
-      <y>824</y>
+      <y>816</y>
       <w>64</w>
-      <h>352</h>
+      <h>344</h>
     </coordinates>
     <panel_attributes>lt=&lt;-
 assigned
 Tasks
 m1=0..n</panel_attributes>
-    <additional_attributes>10.0;10.0;10.0;420.0</additional_attributes>
+    <additional_attributes>10.0;10.0;10.0;410.0</additional_attributes>
   </element>
   <element>
     <id>Relation</id>
@@ -1618,7 +1639,7 @@ shiftAvailability
 
 
 m1=0..n</panel_attributes>
-    <additional_attributes>10.0;940.0;10.0;1000.0;370.0;1000.0;370.0;50.0;500.0;50.0;500.0;10.0</additional_attributes>
+    <additional_attributes>10.0;950.0;10.0;1000.0;370.0;1000.0;370.0;50.0;500.0;50.0;500.0;10.0</additional_attributes>
   </element>
   <element>
     <id>Relation</id>
@@ -1751,9 +1772,9 @@ m2=0..1</panel_attributes>
     <id>UMLClass</id>
     <coordinates>
       <x>544</x>
-      <y>1760</y>
+      <y>1832</y>
       <w>296</w>
-      <h>192</h>
+      <h>120</h>
     </coordinates>
     <panel_attributes>ShiftEventReceiver
 {interface}
@@ -1761,7 +1782,8 @@ m2=0..1</panel_attributes>
 
 --
 /+ updateCreatedShift(s: Shift)/
-/+ updatePrecompiledEvent(event: Event)/</panel_attributes>
+/+ updatePrecompiledEvent(event: Event)/
+/+ updateSetRecurrence(rec: ShiftRecurrence)/</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
@@ -1770,11 +1792,15 @@ m2=0..1</panel_attributes>
       <x>488</x>
       <y>1664</y>
       <w>96</w>
-      <h>192</h>
+      <h>216</h>
     </coordinates>
     <panel_attributes>lt=&lt;-
+
+
+
+
 eventReceivers
 m1=0..n</panel_attributes>
-    <additional_attributes>70.0;210.0;10.0;210.0;10.0;10.0;70.0;10.0</additional_attributes>
+    <additional_attributes>70.0;240.0;10.0;240.0;10.0;10.0;70.0;10.0</additional_attributes>
   </element>
 </diagram>
