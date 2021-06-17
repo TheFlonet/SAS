@@ -451,7 +451,7 @@ remove(shift)</panel_attributes>
           user.isChef() &amp;&amp;
           taskMgr.currentSheet.getTasks().contains(task) &amp;&amp;
           shift != null &amp;&amp;
-          shift.getDate().after(new Date()) &amp;&amp;
+          shift.getDate().after(LocalDate.now()) &amp;&amp;
           board.getAssignedShifts().contains(shift))]
 fg=#761C8C
 lw=2

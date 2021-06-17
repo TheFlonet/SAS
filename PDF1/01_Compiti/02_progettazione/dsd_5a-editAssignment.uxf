@@ -10,7 +10,7 @@
       <h>35</h>
     </coordinates>
     <panel_attributes>halign=center
-[ newShift.getDate().before(new Date()) ]
+[ newShift.getDate().before(LocalDate.now()) ]
 lw=0
 </panel_attributes>
     <additional_attributes/>
@@ -154,7 +154,7 @@ user</panel_attributes>
           user.isChef() &amp;&amp;
           taskMgr.currentSheet.getTasks().contains(task) &amp;&amp;
           shift != null &amp;&amp;
-          shift.getDate().after(new Date()) &amp;&amp;
+          shift.getDate().after(LocalDate.now()) &amp;&amp;
           board.getAssignedShifts().contains(shift) &amp;&amp; 
           !newShift.equals(shift))]
 fg=#761C8C

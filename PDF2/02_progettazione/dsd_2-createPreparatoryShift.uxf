@@ -238,7 +238,7 @@ fg=red</panel_attributes>
       <w>980</w>
       <h>742</h>
     </coordinates>
-    <panel_attributes>ALT [ !(date.after(new Date()) &amp;&amp;
+    <panel_attributes>ALT [ !(date.after(LocalDate.now()) &amp;&amp;
            startTime.isBefore(endTime)) ]
 fg=#761C8C
 lw=2

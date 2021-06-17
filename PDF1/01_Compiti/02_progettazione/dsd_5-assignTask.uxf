@@ -404,7 +404,7 @@ fg=red</panel_attributes>
       <w>1200</w>
       <h>992</h>
     </coordinates>
-    <panel_attributes>ALT [ s.getDate().before(new Date()) ]
+    <panel_attributes>ALT [ s.getDate().before(LocalDate.now()) ]
 fg=#761C8C
 lw=2
 --

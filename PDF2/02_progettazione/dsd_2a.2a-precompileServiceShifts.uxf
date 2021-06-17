@@ -242,7 +242,7 @@ fg=red</panel_attributes>
       <w>105</w>
       <h>21</h>
     </coordinates>
-    <panel_attributes>OPT [ !event.getDate().isAfter(new Date()) ]
+    <panel_attributes>OPT [ !event.getDate().isAfter(LocalDate.now()) ]
 fg=#128C86</panel_attributes>
     <additional_attributes/>
   </element>
