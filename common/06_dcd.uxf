@@ -1078,7 +1078,7 @@ _+ getInstance(): ShiftCalendar_
       <x>1071</x>
       <y>1449</y>
       <w>196</w>
-      <h>77</h>
+      <h>84</h>
     </coordinates>
     <panel_attributes>/Recurrence/
 --
@@ -1095,7 +1095,7 @@ _+ getInstance(): ShiftCalendar_
       <x>868</x>
       <y>1449</y>
       <w>182</w>
-      <h>77</h>
+      <h>84</h>
     </coordinates>
     <panel_attributes>GroupRecurrence
 --
@@ -1517,7 +1517,7 @@ m1=1</panel_attributes>
       <x>28</x>
       <y>392</y>
       <w>1169</w>
-      <h>1372</h>
+      <h>1365</h>
     </coordinates>
     <panel_attributes>lt=-&gt;
 serviceShift
@@ -1913,7 +1913,8 @@ bg=yellow</panel_attributes>
 --
 
 --
-+ create(): EmptyShift
++ create(date: LocalDate): 
+    EmptyShift
 + getDate(): LocalDate
 + getType(): Type</panel_attributes>
     <additional_attributes/>
@@ -1928,5 +1929,20 @@ bg=yellow</panel_attributes>
     </coordinates>
     <panel_attributes>lt=&lt;&lt;-</panel_attributes>
     <additional_attributes>10.0;10.0;320.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>1330</x>
+      <y>1148</y>
+      <w>154</w>
+      <h>63</h>
+    </coordinates>
+    <panel_attributes>«Type»
+--
+PREPARATORY
+SERVICE
+EMPTY</panel_attributes>
+    <additional_attributes/>
   </element>
 </diagram>
