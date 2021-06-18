@@ -70,25 +70,6 @@ public class TaskManager {
             receiver.updateRemovedAssignment(task);
     }
 
-    private void notifySpecificationsAdded(Task task, User cook) {
-    }
-
-    private void notifySpecificationsAdded(Task task, long time) {
-    }
-
-    private void notifySpecificationsAdded(Task task, int quantity) {
-    }
-
-    private void notifySpecificationsAdded(Task task, User cook, long time) {
-    }
-
-    private void notifySpecificationsAdded(Task task, User cook, int quantity) {
-    }
-
-    private void notifySpecificationsAdded(Task task, long time, int quantity) {
-    }
-    //TODO servono tutti i casi o basta quello con tutti i parametri?
-
     private void notifySpecificationsAdded(Task task, User cook, long time, int quantity) {
         for (TaskEventReceiver receiver : eventReceivers)
             receiver.updateSpecificationsAdded(task, cook, time, quantity);
@@ -102,6 +83,7 @@ public class TaskManager {
         currentSheet = new SummarySheet(service, user);
         currentSheet.initSectionItems();
         currentSheet.initFreeItems();
+        currentSheet.setOwner(user);
         notifyCreatedSummarySheet(currentSheet);
 
         return currentSheet;
@@ -150,6 +132,7 @@ public class TaskManager {
         if (cook != null) task.setCook(cook);
         if (time > 0) task.setTime(time);
         if (quantity > 0) task.setQuantity(quantity);
+        if (!board.getAssignedShifts().contains(shift)) board.getAssignedShifts().add(shift);
 
         notifyAssignedTask(shift, task);
     }
@@ -287,6 +270,7 @@ public class TaskManager {
             throw new UseCaseLogicException();
 
         shift.removeTask(task);
+
         //TODO cook = null, cosa intendevamo?
 
         if (shift.getAssignedTasks().size() == 0) board.removeShift(shift);

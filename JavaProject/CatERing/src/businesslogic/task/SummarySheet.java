@@ -49,7 +49,9 @@ public class SummarySheet {
     }
 
     public Task createTask(KitchenProcess process) {
-        return new Task(process);
+        Task t = new Task(process);
+        tasks.add(t);
+        return t;
     }
 
     public void removeTask(Task task) {

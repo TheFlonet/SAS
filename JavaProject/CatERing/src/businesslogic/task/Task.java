@@ -13,24 +13,12 @@ public class Task {
         process = kitchenProcess;
     }
 
-    public long getTime() {
-        return time;
-    }
-
     public void setTime(long time) {
         this.time = time;
     }
 
-    public int getQuantity() {
-        return quantity;
-    }
-
     public void setQuantity(int quantity) {
         this.quantity = quantity;
-    }
-
-    public User getCook() {
-        return cook;
     }
 
     public void setCook(User cook) {

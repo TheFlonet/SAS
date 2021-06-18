@@ -3,16 +3,21 @@ package businesslogic.shift;
 import businesslogic.task.Task;
 import businesslogic.user.User;
 
+import java.time.LocalDate;
+import java.time.LocalTime;
 import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
 
 public abstract class Shift {
-    protected Date date;
-    protected double startTime;
-    protected double endTime;
+    protected LocalDate date;
+    protected LocalTime startTime;
+    protected LocalTime endTime;
+    protected boolean isComplete;
     protected List<Task> assignedTasks;
     protected List<User> assignedCooks;
+    protected LocalDate deadlineEditAvailability;
+    protected Type type;
 
     public Shift() {
         assignedTasks = new ArrayList<>();
@@ -27,8 +32,36 @@ public abstract class Shift {
         assignedTasks.remove(t);
     }
 
-    public Date getDate() {
+    public LocalDate getDate() {
         return date;
+    }
+
+    public LocalTime getStartTime() {
+        return startTime;
+    }
+
+    public LocalTime getEndTime() {
+        return endTime;
+    }
+
+    public LocalDate getDeadlineEditAvailability() {
+        return deadlineEditAvailability;
+    }
+
+    public void setDate(LocalDate date) {
+        this.date = date;
+    }
+
+    public void setStartTime(LocalTime startTime) {
+        this.startTime = startTime;
+    }
+
+    public void setEndTime(LocalTime endTime) {
+        this.endTime = endTime;
+    }
+
+    public void setDeadlineEditAvailability(LocalDate deadlineEditAvailability) {
+        this.deadlineEditAvailability = deadlineEditAvailability;
     }
 
     public List<User> getAssignedCooks() {
@@ -38,4 +71,6 @@ public abstract class Shift {
     public List<Task> getAssignedTasks() {
         return assignedTasks;
     }
+
+    public abstract Type getType();
 }
