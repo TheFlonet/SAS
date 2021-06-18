@@ -1004,9 +1004,9 @@ _+ getInstance(): ShiftBoard_
     <id>UMLClass</id>
     <coordinates>
       <x>1288</x>
-      <y>1160</y>
+      <y>1144</y>
       <w>176</w>
-      <h>88</h>
+      <h>104</h>
     </coordinates>
     <panel_attributes>PreparatoryShift
 --
@@ -1015,7 +1015,8 @@ _+ getInstance(): ShiftBoard_
 + create(d: LocalDate,
    s: LocalTime, e: LocalTime,
    l: Location)
-+ getLocation()</panel_attributes>
++ getLocation()
++ getType()</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
@@ -1024,7 +1025,7 @@ _+ getInstance(): ShiftBoard_
       <x>1288</x>
       <y>1256</y>
       <w>176</w>
-      <h>80</h>
+      <h>96</h>
     </coordinates>
     <panel_attributes>ServiceShift
 --
@@ -1032,7 +1033,8 @@ _+ getInstance(): ShiftBoard_
 --
 + create(d: LocalDate,
    s: LocalTime, e: LocalTime,
-   e: Event, s?: Service)</panel_attributes>
+   e: Event, s?: Service)
++ getType()</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
@@ -1071,7 +1073,7 @@ _+ getInstance(): ShiftCalendar_
       <x>1224</x>
       <y>1656</y>
       <w>224</w>
-      <h>80</h>
+      <h>88</h>
     </coordinates>
     <panel_attributes>/Recurrence/
 --
@@ -1086,16 +1088,17 @@ _+ getInstance(): ShiftCalendar_
     <id>UMLClass</id>
     <coordinates>
       <x>992</x>
-      <y>1672</y>
+      <y>1656</y>
       <w>208</w>
-      <h>72</h>
+      <h>88</h>
     </coordinates>
     <panel_attributes>GroupRecurrence
 --
 
 --
 + create(startDate: LocalDate,
-endDate: LocalDate)</panel_attributes>
+endDate: LocalDate)
++ addGroup(group: ShitGroup)</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
@@ -1119,14 +1122,18 @@ endDate: LocalDate)</panel_attributes>
     <id>UMLClass</id>
     <coordinates>
       <x>992</x>
-      <y>1544</y>
+      <y>1504</y>
       <w>208</w>
-      <h>56</h>
+      <h>96</h>
     </coordinates>
     <panel_attributes>ShiftGroup
 --
-
---</panel_attributes>
+- startDate: LocalDate
+- endDate: LocalDate
+--
++ create(startDate: LocalDate,
+endDate: LocalDate)
++ addShifts(shifts: List&lt;Shift&gt;)</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
@@ -1335,12 +1342,12 @@ m1=0..n</panel_attributes>
       <x>1144</x>
       <y>1344</y>
       <w>48</w>
-      <h>216</h>
+      <h>176</h>
     </coordinates>
     <panel_attributes>lt=&lt;-
 shifts
 m1=1..n</panel_attributes>
-    <additional_attributes>10.0;10.0;10.0;250.0</additional_attributes>
+    <additional_attributes>10.0;10.0;10.0;200.0</additional_attributes>
   </element>
   <element>
     <id>Relation</id>
@@ -1348,12 +1355,12 @@ m1=1..n</panel_attributes>
       <x>1104</x>
       <y>1592</y>
       <w>56</w>
-      <h>96</h>
+      <h>80</h>
     </coordinates>
     <panel_attributes>lt=&lt;-
 groups
 m1=1..n</panel_attributes>
-    <additional_attributes>10.0;10.0;10.0;100.0</additional_attributes>
+    <additional_attributes>10.0;10.0;10.0;80.0</additional_attributes>
   </element>
   <element>
     <id>Relation</id>
@@ -1495,7 +1502,7 @@ event
 
 
 m1=1</panel_attributes>
-    <additional_attributes>90.0;10.0;10.0;10.0;10.0;1270.0;1240.0;1270.0;1240.0;1360.0;1740.0;1360.0;1740.0;1310.0</additional_attributes>
+    <additional_attributes>90.0;10.0;10.0;10.0;10.0;1270.0;1240.0;1270.0;1240.0;1360.0;1740.0;1360.0;1740.0;1330.0</additional_attributes>
   </element>
   <element>
     <id>Relation</id>
@@ -1564,7 +1571,7 @@ serviceShift
 
 
 m1=0..1</panel_attributes>
-    <additional_attributes>50.0;10.0;10.0;10.0;10.0;1050.0;1220.0;1050.0;1220.0;1150.0;1650.0;1150.0;1650.0;1110.0</additional_attributes>
+    <additional_attributes>50.0;10.0;10.0;10.0;10.0;1050.0;1220.0;1050.0;1220.0;1150.0;1650.0;1150.0;1650.0;1130.0</additional_attributes>
   </element>
   <element>
     <id>Relation</id>
@@ -1696,12 +1703,12 @@ m1=0..n</panel_attributes>
       <x>1080</x>
       <y>592</y>
       <w>552</w>
-      <h>968</h>
+      <h>928</h>
     </coordinates>
     <panel_attributes>lt=&lt;-
 groupAvailability
 m1=0..n</panel_attributes>
-    <additional_attributes>10.0;1190.0;10.0;1010.0;540.0;1010.0;540.0;80.0;670.0;80.0;670.0;10.0</additional_attributes>
+    <additional_attributes>10.0;1140.0;10.0;1010.0;540.0;1010.0;540.0;80.0;670.0;80.0;670.0;10.0</additional_attributes>
   </element>
   <element>
     <id>Text</id>
@@ -1865,10 +1872,10 @@ fg=gray</panel_attributes>
   <element>
     <id>UMLNote</id>
     <coordinates>
-      <x>1792</x>
-      <y>264</y>
-      <w>368</w>
-      <h>144</h>
+      <x>1544</x>
+      <y>1208</y>
+      <w>376</w>
+      <h>256</h>
     </coordinates>
     <panel_attributes>*CAMPANELLO DI ALLARME:*
 Temo ci sia da indicare anche il tipo di ritorno
@@ -1878,6 +1885,11 @@ mettono...
 
 Ovviamente non sempre, ci mancherebbe esser
 addirittura coerenti
+
+*IN PIU'*
+c'è da rivedere il modello di dominio per aggiungere
+attributi e/o associazioni inseriti nel DCD
+
 fontsize=20
 bg=yellow</panel_attributes>
     <additional_attributes/>
