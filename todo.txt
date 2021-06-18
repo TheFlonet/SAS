@@ -1,2 +1,1 @@
 [ ] controllare modello di dominio
-[ ] inizializzare arraylist nei dsd
