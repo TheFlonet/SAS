@@ -1,5 +1,7 @@
 package businesslogic;
 
+import businesslogic.event.Event;
+import businesslogic.event.EventManager;
 import businesslogic.menu.MenuManager;
 import businesslogic.recipe.RecipeManager;
 import businesslogic.shift.ShiftManager;
@@ -22,6 +24,7 @@ public class CatERing {
     private final UserManager userMgr;
     private final ShiftManager shiftMgr;
     private final TaskManager taskMgr;
+    private final EventManager eventMgr;
 
     private MenuPersistence menuPersistence;
 
@@ -54,4 +57,6 @@ public class CatERing {
     }
 
     public TaskManager getTaskManager() { return taskMgr; }
+
+    public EventManager getEventManager() { return eventMgr; }
 }

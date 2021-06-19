@@ -4,6 +4,7 @@ import businesslogic.recipe.KitchenProcess;
 import businesslogic.user.User;
 
 public class Task {
+    // TODO: mappa statica con i compiti già caricati dal DB (come fatto ad es. con gli utenti)
     private final KitchenProcess process;
     private long time;
     private int quantity;
