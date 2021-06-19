@@ -4,7 +4,7 @@
   <element>
     <id>Text</id>
     <coordinates>
-      <x>147</x>
+      <x>238</x>
       <y>0</y>
       <w>203</w>
       <h>49</h>
@@ -17,7 +17,7 @@ fontsize=20</panel_attributes>
   <element>
     <id>UMLGeneric</id>
     <coordinates>
-      <x>455</x>
+      <x>546</x>
       <y>63</y>
       <w>84</w>
       <h>35</h>
@@ -29,7 +29,7 @@ UserManager</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>399</x>
+      <x>490</x>
       <y>161</y>
       <w>105</w>
       <h>28</h>
@@ -41,7 +41,7 @@ getCurrentUser()</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>399</x>
+      <x>490</x>
       <y>182</y>
       <w>105</w>
       <h>28</h>
@@ -53,7 +53,7 @@ user</panel_attributes>
   <element>
     <id>UMLGeneric</id>
     <coordinates>
-      <x>490</x>
+      <x>581</x>
       <y>175</y>
       <w>14</w>
       <h>21</h>
@@ -64,7 +64,7 @@ user</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>490</x>
+      <x>581</x>
       <y>91</y>
       <w>21</w>
       <h>126</h>
@@ -75,7 +75,7 @@ user</panel_attributes>
   <element>
     <id>UMLGeneric</id>
     <coordinates>
-      <x>546</x>
+      <x>637</x>
       <y>63</y>
       <w>84</w>
       <h>35</h>
@@ -87,18 +87,18 @@ ShiftCalendar</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>581</x>
+      <x>672</x>
       <y>91</y>
       <w>21</w>
-      <h>840</h>
+      <h>679</h>
     </coordinates>
     <panel_attributes>lt=.</panel_attributes>
-    <additional_attributes>10.0;10.0;10.0;1180.0</additional_attributes>
+    <additional_attributes>10.0;10.0;10.0;950.0</additional_attributes>
   </element>
   <element>
     <id>UMLGeneric</id>
     <coordinates>
-      <x>1050</x>
+      <x>1078</x>
       <y>63</y>
       <w>84</w>
       <h>35</h>
@@ -110,18 +110,18 @@ ArrayList&lt;Shift&gt;</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>1085</x>
+      <x>1113</x>
       <y>84</y>
       <w>21</w>
-      <h>819</h>
+      <h>672</h>
     </coordinates>
     <panel_attributes>lt=.</panel_attributes>
-    <additional_attributes>10.0;10.0;10.0;1150.0</additional_attributes>
+    <additional_attributes>10.0;10.0;10.0;940.0</additional_attributes>
   </element>
   <element>
     <id>UMLGeneric</id>
     <coordinates>
-      <x>1141</x>
+      <x>1169</x>
       <y>63</y>
       <w>98</w>
       <h>35</h>
@@ -133,18 +133,18 @@ ShiftEventReceiver</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>1183</x>
+      <x>1211</x>
       <y>91</y>
       <w>21</w>
-      <h>994</h>
+      <h>812</h>
     </coordinates>
     <panel_attributes>lt=.</panel_attributes>
-    <additional_attributes>10.0;10.0;10.0;1400.0</additional_attributes>
+    <additional_attributes>10.0;10.0;10.0;1140.0</additional_attributes>
   </element>
   <element>
     <id>UMLPackage</id>
     <coordinates>
-      <x>112</x>
+      <x>203</x>
       <y>63</y>
       <w>63</w>
       <h>49</h>
@@ -155,18 +155,18 @@ ShiftEventReceiver</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>133</x>
+      <x>224</x>
       <y>105</y>
       <w>21</w>
-      <h>1029</h>
+      <h>833</h>
     </coordinates>
     <panel_attributes>lt=.</panel_attributes>
-    <additional_attributes>10.0;10.0;10.0;1450.0</additional_attributes>
+    <additional_attributes>10.0;10.0;10.0;1170.0</additional_attributes>
   </element>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>133</x>
+      <x>224</x>
       <y>133</y>
       <w>273</w>
       <h>28</h>
@@ -178,7 +178,7 @@ precompileServiceShifts(event)</panel_attributes>
   <element>
     <id>UMLGeneric</id>
     <coordinates>
-      <x>350</x>
+      <x>441</x>
       <y>63</y>
       <w>98</w>
       <h>35</h>
@@ -190,21 +190,21 @@ ShiftManager</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>392</x>
+      <x>483</x>
       <y>91</y>
       <w>21</w>
-      <h>1050</h>
+      <h>847</h>
     </coordinates>
     <panel_attributes>lt=.</panel_attributes>
-    <additional_attributes>10.0;10.0;10.0;1480.0</additional_attributes>
+    <additional_attributes>10.0;10.0;10.0;1190.0</additional_attributes>
   </element>
   <element>
     <id>UMLGeneric</id>
     <coordinates>
-      <x>392</x>
+      <x>483</x>
       <y>147</y>
       <w>14</w>
-      <h>966</h>
+      <h>770</h>
     </coordinates>
     <panel_attributes/>
     <additional_attributes/>
@@ -212,19 +212,20 @@ ShiftManager</panel_attributes>
   <element>
     <id>UMLFrame</id>
     <coordinates>
-      <x>259</x>
+      <x>280</x>
       <y>224</y>
-      <w>175</w>
+      <w>245</w>
       <h>56</h>
     </coordinates>
     <panel_attributes>OPT [ !user.isOrganizer() ]
-fg=#128C86</panel_attributes>
+fg=#128C86
+lw=2</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>133</x>
+      <x>224</x>
       <y>245</y>
       <w>273</w>
       <h>28</h>
@@ -237,19 +238,20 @@ fg=red</panel_attributes>
   <element>
     <id>UMLFrame</id>
     <coordinates>
-      <x>189</x>
+      <x>280</x>
       <y>294</y>
       <w>245</w>
       <h>49</h>
     </coordinates>
     <panel_attributes>OPT [ !event.getDate().isAfter(LocalDate.now()) ]
-fg=#128C86</panel_attributes>
+fg=#128C86
+lw=2</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>133</x>
+      <x>224</x>
       <y>315</y>
       <w>273</w>
       <h>28</h>
@@ -262,10 +264,10 @@ fg=red</panel_attributes>
   <element>
     <id>UMLFrame</id>
     <coordinates>
-      <x>147</x>
+      <x>238</x>
       <y>357</y>
-      <w>1330</w>
-      <h>595</h>
+      <w>1204</w>
+      <h>427</h>
     </coordinates>
     <panel_attributes>LOOP [ for all service in event.getServices() ]
 fg=blue
@@ -275,10 +277,10 @@ lw=2</panel_attributes>
   <element>
     <id>UMLFrame</id>
     <coordinates>
-      <x>154</x>
+      <x>252</x>
       <y>378</y>
-      <w>1302</w>
-      <h>567</h>
+      <w>1176</w>
+      <h>392</h>
     </coordinates>
     <panel_attributes>ALT [ service.getServiceShift() != null ]
 fg=#761C8C
@@ -293,7 +295,7 @@ lw=2
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>133</x>
+      <x>224</x>
       <y>399</y>
       <w>273</w>
       <h>28</h>
@@ -306,7 +308,7 @@ fg=red</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>588</x>
+      <x>679</x>
       <y>469</y>
       <w>259</w>
       <h>35</h>
@@ -319,7 +321,7 @@ event, service)</panel_attributes>
   <element>
     <id>UMLGeneric</id>
     <coordinates>
-      <x>833</x>
+      <x>924</x>
       <y>469</y>
       <w>84</w>
       <h>35</h>
@@ -331,22 +333,23 @@ ServiceShift</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>875</x>
+      <x>966</x>
       <y>511</y>
-      <w>203</w>
+      <w>161</w>
       <h>42</h>
     </coordinates>
     <panel_attributes>lt=-&gt;&gt;&gt;
-super(date, startTime, endTime)</panel_attributes>
+super(date, startTime,
+endTime)</panel_attributes>
     <additional_attributes>10.0;10.0;70.0;10.0;70.0;40.0;20.0;40.0</additional_attributes>
   </element>
   <element>
     <id>UMLGeneric</id>
     <coordinates>
-      <x>868</x>
+      <x>959</x>
       <y>504</y>
       <w>14</w>
-      <h>294</h>
+      <h>196</h>
     </coordinates>
     <panel_attributes/>
     <additional_attributes/>
@@ -354,10 +357,10 @@ super(date, startTime, endTime)</panel_attributes>
   <element>
     <id>UMLGeneric</id>
     <coordinates>
-      <x>875</x>
+      <x>966</x>
       <y>539</y>
       <w>14</w>
-      <h>133</h>
+      <h>28</h>
     </coordinates>
     <panel_attributes/>
     <additional_attributes/>
@@ -365,31 +368,31 @@ super(date, startTime, endTime)</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>875</x>
-      <y>679</y>
-      <w>434</w>
+      <x>966</x>
+      <y>637</y>
+      <w>343</w>
       <h>28</h>
     </coordinates>
     <panel_attributes>lt=-&gt;&gt;&gt;
 setServiceShift(serShift)</panel_attributes>
-    <additional_attributes>10.0;20.0;600.0;20.0</additional_attributes>
+    <additional_attributes>10.0;20.0;470.0;20.0</additional_attributes>
   </element>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>868</x>
+      <x>959</x>
       <y>497</y>
       <w>21</w>
-      <h>343</h>
+      <h>224</h>
     </coordinates>
     <panel_attributes>lt=.</panel_attributes>
-    <additional_attributes>10.0;10.0;10.0;470.0</additional_attributes>
+    <additional_attributes>10.0;10.0;10.0;300.0</additional_attributes>
   </element>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>588</x>
-      <y>784</y>
+      <x>679</x>
+      <y>686</y>
       <w>294</w>
       <h>28</h>
     </coordinates>
@@ -400,10 +403,10 @@ serShift</panel_attributes>
   <element>
     <id>UMLGeneric</id>
     <coordinates>
-      <x>581</x>
+      <x>672</x>
       <y>462</y>
       <w>14</w>
-      <h>434</h>
+      <h>287</h>
     </coordinates>
     <panel_attributes/>
     <additional_attributes/>
@@ -411,20 +414,20 @@ serShift</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>588</x>
-      <y>861</y>
-      <w>511</w>
+      <x>679</x>
+      <y>707</y>
+      <w>448</w>
       <h>28</h>
     </coordinates>
     <panel_attributes>lt=-&gt;&gt;&gt;
 add(serShift)</panel_attributes>
-    <additional_attributes>10.0;20.0;710.0;20.0</additional_attributes>
+    <additional_attributes>10.0;20.0;620.0;20.0</additional_attributes>
   </element>
   <element>
     <id>UMLGeneric</id>
     <coordinates>
-      <x>1085</x>
-      <y>875</y>
+      <x>1113</x>
+      <y>721</y>
       <w>14</w>
       <h>14</h>
     </coordinates>
@@ -434,8 +437,8 @@ add(serShift)</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>399</x>
-      <y>980</y>
+      <x>490</x>
+      <y>791</y>
       <w>182</w>
       <h>56</h>
     </coordinates>
@@ -446,8 +449,8 @@ notifyPrecompiledEvent(event)</panel_attributes>
   <element>
     <id>UMLGeneric</id>
     <coordinates>
-      <x>399</x>
-      <y>1022</y>
+      <x>490</x>
+      <y>833</y>
       <w>14</w>
       <h>77</h>
     </coordinates>
@@ -457,9 +460,9 @@ notifyPrecompiledEvent(event)</panel_attributes>
   <element>
     <id>UMLFrame</id>
     <coordinates>
-      <x>231</x>
-      <y>1029</y>
-      <w>1001</w>
+      <x>322</x>
+      <y>840</y>
+      <w>917</w>
       <h>63</h>
     </coordinates>
     <panel_attributes>LOOP for all sr in eventReceivers
@@ -472,20 +475,20 @@ lw=2
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>406</x>
-      <y>1043</y>
-      <w>791</w>
+      <x>497</x>
+      <y>854</y>
+      <w>728</w>
       <h>28</h>
     </coordinates>
     <panel_attributes>lt=-&gt;&gt;&gt;
 updatePrecompiledEvent(event)</panel_attributes>
-    <additional_attributes>10.0;20.0;1110.0;20.0</additional_attributes>
+    <additional_attributes>10.0;20.0;1020.0;20.0</additional_attributes>
   </element>
   <element>
     <id>UMLGeneric</id>
     <coordinates>
-      <x>1183</x>
-      <y>1057</y>
+      <x>1211</x>
+      <y>868</y>
       <w>14</w>
       <h>14</h>
     </coordinates>
@@ -495,7 +498,7 @@ updatePrecompiledEvent(event)</panel_attributes>
   <element>
     <id>Text</id>
     <coordinates>
-      <x>616</x>
+      <x>707</x>
       <y>63</y>
       <w>21</w>
       <h>21</h>
@@ -507,7 +510,7 @@ style=wordwrap</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>378</x>
+      <x>469</x>
       <y>448</y>
       <w>238</w>
       <h>35</h>
@@ -520,8 +523,8 @@ service.endTime, event, service )</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>399</x>
-      <y>882</y>
+      <x>490</x>
+      <y>735</y>
       <w>196</w>
       <h>28</h>
     </coordinates>
@@ -532,9 +535,9 @@ serShift</panel_attributes>
   <element>
     <id>UMLGeneric</id>
     <coordinates>
-      <x>1253</x>
+      <x>1274</x>
       <y>63</y>
-      <w>98</w>
+      <w>56</w>
       <h>35</h>
     </coordinates>
     <panel_attributes>ser:
@@ -545,9 +548,9 @@ Service</panel_attributes>
     <id>UMLGeneric</id>
     <coordinates>
       <x>1295</x>
-      <y>693</y>
+      <y>651</y>
       <w>14</w>
-      <h>42</h>
+      <h>35</h>
     </coordinates>
     <panel_attributes/>
     <additional_attributes/>
@@ -556,12 +559,13 @@ Service</panel_attributes>
     <id>Relation</id>
     <coordinates>
       <x>1302</x>
-      <y>693</y>
-      <w>154</w>
+      <y>651</y>
+      <w>119</w>
       <h>42</h>
     </coordinates>
     <panel_attributes>lt=-&gt;&gt;&gt;
-serviceShift = serShift</panel_attributes>
+serviceShift =
+serShift</panel_attributes>
     <additional_attributes>10.0;10.0;70.0;10.0;70.0;40.0;10.0;40.0</additional_attributes>
   </element>
   <element>
@@ -570,16 +574,16 @@ serviceShift = serShift</panel_attributes>
       <x>1295</x>
       <y>91</y>
       <w>21</w>
-      <h>672</h>
+      <h>616</h>
     </coordinates>
     <panel_attributes>lt=.</panel_attributes>
-    <additional_attributes>10.0;10.0;10.0;940.0</additional_attributes>
+    <additional_attributes>10.0;10.0;10.0;860.0</additional_attributes>
   </element>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>875</x>
-      <y>700</y>
+      <x>966</x>
+      <y>567</y>
       <w>126</w>
       <h>42</h>
     </coordinates>
@@ -588,131 +592,30 @@ this.event = event</panel_attributes>
     <additional_attributes>10.0;10.0;50.0;10.0;50.0;40.0;10.0;40.0</additional_attributes>
   </element>
   <element>
-    <id>UMLGeneric</id>
-    <coordinates>
-      <x>994</x>
-      <y>546</y>
-      <w>84</w>
-      <h>35</h>
-    </coordinates>
-    <panel_attributes>assignedTasks:
-List&lt;Task&gt;</panel_attributes>
-    <additional_attributes/>
-  </element>
-  <element>
     <id>Relation</id>
     <coordinates>
-      <x>1022</x>
-      <y>574</y>
-      <w>21</w>
-      <h>42</h>
-    </coordinates>
-    <panel_attributes>lt=.</panel_attributes>
-    <additional_attributes>10.0;10.0;10.0;40.0</additional_attributes>
-  </element>
-  <element>
-    <id>UMLGeneric</id>
-    <coordinates>
-      <x>1022</x>
-      <y>581</y>
-      <w>14</w>
-      <h>21</h>
-    </coordinates>
-    <panel_attributes/>
-    <additional_attributes/>
-  </element>
-  <element>
-    <id>Relation</id>
-    <coordinates>
-      <x>882</x>
-      <y>588</y>
-      <w>154</w>
-      <h>28</h>
-    </coordinates>
-    <panel_attributes>lt=&lt;.
-assignedTask</panel_attributes>
-    <additional_attributes>10.0;20.0;200.0;20.0</additional_attributes>
-  </element>
-  <element>
-    <id>Relation</id>
-    <coordinates>
-      <x>882</x>
-      <y>546</y>
-      <w>126</w>
-      <h>28</h>
-    </coordinates>
-    <panel_attributes>lt=&lt;.
-create</panel_attributes>
-    <additional_attributes>160.0;20.0;10.0;20.0</additional_attributes>
-  </element>
-  <element>
-    <id>UMLGeneric</id>
-    <coordinates>
-      <x>994</x>
-      <y>616</y>
-      <w>84</w>
-      <h>35</h>
-    </coordinates>
-    <panel_attributes>assignedCooks:
-List&lt;Task&gt;</panel_attributes>
-    <additional_attributes/>
-  </element>
-  <element>
-    <id>Relation</id>
-    <coordinates>
-      <x>1022</x>
-      <y>644</y>
-      <w>21</w>
-      <h>42</h>
-    </coordinates>
-    <panel_attributes>lt=.</panel_attributes>
-    <additional_attributes>10.0;10.0;10.0;40.0</additional_attributes>
-  </element>
-  <element>
-    <id>UMLGeneric</id>
-    <coordinates>
-      <x>1022</x>
-      <y>651</y>
-      <w>14</w>
-      <h>21</h>
-    </coordinates>
-    <panel_attributes/>
-    <additional_attributes/>
-  </element>
-  <element>
-    <id>Relation</id>
-    <coordinates>
-      <x>882</x>
-      <y>616</y>
-      <w>126</w>
-      <h>28</h>
-    </coordinates>
-    <panel_attributes>lt=&lt;.
-create</panel_attributes>
-    <additional_attributes>160.0;20.0;10.0;20.0</additional_attributes>
-  </element>
-  <element>
-    <id>Relation</id>
-    <coordinates>
-      <x>882</x>
-      <y>658</y>
-      <w>154</w>
-      <h>28</h>
-    </coordinates>
-    <panel_attributes>lt=&lt;.
-assignedTask</panel_attributes>
-    <additional_attributes>10.0;20.0;200.0;20.0</additional_attributes>
-  </element>
-  <element>
-    <id>Relation</id>
-    <coordinates>
-      <x>875</x>
-      <y>735</y>
+      <x>966</x>
+      <y>602</y>
       <w>147</w>
       <h>42</h>
     </coordinates>
     <panel_attributes>lt=-&gt;&gt;&gt;
 type = Type.SERVICE</panel_attributes>
     <additional_attributes>10.0;10.0;50.0;10.0;50.0;40.0;10.0;40.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLNote</id>
+    <coordinates>
+      <x>756</x>
+      <y>518</y>
+      <w>182</w>
+      <h>56</h>
+    </coordinates>
+    <panel_attributes>L'esecuzione dettagliata dell'operazione
+super(...) è presente nel DSD
+/2 - createPreparatoryShift/
+Non è qui riportata per brevità
+bg=yellow</panel_attributes>
+    <additional_attributes/>
   </element>
 </diagram>
