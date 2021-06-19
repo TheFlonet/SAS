@@ -10,6 +10,7 @@ import businesslogic.shift.Shift;
 import businesslogic.shift.ShiftBoard;
 import businesslogic.user.User;
 
+import java.time.LocalDate;
 import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
@@ -123,7 +124,7 @@ public class TaskManager {
                 && currentSheet.getTasks().contains(task)))
             throw new UseCaseLogicException();
 
-        if (shift.getDate().before(new Date())) throw new PastShiftException("Shift in the past");
+        if (shift.getDate().isBefore(LocalDate.now())) throw new PastShiftException("Shift in the past");
 
         if (cook != null && !shift.getAssignedCooks().contains(cook)) throw new UnavailableCookException();
 
@@ -172,7 +173,7 @@ public class TaskManager {
                 && user.isChef()
                 && currentSheet.getTasks().contains(task)
                 && shift != null
-                && shift.getDate().after(new Date())
+                && shift.getDate().isAfter(LocalDate.now())
                 && board.getAssignedShifts().contains(shift)
                 && !newShift.equals(shift)))
             throw new UseCaseLogicException();
@@ -182,7 +183,7 @@ public class TaskManager {
                 && newShift.getAssignedCooks().contains(newCook)))
             throw new UnavailableCookException();
 
-        if (newShift.getDate().before(new Date())) throw new PastShiftException("Shift in the past");
+        if (newShift.getDate().isBefore(LocalDate.now())) throw new PastShiftException("Shift in the past");
 
         shift.removeTask(task);
 
@@ -265,7 +266,7 @@ public class TaskManager {
                 && user.isChef()
                 && currentSheet.getTasks().contains(task)
                 && shift != null
-                && shift.getDate().after(new Date())
+                && shift.getDate().isAfter(LocalDate.now())
                 && board.getAssignedShifts().contains(shift)))
             throw new UseCaseLogicException();
 
@@ -316,7 +317,7 @@ public class TaskManager {
 
         if (newCook != null
                 && !(shift != null
-                && shift.getDate().after(new Date())
+                && shift.getDate().isAfter(LocalDate.now())
                 && shift.getAssignedCooks().contains(newCook)))
             throw new UseCaseLogicException();
 

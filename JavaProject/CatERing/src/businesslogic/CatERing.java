@@ -3,6 +3,7 @@ package businesslogic;
 import businesslogic.menu.MenuManager;
 import businesslogic.recipe.RecipeManager;
 import businesslogic.shift.ShiftManager;
+import businesslogic.task.TaskManager;
 import businesslogic.user.UserManager;
 import persistence.MenuPersistence;
 
@@ -20,6 +21,7 @@ public class CatERing {
     private final RecipeManager recipeMgr;
     private final UserManager userMgr;
     private final ShiftManager shiftMgr;
+    private final TaskManager taskMgr;
 
     private MenuPersistence menuPersistence;
 
@@ -28,8 +30,11 @@ public class CatERing {
         recipeMgr = new RecipeManager();
         userMgr = new UserManager();
         shiftMgr = new ShiftManager();
+        taskMgr = new TaskManager();
+        eventMgr = new EventManager();
         menuPersistence = new MenuPersistence();
         menuMgr.addEventReceiver(menuPersistence);
+        // TODO: creare TaskPersistece e aggiungerlo ai listener di taskMgr
     }
 
     public MenuManager getMenuManager() {
@@ -47,4 +52,6 @@ public class CatERing {
     public ShiftManager getShiftManager() {
         return shiftMgr;
     }
+
+    public TaskManager getTaskManager() { return taskMgr; }
 }
