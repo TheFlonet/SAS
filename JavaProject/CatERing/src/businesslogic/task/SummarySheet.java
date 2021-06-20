@@ -50,7 +50,8 @@ public class SummarySheet {
 
     public Task createTask(KitchenProcess process) {
         Task t = new Task(process);
-        tasks.add(t);
+        if (!tasks.contains(t)) tasks.add(t);
+        else t = null;
         return t;
     }
 
@@ -64,10 +65,13 @@ public class SummarySheet {
 
     @Override
     public String toString() {
-        return "SummarySheet{" +
-                "tasks=" + tasks +
-                ", associatedService=" + associatedService +
-                ", owner=" + owner +
-                '}';
+        String s = "";
+        for(Task t : tasks) {
+            s += "\t\t" + t + "\n";
+        }
+        return "\nFOGLIO RIEPILOGATIVO CORRENTE:\n" +
+                "\tCOMPITI:\n" + s +
+                "\n\tSERVIZIO ASSOCIATO: " + associatedService +
+                "\n\tPROPRIETARIO: " + owner + "\n";
     }
 }

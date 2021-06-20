@@ -6,8 +6,8 @@ public class ShiftManager {
     private final ShiftBoard board;
 
     public ShiftManager() {
-        board = ShiftBoard.getInstance();
         Shift.loadAllShifts();
+        board = ShiftBoard.getInstance();
     }
 
     public ShiftBoard getShiftBoard() {

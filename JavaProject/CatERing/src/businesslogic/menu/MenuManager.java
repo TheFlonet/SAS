@@ -9,11 +9,12 @@ import javafx.collections.ObservableList;
 import java.util.ArrayList;
 
 public class MenuManager {
-    private String[] menuFeatures = {"Richiede cucina", "Richiede cuoco", "Finger food", "Buffet", "Piatti caldi"};
+    private final String[] menuFeatures = {"Richiede cucina", "Richiede cuoco", "Finger food", "Buffet", "Piatti caldi"};
     private Menu currentMenu;
-    private ArrayList<MenuEventReceiver> eventReceivers;
+    private final ArrayList<MenuEventReceiver> eventReceivers;
 
     public MenuManager() {
+        getAllMenus();
         eventReceivers = new ArrayList<>();
     }
 
@@ -197,7 +198,7 @@ public class MenuManager {
 
     public void deleteItem(MenuItem mi) throws  UseCaseLogicException {
         if (currentMenu == null) throw new UseCaseLogicException();
-        Section sec = null;
+        Section sec;
         try {
             sec = currentMenu.getSectionForItem(mi);
         } catch (IllegalArgumentException ex) {

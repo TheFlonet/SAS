@@ -79,7 +79,8 @@ public class TaskManager {
     public SummarySheet createSummarySheet(Service service) throws UseCaseLogicException {
         User user = CatERing.getInstance().getUserManager().getCurrentUser();
 
-        if (!(user.isChef() && service.getCurrentMenu() != null)) throw new UseCaseLogicException();
+        if (!(user.isChef() && service.getCurrentMenu() != null))
+            throw new UseCaseLogicException("ECCEZIONE; utente è chef? " + user.isChef() + "; il servizio ha un menu? " + (service.getCurrentMenu() != null));
 
         currentSheet = new SummarySheet(service, user);
         currentSheet.initSectionItems();
@@ -88,6 +89,10 @@ public class TaskManager {
         notifyCreatedSummarySheet(currentSheet);
 
         return currentSheet;
+    }
+
+    public void assignTask(Task task, Shift shift) throws UnavailableCookException, UseCaseLogicException {
+        assignTask(task, shift, null, 0, 0);
     }
 
     public void assignTask(Task task, Shift shift, User cook) throws PastShiftException, UnavailableCookException, UseCaseLogicException {
@@ -125,6 +130,7 @@ public class TaskManager {
             throw new UseCaseLogicException();
 
         if (shift.getDate().isBefore(LocalDate.now())) throw new PastShiftException("Shift in the past");
+
 
         if (cook != null && !shift.getAssignedCooks().contains(cook)) throw new UnavailableCookException();
 
@@ -218,7 +224,8 @@ public class TaskManager {
 
         Task task = currentSheet.createTask(kitchenProcess);
 
-        notifyAddedTask(task);
+        if(task != null)
+            notifyAddedTask(task);
     }
 
     public void removeTaskFromSheet(Task task) throws UseCaseLogicException {
@@ -272,7 +279,7 @@ public class TaskManager {
 
         shift.removeTask(task);
 
-        //TODO cook = null, cosa intendevamo?
+        task.setCook(null);
 
         if (shift.getAssignedTasks().size() == 0) board.removeShift(shift);
 

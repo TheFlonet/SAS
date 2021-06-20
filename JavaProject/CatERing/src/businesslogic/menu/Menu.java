@@ -92,25 +92,25 @@ public class Menu {
     }
 
     public String testString() {
-        String result = this.toString() + "\n";
+        StringBuilder result = new StringBuilder(this.toString() + "\n");
         for (String f : featuresMap.keySet()) {
-            result += f + ": " + featuresMap.get(f) + "\n";
+            result.append(f).append(": ").append(featuresMap.get(f)).append("\n");
         }
 
-        result += "\n";
+        result.append("\n");
         for (Section sec : sections) {
-            result += sec.testString();
-            result += "\n";
+            result.append(sec.testString());
+            result.append("\n");
         }
 
         if (freeItems.size() > 0) {
-            result += "\n" + "VOCI LIBERE:\n";
+            result.append("\nVOCI LIBERE:\n");
         }
         for (MenuItem mi : freeItems) {
-            result += "\t" + mi.toString() + "\n";
+            result.append("\t").append(mi.toString()).append("\n");
         }
 
-        return result;
+        return result.toString();
     }
 
     public int getId() {
@@ -199,8 +199,7 @@ public class Menu {
 
     public void updateFreeItems(ObservableList<MenuItem> newItems) {
         ObservableList<MenuItem> updatedList = FXCollections.observableArrayList();
-        for (int i = 0; i < newItems.size(); i++) {
-            MenuItem mi = newItems.get(i);
+        for (MenuItem mi : newItems) {
             MenuItem prev = this.findItemById(mi.getId());
             if (prev == null) {
                 updatedList.add(mi);
@@ -223,8 +222,7 @@ public class Menu {
 
     private void updateSections(ObservableList<Section> newSections) {
         ObservableList<Section> updatedList = FXCollections.observableArrayList();
-        for (int i = 0; i < newSections.size(); i++) {
-            Section sec = newSections.get(i);
+        for (Section sec : newSections) {
             Section prev = this.findSectionById(sec.getId());
             if (prev == null) {
                 updatedList.add(sec);
@@ -400,24 +398,21 @@ public class Menu {
         ArrayList<Menu> oldMenus = new ArrayList<>();
         ArrayList<Integer> oldMids = new ArrayList<>();
 
-        PersistenceManager.executeQuery(query, new ResultHandler() {
-            @Override
-            public void handle(ResultSet rs) throws SQLException {
-                int id = rs.getInt("id");
-                if (loadedMenus.containsKey(id)) {
-                    Menu m = loadedMenus.get(id);
-                    m.title = rs.getString("title");
-                    m.published = rs.getBoolean("published");
-                    oldMids.add(rs.getInt("owner_id"));
-                    oldMenus.add(m);
-                } else {
-                    Menu m = new Menu();
-                    m.id = id;
-                    m.title = rs.getString("title");
-                    m.published = rs.getBoolean("published");
-                    newMids.add(rs.getInt("owner_id"));
-                    newMenus.add(m);
-                }
+        PersistenceManager.executeQuery(query, rs -> {
+            int id = rs.getInt("id");
+            if (loadedMenus.containsKey(id)) {
+                Menu m = loadedMenus.get(id);
+                m.title = rs.getString("title");
+                m.published = rs.getBoolean("published");
+                oldMids.add(rs.getInt("owner_id"));
+                oldMenus.add(m);
+            } else {
+                Menu m = new Menu();
+                m.id = id;
+                m.title = rs.getString("title");
+                m.published = rs.getBoolean("published");
+                newMids.add(rs.getInt("owner_id"));
+                newMenus.add(m);
             }
         });
 
@@ -427,12 +422,7 @@ public class Menu {
 
             // load features
             String featQ = "SELECT * FROM MenuFeatures WHERE menu_id = " + m.id;
-            PersistenceManager.executeQuery(featQ, new ResultHandler() {
-                @Override
-                public void handle(ResultSet rs) throws SQLException {
-                    m.featuresMap.put(rs.getString("name"), rs.getBoolean("value"));
-                }
-            });
+            PersistenceManager.executeQuery(featQ, rs -> m.featuresMap.put(rs.getString("name"), rs.getBoolean("value")));
 
             // load sections
             m.sections = Section.loadSectionsFor(m.id);
@@ -442,12 +432,9 @@ public class Menu {
 
             // find if "in use"
             String inuseQ = "SELECT * FROM Services WHERE approved_menu_id = " + m.id;
-            PersistenceManager.executeQuery(inuseQ, new ResultHandler() {
-                @Override
-                public void handle(ResultSet rs) throws SQLException {
-                    // se c'è anche un solo risultato vuol dire che il menù è in uso
-                    m.inUse = true;
-                }
+            PersistenceManager.executeQuery(inuseQ, rs -> {
+                // se c'è anche un solo risultato vuol dire che il menù è in uso
+                m.inUse = true;
             });
         }
 
@@ -458,12 +445,7 @@ public class Menu {
             // load features
             m.featuresMap.clear();
             String featQ = "SELECT * FROM MenuFeatures WHERE menu_id = " + m.id;
-            PersistenceManager.executeQuery(featQ, new ResultHandler() {
-                @Override
-                public void handle(ResultSet rs) throws SQLException {
-                    m.featuresMap.put(rs.getString("name"), rs.getBoolean("value"));
-                }
-            });
+            PersistenceManager.executeQuery(featQ, rs -> m.featuresMap.put(rs.getString("name"), rs.getBoolean("value")));
 
             // load sections
             m.updateSections(Section.loadSectionsFor(m.id));
@@ -475,12 +457,9 @@ public class Menu {
             String inuseQ = "SELECT * FROM Services WHERE approved_menu_id = " + m.id +
                     " OR " +
                     "proposed_menu_id = "+ m.id;
-            PersistenceManager.executeQuery(inuseQ, new ResultHandler() {
-                @Override
-                public void handle(ResultSet rs) throws SQLException {
-                    // se c'è anche un solo risultato vuol dire che il menù è in uso
-                    m.inUse = true;
-                }
+            PersistenceManager.executeQuery(inuseQ, rs -> {
+                // se c'è anche un solo risultato vuol dire che il menù è in uso
+                m.inUse = true;
             });
         }
         for (Menu m: newMenus) {
@@ -526,13 +505,13 @@ public class Menu {
     public String toString() {
         return "Menu{" +
                 "id=" + id +
-                ", title='" + title + '\'' +
-                ", published=" + published +
-                ", inUse=" + inUse +
-                ", featuresMap=" + featuresMap +
-                ", freeItems=" + freeItems +
-                ", sections=" + sections +
-                ", owner=" + owner +
+                ", \ntitle='" + title + '\'' +
+                ", \npublished=" + published +
+                ", \ninUse=" + inUse +
+                ", \nfeaturesMap=" + featuresMap +
+                ", \nfreeItems=" + freeItems +
+                ", \nsections=" + sections +
+                ", \nowner=" + owner +
                 '}';
     }
 }

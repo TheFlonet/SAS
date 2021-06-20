@@ -13,15 +13,15 @@ import java.util.*;
 
 public abstract class Shift {
 
-    private static Map<Integer, Shift> loadedShifts = new HashMap<>();
+    private static final Map<Integer, Shift> loadedShifts = new HashMap<>();
 
     protected int id;
     protected LocalDate date;
     protected LocalTime startTime;
     protected LocalTime endTime;
     protected boolean isComplete;
-    protected List<Task> assignedTasks;
-    protected List<User> assignedCooks;
+    protected ObservableList<Task> assignedTasks;
+    protected ObservableList<User> assignedCooks;
     protected LocalDate deadlineEditAvailability;
     protected Type type;
 
@@ -31,8 +31,8 @@ public abstract class Shift {
         this.startTime = startTime;
         this.endTime = endTime;
         isComplete = false;
-        assignedTasks = new ArrayList<>();
-        assignedCooks = new ArrayList<>();
+        assignedTasks = FXCollections.observableArrayList();
+        assignedCooks = FXCollections.observableArrayList();
     }
 
     @Override
@@ -57,6 +57,8 @@ public abstract class Shift {
     public void removeTask(Task t) {
         assignedTasks.remove(t);
     }
+
+    public int getId() { return id; }
 
     public LocalDate getDate() {
         return date;
@@ -123,12 +125,10 @@ public abstract class Shift {
             Shift rec;
             if (!loadedShifts.containsKey(id)) {
                 String type = rs.getString("type");
-                LocalDate date = rs.getDate("date").toInstant()
-                        .atZone(ZoneId.systemDefault())
-                        .toLocalDate();
-                LocalTime startTime = rs.getObject("start", LocalTime.class);
-                LocalTime endTime = rs.getObject("end", LocalTime.class);
-                boolean isComplete = rs.getBoolean("isComplete");
+                LocalDate date = rs.getObject("date", LocalDate.class);
+                LocalTime startTime = rs.getObject("startTime", LocalTime.class);
+                LocalTime endTime = rs.getObject("endTime", LocalTime.class);
+                boolean isComplete = rs.getBoolean("is_complete");
 
                 if ("prep".equals(type))
                     rec = new PreparatoryShift(date, startTime, endTime);
