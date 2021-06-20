@@ -38,42 +38,42 @@ layer=20</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>584</x>
-      <y>80</y>
-      <w>32</w>
-      <h>640</h>
+      <x>592</x>
+      <y>72</y>
+      <w>24</w>
+      <h>648</h>
     </coordinates>
     <panel_attributes>lt=.
 layer=20</panel_attributes>
-    <additional_attributes>10.0;10.0;20.0;780.0</additional_attributes>
+    <additional_attributes>10.0;10.0;10.0;790.0</additional_attributes>
   </element>
   <element>
     <id>Relation</id>
     <coordinates>
       <x>336</x>
       <y>120</y>
-      <w>272</w>
+      <w>280</w>
       <h>32</h>
     </coordinates>
     <panel_attributes>lt=-&gt;&gt;&gt;
 fg=gray
 layer=20
 1. creaFoglioRiepilogativo(servizio)</panel_attributes>
-    <additional_attributes>10.0;20.0;320.0;20.0</additional_attributes>
+    <additional_attributes>10.0;20.0;330.0;20.0</additional_attributes>
   </element>
   <element>
     <id>Relation</id>
     <coordinates>
       <x>336</x>
       <y>144</y>
-      <w>272</w>
+      <w>280</w>
       <h>32</h>
     </coordinates>
     <panel_attributes>lt=&lt;.
 fg=gray
 layer=20
 restituisce foglio precompilato</panel_attributes>
-    <additional_attributes>10.0;20.0;320.0;20.0</additional_attributes>
+    <additional_attributes>10.0;20.0;330.0;20.0</additional_attributes>
   </element>
   <element>
     <id>Relation</id>
@@ -237,52 +237,52 @@ lw=2</panel_attributes>
     <coordinates>
       <x>336</x>
       <y>240</y>
-      <w>272</w>
+      <w>280</w>
       <h>32</h>
     </coordinates>
     <panel_attributes>lt=-&gt;&gt;&gt;
 layer=20
 2. aggiungiCompito(procedura)</panel_attributes>
-    <additional_attributes>10.0;20.0;320.0;20.0</additional_attributes>
+    <additional_attributes>10.0;20.0;330.0;20.0</additional_attributes>
   </element>
   <element>
     <id>Relation</id>
     <coordinates>
       <x>336</x>
       <y>256</y>
-      <w>272</w>
+      <w>280</w>
       <h>32</h>
     </coordinates>
     <panel_attributes>lt=&lt;.
 layer=20
 ok</panel_attributes>
-    <additional_attributes>10.0;20.0;320.0;20.0</additional_attributes>
+    <additional_attributes>10.0;20.0;330.0;20.0</additional_attributes>
   </element>
   <element>
     <id>Relation</id>
     <coordinates>
       <x>336</x>
       <y>304</y>
-      <w>272</w>
+      <w>280</w>
       <h>32</h>
     </coordinates>
     <panel_attributes>lt=-&gt;&gt;&gt;
 layer=20
 2a.1 eliminaCompito(compito)</panel_attributes>
-    <additional_attributes>10.0;20.0;320.0;20.0</additional_attributes>
+    <additional_attributes>10.0;20.0;330.0;20.0</additional_attributes>
   </element>
   <element>
     <id>Relation</id>
     <coordinates>
       <x>336</x>
       <y>320</y>
-      <w>272</w>
+      <w>280</w>
       <h>32</h>
     </coordinates>
     <panel_attributes>lt=&lt;.
 layer=20
 ok</panel_attributes>
-    <additional_attributes>10.0;20.0;320.0;20.0</additional_attributes>
+    <additional_attributes>10.0;20.0;330.0;20.0</additional_attributes>
   </element>
   <element>
     <id>UMLFrame</id>
