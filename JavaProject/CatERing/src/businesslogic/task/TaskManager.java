@@ -5,6 +5,9 @@ import businesslogic.PastShiftException;
 import businesslogic.UnavailableCookException;
 import businesslogic.UseCaseLogicException;
 import businesslogic.event.Service;
+import businesslogic.menu.Menu;
+import businesslogic.menu.MenuItem;
+import businesslogic.menu.Section;
 import businesslogic.recipe.KitchenProcess;
 import businesslogic.shift.Shift;
 import businesslogic.shift.ShiftBoard;
@@ -51,9 +54,9 @@ public class TaskManager {
             receiver.updateSetSummarySheet(summarySheet);
     }
 
-    private void notifyAddedTask(Task task) {
+    private void notifyAddedTask(SummarySheet s, Task task) {
         for (TaskEventReceiver receiver : eventReceivers)
-            receiver.updateAddedTask(task);
+            receiver.updateAddedTask(s, task);
     }
 
     private void notifyRemovedTask(Task task) {
@@ -83,11 +86,22 @@ public class TaskManager {
             throw new UseCaseLogicException("ECCEZIONE; utente è chef? " + user.isChef() + "; il servizio ha un menu? " + (service.getCurrentMenu() != null));
 
         currentSheet = new SummarySheet(service, user);
-        currentSheet.initSectionItems();
-        currentSheet.initFreeItems();
         currentSheet.setOwner(user);
-
         notifyCreatedSummarySheet(currentSheet);
+
+        //  currentSheet.initSectionItems();
+        for(Section s : currentSheet.getAssociatedService().getCurrentMenu().getSections()) {
+            for(MenuItem mi: s.getItems()) {
+                Task t = currentSheet.createTask(mi.getItemProcess());
+                notifyAddedTask(currentSheet, t);
+            }
+        }
+
+        // currentSheet.initFreeItems();
+        for(MenuItem mi : currentSheet.getAssociatedService().getCurrentMenu().getFreeItems()) {
+            Task t = currentSheet.createTask(mi.getItemProcess());
+            notifyAddedTask(currentSheet, t);
+        }
 
         return currentSheet;
     }
@@ -226,7 +240,7 @@ public class TaskManager {
         Task task = currentSheet.createTask(kitchenProcess);
 
         if(task != null)
-            notifyAddedTask(task);
+            notifyAddedTask(currentSheet, task);
     }
 
     public void removeTaskFromSheet(Task task) throws UseCaseLogicException {

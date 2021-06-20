@@ -8,7 +8,7 @@ public interface TaskEventReceiver {
     void updateSetSummarySheet(SummarySheet summarySheet);
     void updateAssignedTask(Shift s, Task t);
     void updateEditedAssignment(Shift s, Task t);
-    void updateAddedTask(Task task);
+    void updateAddedTask(SummarySheet s, Task task);
     void updateRemovedTask(Task task);
     void updateMovedTask(Task task, int pos);
     void updateRemovedAssignment(Task task);

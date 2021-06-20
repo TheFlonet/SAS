@@ -64,7 +64,7 @@ public class SummarySheet {
 
     public Task createTask(KitchenProcess process) {
         Task t = new Task(process);
-        if (!tasks.contains(t)) tasks.add(t);
+        if(!tasks.contains(t)) tasks.add(t);
         else t = null;
         return t;
     }

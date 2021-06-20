@@ -19,7 +19,7 @@ public class TaskPersistence implements TaskEventReceiver {
 
     @Override
     public void updateAssignedTask(Shift s, Task t) {
-
+        Task.saveAssignedTask(s, t);
     }
 
     @Override
@@ -28,8 +28,8 @@ public class TaskPersistence implements TaskEventReceiver {
     }
 
     @Override
-    public void updateAddedTask(Task task) {
-
+    public void updateAddedTask(SummarySheet s, Task task) {
+        Task.saveNewTask(s, task);
     }
 
     @Override

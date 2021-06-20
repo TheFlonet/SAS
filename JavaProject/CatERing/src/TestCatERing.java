@@ -56,10 +56,16 @@ public class TestCatERing {
                 CatERing.getInstance().getTaskManager().assignTask(newSheet.getTasks().get(0), shifts.get(0), cooks.get(0), 20, 2);
                 CatERing.getInstance().getTaskManager().assignTask(newSheet.getTasks().get(1), shifts.get(0), cooks.get(1), 10, 3);
                 CatERing.getInstance().getTaskManager().assignTask(newSheet.getTasks().get(3), shifts.get(1), 20, 2);
-                CatERing.getInstance().getTaskManager().assignTask(newSheet.getTasks().get(0), shifts.get(2));
+                CatERing.getInstance().getTaskManager().assignTask(newSheet.getTasks().get(5), shifts.get(2));
             } catch (UnavailableCookException e) {
                 e.printStackTrace();
                 System.out.println("Questa cosa non dovrebbe stampare");
+            }
+
+            try {
+                CatERing.getInstance().getTaskManager().assignTask(newSheet.getTasks().get(7), shifts.get(3), cooks.get(0));
+            } catch (UnavailableCookException e) {
+                System.out.println("Il cuoco non è assegnato al turno");
             }
 
             System.out.println(board);
