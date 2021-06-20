@@ -23,6 +23,10 @@ public class Service {
 
     public Menu getCurrentMenu() { return currentMenu; }
 
+    public int getId() {
+        return id;
+    }
+
     // STATIC METHODS FOR PERSISTENCE
 
     public static ObservableList<Service> loadServiceInfoForEvent(int event_id) {

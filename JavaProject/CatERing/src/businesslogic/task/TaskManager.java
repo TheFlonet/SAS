@@ -86,6 +86,7 @@ public class TaskManager {
         currentSheet.initSectionItems();
         currentSheet.initFreeItems();
         currentSheet.setOwner(user);
+
         notifyCreatedSummarySheet(currentSheet);
 
         return currentSheet;

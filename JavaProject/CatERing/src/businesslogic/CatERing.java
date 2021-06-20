@@ -7,6 +7,7 @@ import businesslogic.shift.ShiftManager;
 import businesslogic.task.TaskManager;
 import businesslogic.user.UserManager;
 import persistence.MenuPersistence;
+import persistence.TaskPersistence;
 
 public class CatERing {
     private static CatERing singleInstance;
@@ -26,6 +27,7 @@ public class CatERing {
     private final EventManager eventMgr;
 
     private MenuPersistence menuPersistence;
+    private TaskPersistence taskPersistence;
 
     private CatERing() {
         menuMgr = new MenuManager();
@@ -36,7 +38,8 @@ public class CatERing {
         eventMgr = new EventManager();
         menuPersistence = new MenuPersistence();
         menuMgr.addEventReceiver(menuPersistence);
-        // TODO: creare TaskPersistece e aggiungerlo ai listener di taskMgr
+        taskPersistence = new TaskPersistence();
+        taskMgr.addReceiver(taskPersistence);
     }
 
     public MenuManager getMenuManager() {

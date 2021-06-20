@@ -17,13 +17,13 @@ import java.util.ArrayList;
 import java.util.Map;
 
 public class Menu {
-    private static Map<Integer, Menu> loadedMenus = FXCollections.observableHashMap();
+    private static final Map<Integer, Menu> loadedMenus = FXCollections.observableHashMap();
     private int id;
     private String title;
     private boolean published;
     private boolean inUse;
 
-    private ObservableMap<String, Boolean> featuresMap;
+    private final ObservableMap<String, Boolean> featuresMap;
     private ObservableList<MenuItem> freeItems;
     private ObservableList<Section> sections;
 
@@ -163,7 +163,7 @@ public class Menu {
             if (sec.getItemPosition(mi) >= 0)
                 return sec;
         }
-        if (freeItems.indexOf(mi) >= 0) return null;
+        if (freeItems.contains(mi)) return null;
         throw new IllegalArgumentException();
     }
 

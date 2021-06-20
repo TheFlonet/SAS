@@ -5,11 +5,13 @@ import businesslogic.menu.MenuItem;
 import businesslogic.menu.Section;
 import businesslogic.recipe.KitchenProcess;
 import businesslogic.user.User;
+import persistence.PersistenceManager;
 
 import java.util.ArrayList;
 import java.util.List;
 
 public class SummarySheet {
+    private int id;
     private final List<Task> tasks;
     private final Service associatedService;
     private User owner;
@@ -36,6 +38,14 @@ public class SummarySheet {
         }
     }
 
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
+    }
+
     public void setOwner(User user) {
         owner = user;
     }
@@ -46,6 +56,10 @@ public class SummarySheet {
 
     public List<Task> getTasks() {
         return tasks;
+    }
+
+    public Service getAssociatedService() {
+        return associatedService;
     }
 
     public Task createTask(KitchenProcess process) {
@@ -69,9 +83,17 @@ public class SummarySheet {
         for(Task t : tasks) {
             s += "\t\t" + t + "\n";
         }
-        return "\nFOGLIO RIEPILOGATIVO CORRENTE:\n" +
+        return "\nFOGLIO RIEPILOGATIVO CORRENTE (id " + id + "):\n" +
                 "\tCOMPITI:\n" + s +
                 "\n\tSERVIZIO ASSOCIATO: " + associatedService +
                 "\n\tPROPRIETARIO: " + owner + "\n";
     }
+
+    // STATIC METHODS FOR PERSISTENCE
+    public static void saveNewSummarySheet(SummarySheet summarySheet) {
+        String sql = "INSERT INTO summarysheets (service_id, creator_id) VALUES (" + summarySheet.associatedService.getId() + "," + summarySheet.owner.getId() + ");";
+        PersistenceManager.executeUpdate(sql);
+        summarySheet.id = PersistenceManager.getLastId();
+    }
+
 }

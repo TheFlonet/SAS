@@ -10,12 +10,11 @@ public class TaskPersistence implements TaskEventReceiver {
 
     @Override
     public void updateCreatedSummarySheet(SummarySheet summarySheet) {
-        
+        SummarySheet.saveNewSummarySheet(summarySheet);
     }
 
     @Override
     public void updateSetSummarySheet(SummarySheet summarySheet) {
-
     }
 
     @Override
@@ -40,7 +39,7 @@ public class TaskPersistence implements TaskEventReceiver {
 
     @Override
     public void updateMovedTask(Task task, int pos) {
-
+        // nessun salvataggio relativo a posizione
     }
 
     @Override
