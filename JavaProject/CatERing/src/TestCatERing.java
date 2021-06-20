@@ -21,10 +21,6 @@ public class TestCatERing {
             User currentUser = CatERing.getInstance().getUserManager().getCurrentUser();
             System.out.println(currentUser);
 
-            System.out.println("\n TEST CREATE MENU");
-            Menu m = CatERing.getInstance().getMenuManager().createMenu("Menu di Test");
-            System.out.println(m.toString());
-
             System.out.println("TEST CREATE SHEET");
             /* TODO messo solo per evidenziare la nota:
              *  il recupero degli eventi corrisponderebbe a una operazione di sistema del tipo "consultaListaEventi",
@@ -76,9 +72,9 @@ public class TestCatERing {
 
             /* TODO generale: cose da rendere persistenti
              *  - fogli_riepilogativi(id AUTOINCR, id_servizio, creatore, *)
-             *  - compiti(id AUTOINCR, id_foglio, id_ricetta, id_utente?, *)
-             *  - turni_preparatori(id AUTOINCR, data, orainizio, orafine, *)
-             *  - associazione_turno_compito(id_turno, id_compito, *)
+             *  - compiti(id AUTOINCR, id_foglio, id_ricetta, id_utente?, *) -> SERVE -forse- AGGIUNGERE "id_turno?"
+             *  - turni_preparatori(id AUTOINCR, data, orainizio, orafine, completo, *)
+             *  - associazione_turno_compito(id_turno, id_compito, *) -> NON SERVE -forse- PERCHE' ASSOCIAZIONE uno-a-molti
              *  - associazione_turno_cuoco(id_turno, id_utente, *)
              */
 

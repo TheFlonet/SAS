@@ -10,6 +10,7 @@ import java.util.Date;
 import java.util.List;
 
 public abstract class Shift {
+    protected int id;
     protected LocalDate date;
     protected LocalTime startTime;
     protected LocalTime endTime;
@@ -19,7 +20,12 @@ public abstract class Shift {
     protected LocalDate deadlineEditAvailability;
     protected Type type;
 
-    public Shift() {
+    public Shift(LocalDate date, LocalTime startTime, LocalTime endTime) {
+        id = 0;
+        this.date = date;
+        this.startTime = startTime;
+        this.endTime = endTime;
+        isComplete = false;
         assignedTasks = new ArrayList<>();
         assignedCooks = new ArrayList<>();
     }
