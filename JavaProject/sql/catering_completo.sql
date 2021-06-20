@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Creato il: Giu 20, 2021 alle 14:56
+-- Creato il: Giu 20, 2021 alle 16:33
 -- Versione del server: 10.4.14-MariaDB
 -- Versione PHP: 7.4.11
 
@@ -261,7 +261,7 @@ CREATE TABLE `services` (
 
 INSERT INTO `services` (`id`, `event_id`, `name`, `proposed_menu_id`, `approved_menu_id`, `service_date`, `time_start`, `time_end`, `expected_participants`) VALUES
 (1, 2, 'Cena', 86, 0, '2020-08-13', '20:00:00', '23:30:00', 25),
-(2, 1, 'Coffee break mattino', 0, 80, '2020-09-25', '10:30:00', '11:30:00', 100),
+(2, 1, 'Coffee break mattino', 0, 86, '2020-09-25', '10:30:00', '11:30:00', 100),
 (3, 1, 'Colazione di lavoro', 0, 0, '2020-09-25', '13:00:00', '14:00:00', 80),
 (4, 1, 'Coffee break pomeriggio', 0, 82, '2020-09-25', '16:00:00', '16:30:00', 100),
 (5, 1, 'Cena sociale', 0, 0, '2020-09-25', '20:00:00', '22:30:00', 40),
@@ -311,8 +311,10 @@ CREATE TABLE `shifts` (
 --
 
 INSERT INTO `shifts` (`id`, `date`, `startTime`, `endTime`, `is_complete`, `type`) VALUES
-(1, '2021-06-20', '13:00:00', '14:00:00', 0, 'prep'),
-(3, '2021-06-25', '07:00:00', '13:00:00', 0, 'prep');
+(1, '2021-08-13', '13:00:00', '14:00:00', 0, 'prep'),
+(3, '2022-06-11', '07:00:00', '13:00:00', 0, 'prep'),
+(4, '2021-07-25', '13:00:00', '14:00:00', 0, 'prep'),
+(5, '2022-06-12', '12:00:00', '15:00:00', 0, 'prep');
 
 -- --------------------------------------------------------
 
@@ -544,7 +546,7 @@ ALTER TABLE `services`
 -- AUTO_INCREMENT per la tabella `shifts`
 --
 ALTER TABLE `shifts`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
 
 --
 -- AUTO_INCREMENT per la tabella `summarysheets`
