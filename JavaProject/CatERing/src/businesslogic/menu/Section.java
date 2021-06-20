@@ -45,7 +45,7 @@ public class Section {
                 updatedList.add(mi);
             } else {
                 prev.setDescription(mi.getDescription());
-                prev.setItemRecipe(mi.getItemRecipe());
+                prev.setItemKitchenProcess(mi.getItemRecipe());
                 updatedList.add(prev);
             }
         }

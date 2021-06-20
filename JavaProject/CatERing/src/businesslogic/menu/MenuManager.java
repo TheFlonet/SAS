@@ -2,7 +2,7 @@ package businesslogic.menu;
 
 import businesslogic.CatERing;
 import businesslogic.UseCaseLogicException;
-import businesslogic.recipe.Recipe;
+import businesslogic.recipe.KitchenProcess;
 import businesslogic.user.User;
 import javafx.collections.ObservableList;
 
@@ -47,7 +47,7 @@ public class MenuManager {
         return sec;
     }
 
-    public MenuItem insertItem(Recipe recipe, Section sec, String desc) throws UseCaseLogicException {
+    public MenuItem insertItem(KitchenProcess recipe, Section sec, String desc) throws UseCaseLogicException {
         if (this.currentMenu == null) throw new UseCaseLogicException();
         if (sec != null && this.currentMenu.getSectionPosition(sec) < 0) throw new UseCaseLogicException();
         MenuItem mi = this.currentMenu.addItem(recipe, sec, desc);
@@ -55,15 +55,15 @@ public class MenuManager {
         return mi;
     }
 
-    public MenuItem insertItem(Recipe recipe, Section sec) throws UseCaseLogicException {
+    public MenuItem insertItem(KitchenProcess recipe, Section sec) throws UseCaseLogicException {
         return this.insertItem(recipe, sec, recipe.getName());
     }
 
-    public MenuItem insertItem(Recipe rec) throws UseCaseLogicException {
+    public MenuItem insertItem(KitchenProcess rec) throws UseCaseLogicException {
         return this.insertItem(rec, null, rec.getName());
     }
 
-    public MenuItem insertItem(Recipe rec, String desc) throws UseCaseLogicException {
+    public MenuItem insertItem(KitchenProcess rec, String desc) throws UseCaseLogicException {
         return this.insertItem(rec, null, desc);
     }
 

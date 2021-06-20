@@ -1,9 +1,8 @@
 package businesslogic;
 
-import businesslogic.event.Event;
 import businesslogic.event.EventManager;
 import businesslogic.menu.MenuManager;
-import businesslogic.recipe.RecipeManager;
+import businesslogic.recipe.KitchenProcessManager;
 import businesslogic.shift.ShiftManager;
 import businesslogic.task.TaskManager;
 import businesslogic.user.UserManager;
@@ -20,7 +19,7 @@ public class CatERing {
     }
 
     private final MenuManager menuMgr;
-    private final RecipeManager recipeMgr;
+    private final KitchenProcessManager recipeMgr;
     private final UserManager userMgr;
     private final ShiftManager shiftMgr;
     private final TaskManager taskMgr;
@@ -30,7 +29,7 @@ public class CatERing {
 
     private CatERing() {
         menuMgr = new MenuManager();
-        recipeMgr = new RecipeManager();
+        recipeMgr = new KitchenProcessManager();
         userMgr = new UserManager();
         shiftMgr = new ShiftManager();
         taskMgr = new TaskManager();
@@ -44,7 +43,7 @@ public class CatERing {
         return menuMgr;
     }
 
-    public RecipeManager getRecipeManager() {
+    public KitchenProcessManager getRecipeManager() {
         return recipeMgr;
     }
 

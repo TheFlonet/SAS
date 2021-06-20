@@ -1,5 +1,6 @@
 package businesslogic.menu;
 
+import businesslogic.recipe.KitchenProcess;
 import businesslogic.recipe.Recipe;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
@@ -16,17 +17,17 @@ import java.util.List;
 public class MenuItem {
     private int id;
     private String description;
-    private Recipe itemRecipe;
+    private KitchenProcess itemRecipe;
 
     private MenuItem() {
 
     }
 
-    public MenuItem(Recipe rec) {
+    public MenuItem(KitchenProcess rec) {
         this(rec, rec.getName());
     }
 
-    public MenuItem(Recipe rec, String desc) {
+    public MenuItem(KitchenProcess rec, String desc) {
         id = 0;
         itemRecipe = rec;
         description = desc;
@@ -56,11 +57,11 @@ public class MenuItem {
         this.description = description;
     }
 
-    public Recipe getItemRecipe() {
+    public KitchenProcess getItemRecipe() {
         return itemRecipe;
     }
 
-    public void setItemRecipe(Recipe itemRecipe) {
+    public void setItemKitchenProcess(KitchenProcess itemRecipe) {
         this.itemRecipe = itemRecipe;
     }
 
@@ -119,7 +120,7 @@ public class MenuItem {
 
         // carico qui le ricette perché non posso innestare due connessioni al DB
         for (int i = 0; i < result.size(); i++) {
-            result.get(i).itemRecipe = Recipe.loadRecipeById(recids.get(i));
+            result.get(i).itemRecipe = KitchenProcess.loadKitchenProcessById(recids.get(i));
         }
 
         return result;

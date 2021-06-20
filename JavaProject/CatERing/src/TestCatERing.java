@@ -71,10 +71,9 @@ public class TestCatERing {
 
 
             /* TODO generale: cose da rendere persistenti
-             *  - fogli_riepilogativi(id AUTOINCR, id_servizio, creatore, *)
-             *  - compiti(id AUTOINCR, id_foglio, id_ricetta, id_utente?, *) -> SERVE -forse- AGGIUNGERE "id_turno?"
+             *  - fogli_riepilogativi(id AUTOINCR, id_servizio, id_utente, *)
+             *  - compiti(id AUTOINCR, id_foglio, id_procedura, id_utente?, id_turno?, *)
              *  - turni_preparatori(id AUTOINCR, data, orainizio, orafine, completo, *)
-             *  - associazione_turno_compito(id_turno, id_compito, *) -> NON SERVE -forse- PERCHE' ASSOCIAZIONE uno-a-molti
              *  - associazione_turno_cuoco(id_turno, id_utente, *)
              */
 
