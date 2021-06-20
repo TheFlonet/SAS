@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Creato il: Giu 20, 2021 alle 14:46
+-- Creato il: Giu 20, 2021 alle 14:56
 -- Versione del server: 10.4.14-MariaDB
 -- Versione PHP: 7.4.11
 
@@ -288,9 +288,6 @@ INSERT INTO `shiftcooks` (`shift_id`, `cook_id`) VALUES
 (1, 4),
 (1, 5),
 (1, 6),
-(2, 5),
-(2, 6),
-(2, 7),
 (3, 4),
 (3, 6);
 
@@ -315,7 +312,6 @@ CREATE TABLE `shifts` (
 
 INSERT INTO `shifts` (`id`, `date`, `startTime`, `endTime`, `is_complete`, `type`) VALUES
 (1, '2021-06-20', '13:00:00', '14:00:00', 0, 'prep'),
-(2, '2021-06-16', '06:00:00', '08:00:00', 0, 'ser'),
 (3, '2021-06-25', '07:00:00', '13:00:00', 0, 'prep');
 
 -- --------------------------------------------------------
@@ -362,8 +358,6 @@ CREATE TABLE `tasks` (
 
 INSERT INTO `tasks` (`id`, `sheet_id`, `process_id`, `cook_id`, `shift_id`, `time`, `qty`) VALUES
 (1, 1, 2, NULL, NULL, NULL, NULL),
-(2, 1, 5, 5, 2, NULL, NULL),
-(3, 2, 4, 7, 2, NULL, NULL),
 (4, 3, 1, 4, 1, NULL, NULL);
 
 -- --------------------------------------------------------
@@ -496,9 +490,9 @@ ALTER TABLE `summarysheets`
 ALTER TABLE `tasks`
   ADD PRIMARY KEY (`id`),
   ADD KEY `tasks_kitchenprocesses_id_fk` (`process_id`),
+  ADD KEY `tasks_shiftcooks_shift_id_cook_id_fk` (`shift_id`,`cook_id`),
   ADD KEY `tasks_summarysheets_id_fk` (`sheet_id`),
-  ADD KEY `tasks_users_id_fk` (`cook_id`),
-  ADD KEY `tasks_shiftcooks_shift_id_cook_id_fk` (`shift_id`,`cook_id`);
+  ADD KEY `tasks_users_id_fk` (`cook_id`);
 
 --
 -- Indici per le tabelle `users`
@@ -578,8 +572,8 @@ ALTER TABLE `users`
 -- Limiti per la tabella `shiftcooks`
 --
 ALTER TABLE `shiftcooks`
-  ADD CONSTRAINT `shiftcooks_shifts_id_fk` FOREIGN KEY (`shift_id`) REFERENCES `shifts` (`id`),
-  ADD CONSTRAINT `shiftcooks_users_id_fk` FOREIGN KEY (`cook_id`) REFERENCES `users` (`id`);
+  ADD CONSTRAINT `shiftcooks_shifts_id_fk` FOREIGN KEY (`shift_id`) REFERENCES `shifts` (`id`) ON DELETE CASCADE ON UPDATE CASCADE,
+  ADD CONSTRAINT `shiftcooks_users_id_fk` FOREIGN KEY (`cook_id`) REFERENCES `users` (`id`) ON DELETE CASCADE ON UPDATE CASCADE;
 
 --
 -- Limiti per la tabella `summarysheets`
@@ -592,11 +586,11 @@ ALTER TABLE `summarysheets`
 -- Limiti per la tabella `tasks`
 --
 ALTER TABLE `tasks`
-  ADD CONSTRAINT `tasks_kitchenprocesses_id_fk` FOREIGN KEY (`process_id`) REFERENCES `kitchenprocesses` (`id`),
-  ADD CONSTRAINT `tasks_shiftcooks_shift_id_cook_id_fk` FOREIGN KEY (`shift_id`,`cook_id`) REFERENCES `shiftcooks` (`shift_id`, `cook_id`),
-  ADD CONSTRAINT `tasks_shifts_id_fk` FOREIGN KEY (`shift_id`) REFERENCES `shifts` (`id`),
-  ADD CONSTRAINT `tasks_summarysheets_id_fk` FOREIGN KEY (`sheet_id`) REFERENCES `summarysheets` (`id`),
-  ADD CONSTRAINT `tasks_users_id_fk` FOREIGN KEY (`cook_id`) REFERENCES `users` (`id`);
+  ADD CONSTRAINT `tasks_kitchenprocesses_id_fk` FOREIGN KEY (`process_id`) REFERENCES `kitchenprocesses` (`id`) ON DELETE CASCADE ON UPDATE CASCADE,
+  ADD CONSTRAINT `tasks_shiftcooks_shift_id_cook_id_fk` FOREIGN KEY (`shift_id`,`cook_id`) REFERENCES `shiftcooks` (`shift_id`, `cook_id`) ON DELETE CASCADE ON UPDATE CASCADE,
+  ADD CONSTRAINT `tasks_shifts_id_fk` FOREIGN KEY (`shift_id`) REFERENCES `shifts` (`id`) ON DELETE CASCADE ON UPDATE CASCADE,
+  ADD CONSTRAINT `tasks_summarysheets_id_fk` FOREIGN KEY (`sheet_id`) REFERENCES `summarysheets` (`id`) ON DELETE CASCADE ON UPDATE CASCADE,
+  ADD CONSTRAINT `tasks_users_id_fk` FOREIGN KEY (`cook_id`) REFERENCES `users` (`id`) ON DELETE CASCADE ON UPDATE CASCADE;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
