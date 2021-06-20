@@ -292,13 +292,11 @@ public class TaskManager {
                 && board.getAssignedShifts().contains(shift)))
             throw new UseCaseLogicException();
 
-        shift.removeTask(task);
-
-        task.setCook(null);
+        Task removedTask = shift.removeTask(task);
 
         if (shift.getAssignedTasks().size() == 0) board.removeShift(shift);
 
-        notifyRemovedAssignment(task);
+        notifyRemovedAssignment(removedTask);
     }
 
     public void addSpecification(Task task, User newCook) throws UseCaseLogicException {

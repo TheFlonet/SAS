@@ -22,9 +22,12 @@ public class ShiftBoard {
 
     @Override
     public String toString() {
-        return "ShiftBoard{" +
-                "assignedShifts=" + assignedShifts +
-                '}';
+        String s = "TABELLONE TURNI\n";
+        for (Shift sh : assignedShifts) {
+            s += "\t- " + sh + "\n";
+        }
+        s += "\n";
+        return s;
     }
 
     public Shift findShiftOf(Task task) {

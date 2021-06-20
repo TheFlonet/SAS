@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Creato il: Giu 20, 2021 alle 19:40
+-- Creato il: Giu 20, 2021 alle 21:47
 -- Versione del server: 10.4.14-MariaDB
 -- Versione PHP: 7.4.11
 
@@ -289,7 +289,8 @@ INSERT INTO `shiftcooks` (`shift_id`, `cook_id`) VALUES
 (1, 5),
 (1, 6),
 (3, 4),
-(3, 6);
+(3, 6),
+(5, 5);
 
 -- --------------------------------------------------------
 

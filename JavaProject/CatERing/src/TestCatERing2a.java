@@ -16,11 +16,6 @@ public class TestCatERing2a {
             User currentUser = CatERing.getInstance().getUserManager().getCurrentUser();
             System.out.println(currentUser);
 
-/*            System.out.println("\nTEST CREATE SHEET");
-            List<Event> events = CatERing.getInstance().getEventManager().getEvents();
-            SummarySheet newSheet = CatERing.getInstance().getTaskManager().createSummarySheet(events.get(0).getServices().get(0));
-            System.out.println(newSheet);*/
-
             System.out.println("\n TEST SET SHEET");
             SummarySheet existingSheet = SummarySheet.loadExistingSheet();
             CatERing.getInstance().getTaskManager().setCurrentSheet(existingSheet);

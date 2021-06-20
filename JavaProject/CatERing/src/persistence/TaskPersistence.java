@@ -14,8 +14,7 @@ public class TaskPersistence implements TaskEventReceiver {
     }
 
     @Override
-    public void updateSetSummarySheet(SummarySheet summarySheet) {
-    }
+    public void updateSetSummarySheet(SummarySheet summarySheet) {}
 
     @Override
     public void updateAssignedTask(Shift s, Task t) {
@@ -23,9 +22,7 @@ public class TaskPersistence implements TaskEventReceiver {
     }
 
     @Override
-    public void updateEditedAssignment(Shift s, Task t) {
-
-    }
+    public void updateEditedAssignment(Shift s, Task t) {}
 
     @Override
     public void updateAddedTask(SummarySheet s, Task task) {
@@ -44,11 +41,11 @@ public class TaskPersistence implements TaskEventReceiver {
 
     @Override
     public void updateRemovedAssignment(Task task) {
-
+        Task.saveRemovedAssignment(task);
     }
 
     @Override
     public void updateSpecificationsAdded(Task task, User cook, long time, int quantity) {
-
+        Task.saveNewSpecs(task, cook, time, quantity);
     }
 }

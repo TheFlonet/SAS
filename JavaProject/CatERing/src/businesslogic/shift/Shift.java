@@ -37,7 +37,7 @@ public abstract class Shift {
 
     @Override
     public String toString() {
-        return "Shift{" +
+        /*return "Shift{" +
                 "id=" + id +
                 ", date=" + date +
                 ", startTime=" + startTime +
@@ -48,14 +48,20 @@ public abstract class Shift {
                 ", deadlineEditAvailability=" + deadlineEditAvailability +
                 ", type=" + type +
                 '}';
+        */
+        return "TURNO n°" + id + "["+date+" "+startTime+" "+endTime+"]; Cuochi: " + assignedCooks.size() + " - Compiti: " + assignedTasks.size();
     }
 
     public void  addTask(Task t) {
         assignedTasks.add(t);
     }
 
-    public void removeTask(Task t) {
-        assignedTasks.remove(t);
+    public Task removeTask(Task t) {
+        int index = assignedTasks.indexOf(t);
+        Task removedT = assignedTasks.remove(index);
+
+        removedT.setCook(null);
+        return removedT;
     }
 
     public int getId() { return id; }

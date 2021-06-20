@@ -84,7 +84,6 @@ public class Task {
         });
 
         return res;
-
     }
 
     public static void saveAssignedTask(Shift s, Task t) {
@@ -130,4 +129,26 @@ public class Task {
 
         return lst;
     }
+
+    public static void saveRemovedAssignment(Task t) {
+        System.out.println("Voglio rimuovere assegnamento a compito " + t.id);
+        String sql = "UPDATE tasks SET shift_id = null, cook_id = null WHERE id = " + t.id;
+        int result = PersistenceManager.executeUpdate(sql);
+        System.out.println("Modifiche fatte? " + result);
+    }
+
+    public static Task getLoadedTaskById(int task_id) {
+        return loadedTasks.get(task_id);
+    }
+
+    public static void saveNewSpecs(Task t, User c, long time, int qty) {
+        System.out.println("Voglio aggiungere specifiche a compito " + t.id);
+        String sql = "UPDATE tasks SET ";
+        if(c != null) sql += "cook_id = " + c.getId();
+        else sql += "time = " + time + ",qty = " + qty;
+        sql += " WHERE id = " + t.id;
+        int result = PersistenceManager.executeUpdate(sql);
+        System.out.println("Modifiche fatte? " + result);
+    }
 }
+
