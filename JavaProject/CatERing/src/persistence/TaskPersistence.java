@@ -33,8 +33,8 @@ public class TaskPersistence implements TaskEventReceiver {
     }
 
     @Override
-    public void updateRemovedTask(Task task) {
-
+    public void updateRemovedTask(SummarySheet s, Task task) {
+        Task.saveRemovedTask(s, task);
     }
 
     @Override

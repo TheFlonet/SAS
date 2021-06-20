@@ -6,7 +6,10 @@ import businesslogic.menu.Section;
 import businesslogic.recipe.KitchenProcess;
 import businesslogic.user.User;
 import persistence.PersistenceManager;
+import persistence.ResultHandler;
 
+import java.sql.ResultSet;
+import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -90,10 +93,31 @@ public class SummarySheet {
     }
 
     // STATIC METHODS FOR PERSISTENCE
+
     public static void saveNewSummarySheet(SummarySheet summarySheet) {
         String sql = "INSERT INTO summarysheets (service_id, creator_id) VALUES (" + summarySheet.associatedService.getId() + "," + summarySheet.owner.getId() + ");";
         PersistenceManager.executeUpdate(sql);
         summarySheet.id = PersistenceManager.getLastId();
+    }
+
+    public static SummarySheet loadExistingSheet() {
+        List<SummarySheet> lst = new ArrayList<>();
+        int sh_id = 1;
+        String query = "SELECT * FROM summarysheets WHERE id=" + sh_id;
+        PersistenceManager.executeQuery(query, rs -> {
+            int service_id = rs.getInt("service_id");
+            int creator_id = rs.getInt("creator_id");
+            Service s = Service.loadServiceById(service_id);
+            User u = User.loadUserById(creator_id);
+            SummarySheet ret = new SummarySheet(s, u);
+            ret.id = sh_id;
+            lst.add(ret);
+        });
+
+        SummarySheet sh = lst.get(0);
+        sh.getTasks().addAll(Task.loadTasksBySheet(sh.id));
+
+        return sh;
     }
 
 }

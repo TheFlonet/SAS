@@ -8,9 +8,7 @@ import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import persistence.PersistenceManager;
 
-import java.util.HashMap;
-import java.util.Map;
-import java.util.Objects;
+import java.util.*;
 
 public class Task {
 
@@ -101,5 +99,35 @@ public class Task {
         sql += (" WHERE id = " + t.id);
 
         PersistenceManager.executeUpdate(sql);
+    }
+
+    public static void saveRemovedTask(SummarySheet s, Task task) {
+        //System.out.println("Rimuovo task della ricetta " + task.getProcess().getId());
+        String sql = "DELETE FROM tasks WHERE sheet_id = " + s.getId() + " AND process_id = " + task.getProcess().getId() + ";";
+        int result = PersistenceManager.executeUpdate(sql);
+        loadedTasks.remove(task.id);
+        //System.out.println("Rimosso task? " + result);
+    }
+
+    public static List<Task> loadTasksBySheet(int sheet_id) {
+        List<Task> lst = new ArrayList<>();
+        String query = "SELECT * FROM tasks WHERE sheet_id = " + sheet_id;
+        PersistenceManager.executeQuery(query, rs -> {
+            int t_id = rs.getInt("id");
+            if(loadedTasks.containsKey(t_id)) lst.add(loadedTasks.get(t_id));
+            else {
+                KitchenProcess process = KitchenProcess.loadKitchenProcessById(rs.getInt("process_id"));
+                Task task = new Task(process);
+                task.id = t_id;
+                int cook_id;
+                if((cook_id = rs.getInt("cook_id")) > 0) task.cook = User.loadUserById(cook_id);
+                task.quantity = rs.getInt("qty");
+                task.time = rs.getInt("time");
+                loadedTasks.put(t_id, task);
+                lst.add(task);
+            }
+        });
+
+        return lst;
     }
 }

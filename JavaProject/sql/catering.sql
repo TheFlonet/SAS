@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Creato il: Giu 20, 2021 alle 16:33
+-- Creato il: Giu 20, 2021 alle 19:40
 -- Versione del server: 10.4.14-MariaDB
 -- Versione PHP: 7.4.11
 
@@ -359,8 +359,16 @@ CREATE TABLE `tasks` (
 --
 
 INSERT INTO `tasks` (`id`, `sheet_id`, `process_id`, `cook_id`, `shift_id`, `time`, `qty`) VALUES
-(1, 1, 2, NULL, NULL, NULL, NULL),
-(4, 3, 1, 4, 1, NULL, NULL);
+(1, 1, 1, NULL, NULL, NULL, NULL),
+(4, 1, 2, NULL, NULL, NULL, NULL),
+(6, 1, 3, NULL, NULL, NULL, NULL),
+(7, 1, 4, NULL, NULL, NULL, NULL),
+(8, 1, 5, NULL, NULL, NULL, NULL),
+(9, 1, 6, NULL, NULL, NULL, NULL),
+(10, 1, 7, NULL, NULL, NULL, NULL),
+(11, 1, 8, NULL, NULL, NULL, NULL),
+(12, 1, 9, NULL, NULL, NULL, NULL),
+(13, 1, 10, NULL, NULL, NULL, NULL);
 
 -- --------------------------------------------------------
 
@@ -558,7 +566,7 @@ ALTER TABLE `summarysheets`
 -- AUTO_INCREMENT per la tabella `tasks`
 --
 ALTER TABLE `tasks`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=14;
 
 --
 -- AUTO_INCREMENT per la tabella `users`

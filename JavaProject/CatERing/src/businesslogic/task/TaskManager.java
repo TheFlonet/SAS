@@ -59,9 +59,9 @@ public class TaskManager {
             receiver.updateAddedTask(s, task);
     }
 
-    private void notifyRemovedTask(Task task) {
+    private void notifyRemovedTask(SummarySheet s, Task task) {
         for (TaskEventReceiver receiver : eventReceivers)
-            receiver.updateRemovedTask(task);
+            receiver.updateRemovedTask(s, task);
     }
 
     private void notifyMovedTask(Task task, int pos) {
@@ -253,7 +253,7 @@ public class TaskManager {
 
         currentSheet.removeTask(task);
 
-        notifyRemovedTask(task);
+        notifyRemovedTask(currentSheet, task);
     }
 
     public void moveTask(Task task, int pos) throws UseCaseLogicException {

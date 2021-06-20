@@ -11,7 +11,7 @@ import java.sql.Time;
 public class Service {
     private int id;
     private Menu currentMenu;
-    private final String name;
+    private String name;
     private Date date;
     private Time timeStart;
     private Time timeEnd;
@@ -46,6 +46,23 @@ public class Service {
         });
 
         return result;
+    }
+
+    public static Service loadServiceById(int service_id) {
+        String query = "SELECT id, name, approved_menu_id, service_date, time_start, time_end, expected_participants " +
+                "FROM Services WHERE id = " + service_id;
+        Service serv = new Service("");
+        PersistenceManager.executeQuery(query, rs -> {
+            serv.name = rs.getString("name");
+            serv.id = rs.getInt("id");
+            serv.currentMenu = Menu.getMenuByID(rs.getInt("approved_menu_id"));
+            serv.date = rs.getDate("service_date");
+            serv.timeStart = rs.getTime("time_start");
+            serv.timeEnd = rs.getTime("time_end");
+            serv.participants = rs.getInt("expected_participants");
+        });
+
+        return serv;
     }
 
     @Override
