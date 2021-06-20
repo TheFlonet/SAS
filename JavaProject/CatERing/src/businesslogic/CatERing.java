@@ -19,7 +19,7 @@ public class CatERing {
     }
 
     private final MenuManager menuMgr;
-    private final KitchenProcessManager recipeMgr;
+    private final KitchenProcessManager kitchenProcessMgr;
     private final UserManager userMgr;
     private final ShiftManager shiftMgr;
     private final TaskManager taskMgr;
@@ -29,7 +29,7 @@ public class CatERing {
 
     private CatERing() {
         menuMgr = new MenuManager();
-        recipeMgr = new KitchenProcessManager();
+        kitchenProcessMgr = new KitchenProcessManager();
         userMgr = new UserManager();
         shiftMgr = new ShiftManager();
         taskMgr = new TaskManager();
@@ -43,8 +43,8 @@ public class CatERing {
         return menuMgr;
     }
 
-    public KitchenProcessManager getRecipeManager() {
-        return recipeMgr;
+    public KitchenProcessManager getKitchenProcessManager() {
+        return kitchenProcessMgr;
     }
 
     public UserManager getUserManager() {

@@ -27,6 +27,15 @@ public class User {
         this.roles = new HashSet<>();
     }
 
+    @Override
+    public String toString() {
+        return "User{" +
+                "id=" + id +
+                ", username='" + username + '\'' +
+                ", roles=" + roles +
+                '}';
+    }
+
     public boolean isChef() {
         return roles.contains(Role.CHEF);
     }
@@ -39,18 +48,6 @@ public class User {
 
     public int getId() {
         return this.id;
-    }
-
-    public String toString() {
-        String result = username;
-        if (roles.size() > 0) {
-            result += ": ";
-
-            for (User.Role r : roles) {
-                result += r.toString() + " ";
-            }
-        }
-        return result;
     }
 
     // STATIC METHODS FOR PERSISTENCE

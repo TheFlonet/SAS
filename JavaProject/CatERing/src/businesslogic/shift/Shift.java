@@ -2,14 +2,19 @@ package businesslogic.shift;
 
 import businesslogic.task.Task;
 import businesslogic.user.User;
+import javafx.collections.FXCollections;
+import javafx.collections.ObservableList;
+import persistence.PersistenceManager;
 
 import java.time.LocalDate;
 import java.time.LocalTime;
-import java.util.ArrayList;
-import java.util.Date;
-import java.util.List;
+import java.time.ZoneId;
+import java.util.*;
 
 public abstract class Shift {
+
+    private static Map<Integer, Shift> loadedShifts = new HashMap<>();
+
     protected int id;
     protected LocalDate date;
     protected LocalTime startTime;
@@ -28,6 +33,21 @@ public abstract class Shift {
         isComplete = false;
         assignedTasks = new ArrayList<>();
         assignedCooks = new ArrayList<>();
+    }
+
+    @Override
+    public String toString() {
+        return "Shift{" +
+                "id=" + id +
+                ", date=" + date +
+                ", startTime=" + startTime +
+                ", endTime=" + endTime +
+                ", isComplete=" + isComplete +
+                ", assignedTasks=" + assignedTasks +
+                ", assignedCooks=" + assignedCooks +
+                ", deadlineEditAvailability=" + deadlineEditAvailability +
+                ", type=" + type +
+                '}';
     }
 
     public void  addTask(Task t) {
@@ -79,4 +99,53 @@ public abstract class Shift {
     }
 
     public abstract Type getType();
+
+    // STATIC METHODS FOR PERSISTENCE
+
+    public static ObservableList<Shift> getAllShifts() {
+        return FXCollections.observableArrayList(loadedShifts.values());
+    }
+
+    public static ObservableList<Shift> getAllAssignedShifts() {
+        List<Shift> res = new ArrayList<>();
+        for(Shift v : loadedShifts.values()) {
+            if(v.getAssignedTasks().size() > 0)
+                res.add(v);
+        }
+
+        return FXCollections.observableList(res);
+    }
+
+    public static ObservableList<Shift> loadAllShifts() {
+        String query = "SELECT * FROM shifts";
+        PersistenceManager.executeQuery(query, rs -> {
+            int id = rs.getInt("id");
+            Shift rec;
+            if (!loadedShifts.containsKey(id)) {
+                String type = rs.getString("type");
+                LocalDate date = rs.getDate("date").toInstant()
+                        .atZone(ZoneId.systemDefault())
+                        .toLocalDate();
+                LocalTime startTime = rs.getObject("start", LocalTime.class);
+                LocalTime endTime = rs.getObject("end", LocalTime.class);
+                boolean isComplete = rs.getBoolean("isComplete");
+
+                if ("prep".equals(type))
+                    rec = new PreparatoryShift(date, startTime, endTime);
+                else
+                    throw new IllegalStateException();
+
+                rec.id = id;
+                rec.isComplete = isComplete;
+                rec.assignedCooks = User.getCooksFor(rec.id);
+                rec.assignedTasks = Task.getTasksFor(rec.id);
+
+                loadedShifts.put(rec.id, rec);
+            }
+        });
+
+        ObservableList<Shift> ret =  FXCollections.observableArrayList(loadedShifts.values());
+        ret.sort(Comparator.comparing(Shift::getDate));
+        return ret;
+    }
 }

@@ -7,6 +7,7 @@ public class ShiftManager {
 
     public ShiftManager() {
         board = ShiftBoard.getInstance();
+        Shift.loadAllShifts();
     }
 
     public ShiftBoard getShiftBoard() {

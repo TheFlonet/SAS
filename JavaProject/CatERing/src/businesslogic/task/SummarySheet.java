@@ -61,4 +61,13 @@ public class SummarySheet {
     public void addTask(Task task, int pos) {
         tasks.add(pos, task);
     }
+
+    @Override
+    public String toString() {
+        return "SummarySheet{" +
+                "tasks=" + tasks +
+                ", associatedService=" + associatedService +
+                ", owner=" + owner +
+                '}';
+    }
 }

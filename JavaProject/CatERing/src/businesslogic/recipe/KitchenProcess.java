@@ -10,8 +10,7 @@ import java.sql.SQLException;
 import java.util.*;
 
 public class KitchenProcess {
-    private static Map<Integer, KitchenProcess> all = new HashMap<>();
-
+    private static final Map<Integer, KitchenProcess> all = new HashMap<>();
 
     private int id;
     private String name;
@@ -21,6 +20,14 @@ public class KitchenProcess {
     public KitchenProcess(String name) {
         id = 0;
         this.name = name;
+    }
+
+    @Override
+    public String toString() {
+        return "KitchenProcess{" +
+                "id=" + id +
+                ", name='" + name + '\'' +
+                '}';
     }
 
     public String getName() {
@@ -35,10 +42,7 @@ public class KitchenProcess {
         String query = "SELECT * FROM KitchenProcesses";
         PersistenceManager.executeQuery(query, rs -> {
             int id = rs.getInt("id");
-            if (all.containsKey(id)) {
-                KitchenProcess rec = all.get(id);
-                rec.name = rs.getString("name");
-            } else {
+            if (!all.containsKey(id)) {
                 KitchenProcess rec = new KitchenProcess(rs.getString("name"));
                 rec.id = id;
                 all.put(rec.id, rec);

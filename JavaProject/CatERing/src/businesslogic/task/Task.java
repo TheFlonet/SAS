@@ -14,6 +14,16 @@ public class Task {
         process = kitchenProcess;
     }
 
+    @Override
+    public String toString() {
+        return "Task{" +
+                "process=" + process +
+                ", time=" + time +
+                ", quantity=" + quantity +
+                ", cook=" + cook +
+                '}';
+    }
+
     public void setTime(long time) {
         this.time = time;
     }

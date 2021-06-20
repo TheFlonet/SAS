@@ -1,22 +1,30 @@
 package businesslogic.shift;
 
 import businesslogic.task.Task;
+import javafx.collections.ObservableList;
 
 import java.util.ArrayList;
 import java.util.List;
 
 public class ShiftBoard {
-    private final List<Shift> assignedShifts;
+    private final ObservableList<Shift> assignedShifts;
     private static ShiftBoard instance;
 
     private ShiftBoard() {
-        assignedShifts = new ArrayList<>();
+        assignedShifts = Shift.getAllAssignedShifts();
     }
 
     public static ShiftBoard getInstance() {
         if (instance == null) instance = new ShiftBoard();
 
         return instance;
+    }
+
+    @Override
+    public String toString() {
+        return "ShiftBoard{" +
+                "assignedShifts=" + assignedShifts +
+                '}';
     }
 
     public Shift findShiftOf(Task task) {

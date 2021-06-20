@@ -2,7 +2,6 @@ package businesslogic.menu;
 
 import businesslogic.CatERing;
 import businesslogic.recipe.KitchenProcess;
-import businesslogic.recipe.Recipe;
 import businesslogic.user.User;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
@@ -114,12 +113,6 @@ public class Menu {
         return result;
     }
 
-    public String toString() {
-        return title + " (autore: " + owner.getUserName() + ")," + (published ? " " : " non ") +
-                "pubblicato," + (inUse ? " " : " non ") + "in uso";
-    }
-
-
     public int getId() {
         return id;
     }
@@ -134,7 +127,7 @@ public class Menu {
         this.sections.add(new Section("Secondi"));
         this.sections.add(new Section("Dessert"));
 
-        KitchenProcess[] all = CatERing.getInstance().getRecipeManager().getKitchenProcesses().toArray(new KitchenProcess[0]);
+        KitchenProcess[] all = CatERing.getInstance().getKitchenProcessManager().getKitchenProcesses().toArray(new KitchenProcess[0]);
         freeItems.add(new MenuItem(all[3]));
         freeItems.add(new MenuItem(all[4]));
         freeItems.add(new MenuItem(all[5]));
@@ -213,7 +206,7 @@ public class Menu {
                 updatedList.add(mi);
             } else {
                 prev.setDescription(mi.getDescription());
-                prev.setItemKitchenProcess(mi.getItemRecipe());
+                prev.setItemKitchenProcess(mi.getItemProcess());
                 updatedList.add(prev);
             }
         }
@@ -299,6 +292,8 @@ public class Menu {
         if (sec == null) freeItems.remove(mi);
         else sec.removeItem(mi);
     }
+
+    public static Menu getMenuByID(int menu_id) { return loadedMenus.get(menu_id); }
 
     // STATIC METHODS FOR PERSISTENCE
 
@@ -525,5 +520,19 @@ public class Menu {
                 // no generated ids to handle
             }
         });
+    }
+
+    @Override
+    public String toString() {
+        return "Menu{" +
+                "id=" + id +
+                ", title='" + title + '\'' +
+                ", published=" + published +
+                ", inUse=" + inUse +
+                ", featuresMap=" + featuresMap +
+                ", freeItems=" + freeItems +
+                ", sections=" + sections +
+                ", owner=" + owner +
+                '}';
     }
 }

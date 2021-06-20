@@ -31,6 +31,19 @@ public class Section {
         }
     }
 
+    public ObservableList<MenuItem> getSectionItems() {
+        return sectionItems;
+    }
+
+    @Override
+    public String toString() {
+        return "Section{" +
+                "id=" + id +
+                ", name='" + name + '\'' +
+                ", sectionItems=" + sectionItems +
+                '}';
+    }
+
     public void addItem(MenuItem mi) {
         this.sectionItems.add(mi);
     }
@@ -45,7 +58,7 @@ public class Section {
                 updatedList.add(mi);
             } else {
                 prev.setDescription(mi.getDescription());
-                prev.setItemKitchenProcess(mi.getItemRecipe());
+                prev.setItemKitchenProcess(mi.getItemProcess());
                 updatedList.add(prev);
             }
         }
@@ -75,10 +88,6 @@ public class Section {
             result += "\t" + mi.toString() + "\n";
         }
         return result;
-    }
-
-    public String toString() {
-        return name;
     }
 
     public String getName() {
