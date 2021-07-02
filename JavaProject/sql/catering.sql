@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Creato il: Giu 20, 2021 alle 21:47
+-- Creato il: Lug 02, 2021 alle 09:39
 -- Versione del server: 10.4.14-MariaDB
 -- Versione PHP: 7.4.11
 
@@ -334,10 +334,10 @@ CREATE TABLE `summarysheets` (
 --
 
 INSERT INTO `summarysheets` (`id`, `service_id`, `creator_id`) VALUES
-(1, 2, 2),
 (2, 4, 3),
 (3, 5, 3),
-(4, 7, 4);
+(4, 7, 4),
+(5, 2, 4);
 
 -- --------------------------------------------------------
 
@@ -360,16 +360,18 @@ CREATE TABLE `tasks` (
 --
 
 INSERT INTO `tasks` (`id`, `sheet_id`, `process_id`, `cook_id`, `shift_id`, `time`, `qty`) VALUES
-(1, 1, 1, NULL, NULL, NULL, NULL),
-(4, 1, 2, NULL, NULL, NULL, NULL),
-(6, 1, 3, NULL, NULL, NULL, NULL),
-(7, 1, 4, NULL, NULL, NULL, NULL),
-(8, 1, 5, NULL, NULL, NULL, NULL),
-(9, 1, 6, NULL, NULL, NULL, NULL),
-(10, 1, 7, NULL, NULL, NULL, NULL),
-(11, 1, 8, NULL, NULL, NULL, NULL),
-(12, 1, 9, NULL, NULL, NULL, NULL),
-(13, 1, 10, NULL, NULL, NULL, NULL);
+(14, 5, 1, NULL, NULL, NULL, NULL),
+(15, 5, 2, 4, 1, 20, 2),
+(16, 5, 3, 5, 1, 10, 3),
+(17, 5, 5, NULL, 3, 20, 2),
+(18, 5, 20, NULL, NULL, NULL, NULL),
+(19, 5, 8, NULL, 4, NULL, NULL),
+(20, 5, 18, NULL, NULL, NULL, NULL),
+(21, 5, 19, NULL, NULL, NULL, NULL),
+(22, 5, 7, NULL, NULL, NULL, NULL),
+(23, 5, 17, NULL, NULL, NULL, NULL),
+(24, 5, 11, NULL, NULL, NULL, NULL),
+(25, 5, 9, NULL, NULL, NULL, NULL);
 
 -- --------------------------------------------------------
 
@@ -561,13 +563,13 @@ ALTER TABLE `shifts`
 -- AUTO_INCREMENT per la tabella `summarysheets`
 --
 ALTER TABLE `summarysheets`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
 
 --
 -- AUTO_INCREMENT per la tabella `tasks`
 --
 ALTER TABLE `tasks`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=14;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=26;
 
 --
 -- AUTO_INCREMENT per la tabella `users`

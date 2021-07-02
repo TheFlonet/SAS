@@ -17,11 +17,11 @@ public class TestCatERing5b5c {
     public static void main(String[] args) {
         try {
             System.out.println("\nTEST FAKE LOGIN");
-            CatERing.getInstance().getUserManager().fakeLogin("Lidia");
+            CatERing.getInstance().getUserManager().fakeLogin("Tony");
             User currentUser = CatERing.getInstance().getUserManager().getCurrentUser();
             System.out.println(currentUser);
 
-            System.out.println("\n TEST SET SHEET");
+            System.out.println("\nTEST SET SHEET");
             SummarySheet existingSheet = SummarySheet.loadExistingSheet();
             CatERing.getInstance().getTaskManager().setCurrentSheet(existingSheet);
             System.out.println(existingSheet);
@@ -32,9 +32,11 @@ public class TestCatERing5b5c {
             CatERing.getInstance().getTaskManager().addTaskToSheet(kitchenProcessesBook.get(13));
             CatERing.getInstance().getTaskManager().addTaskToSheet(kitchenProcessesBook.get(11));
             CatERing.getInstance().getTaskManager().addTaskToSheet(kitchenProcessesBook.get(18));
+            CatERing.getInstance().getTaskManager().addTaskToSheet(kitchenProcessesBook.get(8));
+            CatERing.getInstance().getTaskManager().addTaskToSheet(kitchenProcessesBook.get(10));
             System.out.println(existingSheet);
 
-            System.out.println("\n TEST BOARD");
+            System.out.println("\nTEST BOARD");
             ShiftBoard board = CatERing.getInstance().getTaskManager().getShiftBoard();
             System.out.println(board);
 
@@ -46,14 +48,14 @@ public class TestCatERing5b5c {
                 CatERing.getInstance().getTaskManager().assignTask(existingSheet.getTasks().get(0), shifts.get(0), cooks.get(0), 20, 2);
                 CatERing.getInstance().getTaskManager().assignTask(existingSheet.getTasks().get(1), shifts.get(0), cooks.get(1), 10, 3);
                 CatERing.getInstance().getTaskManager().assignTask(existingSheet.getTasks().get(3), shifts.get(1), 20, 2);
-                CatERing.getInstance().getTaskManager().assignTask(existingSheet.getTasks().get(5), shifts.get(2));
+                CatERing.getInstance().getTaskManager().assignTask(existingSheet.getTasks().get(2), shifts.get(2));
             } catch (UnavailableCookException e) {
                 e.printStackTrace();
                 System.out.println("Questa cosa non dovrebbe stampare");
             }
 
             try {
-                CatERing.getInstance().getTaskManager().assignTask(existingSheet.getTasks().get(7), shifts.get(3), cooks.get(0));
+                CatERing.getInstance().getTaskManager().assignTask(existingSheet.getTasks().get(4), shifts.get(3), cooks.get(0));
             } catch (UnavailableCookException e) {
                 System.out.println("Il cuoco non è assegnato al turno");
             }
@@ -61,28 +63,28 @@ public class TestCatERing5b5c {
             System.out.println(board);
 
             System.out.println("\nTEST REMOVE ASSIGNMENT");
-            CatERing.getInstance().getTaskManager().removeAssignment(new Task(kitchenProcessesBook.get(0)));
-            CatERing.getInstance().getTaskManager().removeAssignment(new Task(kitchenProcessesBook.get(5)));
+            CatERing.getInstance().getTaskManager().removeAssignment(new Task(kitchenProcessesBook.get(11)));
+            CatERing.getInstance().getTaskManager().removeAssignment(new Task(kitchenProcessesBook.get(16)));
             System.out.println(board);
 
             try {
-                CatERing.getInstance().getTaskManager().removeAssignment(new Task(kitchenProcessesBook.get(19)));
+                CatERing.getInstance().getTaskManager().removeAssignment(new Task(kitchenProcessesBook.get(10)));
             } catch (UseCaseLogicException e) {
                 System.out.println(
                     "Il compito di cui voglio rimuovere assegnamento al turno" +
                     " non era assegnato ad alcun turno");
             }
 
-            System.out.println("\n TEST ADD SPECIFICATIONS");
+            System.out.println("\nTEST ADD SPECIFICATIONS");
             Random r = new Random();
-            int[] tasks_id = {1,4,6,7,8};
+            int[] tasks_id = {28,30,31};
             for(int i : tasks_id) {
                 Task t = Task.getLoadedTaskById(i);
                 CatERing.getInstance().getTaskManager().addSpecification(t, r.nextInt(100), r.nextInt(20));
             }
 
             try {
-                Task t = Task.getLoadedTaskById(8);
+                Task t = Task.getLoadedTaskById(28);
                 Shift s = shifts.get(3);
                 CatERing.getInstance().getTaskManager().assignTask(t, s);
                 System.out.println("Ora il seguente turno contiene il Task t: " + s);
@@ -93,13 +95,13 @@ public class TestCatERing5b5c {
             }
 
             try {
-                Task t = Task.getLoadedTaskById(10);
+                Task t = Task.getLoadedTaskById(30);
                 Shift s = shifts.get(2);
                 CatERing.getInstance().getTaskManager().assignTask(t, s);
                 System.out.println("Ora il seguente turno contiene il Task t: " + s);
                 CatERing.getInstance().getTaskManager().addSpecification(t, cooks.get(2));
             } catch (UseCaseLogicException | UnavailableCookException e) {
-                System.out.println("Il cuoco che voglio svolga compito non lavora nel turno in cui il compito è svolto");
+                System.out.println("Il cuoco che voglio svolga il compito non lavora nel turno in cui il compito è svolto");
             }
 
         } catch (UseCaseLogicException e) {

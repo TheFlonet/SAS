@@ -102,7 +102,7 @@ public class SummarySheet {
 
     public static SummarySheet loadExistingSheet() {
         List<SummarySheet> lst = new ArrayList<>();
-        int sh_id = 1;
+        int sh_id = 2;
         String query = "SELECT * FROM summarysheets WHERE id=" + sh_id;
         PersistenceManager.executeQuery(query, rs -> {
             int service_id = rs.getInt("service_id");
